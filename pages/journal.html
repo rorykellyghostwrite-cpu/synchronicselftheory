@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Journal | Synchronic Self Theory
+  </title>
+
+  <meta
+    name="description"
+    content="Explore the Synchronic Self Theory journal, including philosophical perspectives on everyday life, educational tarot resources, deck reviews, rune-casting guides, and rune-set reviews."
+  >
+
+  <meta
+    name="keywords"
+    content="Synchronic Self Theory journal, Jungian philosophy, tarot education, tarot deck reviews, rune casting, rune reviews, symbolism, Rory Kelly"
+  >
+
+  <meta name="author" content="Rory Kelly">
+
+  <meta
+    property="og:title"
+    content="The Synchronic Self Theory Journal"
+  >
+
+  <meta
+    property="og:description"
+    content="New perspectives, practical tarot education, and thoughtful guidance on rune casting."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://synchronicselftheory.com/pages/journal.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://synchronicselftheory.com/sst-thunderbird.png"
+  >
+
+  <link
+    rel="canonical"
+    href="https://synchronicselftheory.com/pages/journal.html"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../styles.css"
+  >
+
+  <style>
+    /* ======================================================
+       JOURNAL PAGE
+       These styles apply only to pages/journal.html.
+       ====================================================== */
+
+    .journal-hero {
+      position: relative;
+      display: grid;
+      min-height: 560px;
+      overflow: hidden;
+      place-items: center;
+      isolation: isolate;
+    }
+
+    .journal-hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background-image: url("../sst-thunderbird.png");
+      background-position: center 38%;
+      background-size: cover;
+      content: "";
+      filter:
+        brightness(0.46)
+        contrast(1.08)
+        saturate(0.78);
+      transform: scale(1.02);
+    }
+
+    .journal-hero::after {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 6, 9, 0.96) 0%,
+          rgba(5, 6, 9, 0.76) 52%,
+          rgba(5, 6, 9, 0.48) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(5, 6, 9, 0.15) 0%,
+          rgba(5, 6, 9, 0.52) 55%,
+          rgba(5, 6, 9, 0.98) 100%
+        );
+      content: "";
+    }
+
+    .journal-hero-inner {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+      padding: 7rem 1.5rem;
+    }
+
+    .journal-hero-copy {
+      max-width: 820px;
+    }
+
+    .journal-hero h1 {
+      margin-bottom: 1.5rem;
+      font-size: clamp(3rem, 7vw, 6.5rem);
+    }
+
+    .journal-hero .lead {
+      max-width: 760px;
+      margin-bottom: 0;
+    }
+
+    .journal-introduction {
+      background:
+        radial-gradient(
+          circle at 20% 0%,
+          rgba(94, 168, 255, 0.07),
+          transparent 28rem
+        ),
+        linear-gradient(
+          180deg,
+          #090b0f,
+          #0d1016
+        );
+    }
+
+    .journal-introduction .section-inner {
+      max-width: 850px;
+    }
+
+    .journal-introduction p:last-child {
+      margin-bottom: 0;
+    }
+
+    .journal-category-section {
+      background:
+        radial-gradient(
+          circle at 80% 10%,
+          rgba(255, 90, 31, 0.08),
+          transparent 28rem
+        ),
+        var(--background);
+    }
+
+    .journal-category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .journal-category-card {
+      position: relative;
+      display: flex;
+      min-height: 430px;
+      padding: 2.2rem;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.045),
+          rgba(255, 255, 255, 0.012)
+        ),
+        var(--background-card);
+      box-shadow: 0 22px 55px rgba(0, 0, 0, 0.3);
+      flex-direction: column;
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+    }
+
+    .journal-category-card::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 4px;
+      content: "";
+    }
+
+    .journal-category-card::after {
+      position: absolute;
+      top: -6rem;
+      right: -6rem;
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%;
+      content: "";
+      filter: blur(55px);
+      opacity: 0.26;
+      pointer-events: none;
+    }
+
+    .journal-category-card:hover,
+    .journal-category-card:focus-visible {
+      border-color: rgba(240, 178, 74, 0.36);
+      background: var(--background-card-hover);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.42);
+      transform: translateY(-7px);
+    }
+
+    .journal-category-card:focus-visible {
+      outline: 3px solid rgba(94, 168, 255, 0.7);
+      outline-offset: 5px;
+    }
+
+    .category-theory::before {
+      background: linear-gradient(
+        90deg,
+        var(--storm),
+        var(--storm-bright)
+      );
+    }
+
+    .category-theory::after {
+      background: var(--storm);
+    }
+
+    .category-tarot::before {
+      background: linear-gradient(
+        90deg,
+        var(--fire),
+        var(--gold)
+      );
+    }
+
+    .category-tarot::after {
+      background: var(--fire);
+    }
+
+    .category-runes::before {
+      background: linear-gradient(
+        90deg,
+        var(--gold),
+        var(--gold-soft)
+      );
+    }
+
+    .category-runes::after {
+      background: var(--gold);
+    }
+
+    .journal-category-icon {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1.8rem;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 50%;
+      background: rgba(7, 8, 11, 0.68);
+      color: var(--gold-soft);
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+      font-size: 1.7rem;
+      place-items: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .journal-category-card h2 {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 1rem;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+    }
+
+    .journal-category-card p {
+      position: relative;
+      z-index: 1;
+      flex-grow: 1;
+    }
+
+    .journal-card-link {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      margin-top: 1.4rem;
+      align-items: center;
+      gap: 0.55rem;
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      transition:
+        color var(--transition),
+        gap var(--transition);
+    }
+
+    .journal-category-card:hover .journal-card-link,
+    .journal-category-card:focus-visible .journal-card-link {
+      gap: 0.85rem;
+      color: var(--gold-soft);
+    }
+
+    .topic-expectations {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .topic-expectations-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .topic-expectation {
+      display: grid;
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+      gap: 1.5rem;
+      grid-template-columns: minmax(190px, 0.42fr) minmax(0, 1fr);
+    }
+
+    .topic-expectation:first-child {
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .topic-expectation h3 {
+      margin-bottom: 0;
+      color: var(--text-primary);
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+    }
+
+    .topic-expectation p {
+      margin-bottom: 0;
+    }
+
+    .journal-closing {
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(240, 178, 74, 0.12),
+          transparent 32rem
+        ),
+        #090a0e;
+      text-align: center;
+    }
+
+    .journal-closing p:not(.section-label) {
+      max-width: 700px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (max-width: 900px) {
+      .journal-category-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .journal-category-card {
+        min-height: 0;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .journal-hero {
+        min-height: 500px;
+      }
+
+      .journal-hero-inner {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+
+      .topic-expectation {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================================================
+       SITE HEADER
+       ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="studio-credit studio-credit-top">
+      <span>Powered by</span>
+
+      <a
+        href="https://ghostwritestudios.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GhostWrite Studios
+      </a>
+    </div>
+
+    <div class="header-inner">
+
+      <a
+        class="site-identity"
+        href="../index.html"
+        aria-label="Synchronic Self Theory home"
+      >
+        <span class="site-name">
+          Synchronic Self Theory
+        </span>
+
+        <span class="site-motto">
+          As within, so without.
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        id="primary-navigation"
+        class="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a
+          class="active"
+          href="journal.html"
+        >
+          Journal
+        </a>
+
+        <a href="tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="runes.html">
+          Rune Casting
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ======================================================
+         JOURNAL HERO
+         ====================================================== -->
+
+    <section class="journal-hero">
+
+      <div class="journal-hero-inner">
+
+        <div class="journal-hero-copy">
+
+          <p class="eyebrow">
+            Reflection, symbolism, and practical exploration
+          </p>
+
+          <h1>
+            The Journal
+          </h1>
+
+          <p class="lead">
+            A growing collection of philosophical perspectives,
+            educational guides, reviews, and practical resources
+            exploring Synchronic Self Theory, tarot, and runes.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         INTRODUCTION
+         ====================================================== -->
+
+    <section class="section journal-introduction">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Enter the Conversation
+        </p>
+
+        <h2>
+          Ideas aren’t meant to replace thought. They’re meant to
+          provoke it.
+        </h2>
+
+        <p class="lead">
+          The Synchronic Self Theory Journal is where philosophy meets
+          practice. It’s a place to examine the patterns shaping daily
+          experience, learn how symbolic systems work, and explore
+          perspectives without being told what conclusion you’re
+          required to reach.
+        </p>
+
+        <p>
+          The journal is organized into three distinct areas. The Theory
+          in Day-to-Day Life focuses on reflection and philosophical
+          inquiry. Tarot and Runes focus more directly on education,
+          technique, tools, and informed practice.
+        </p>
+
+        <p>
+          Each section has a different purpose, but all three share the
+          same foundation: symbols become most useful when they help us
+          ask clearer questions, recognize our own projections, and
+          think more deliberately about the lives we’re creating.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CATEGORY CARDS
+         ====================================================== -->
+
+    <section class="section journal-category-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Explore by Topic
+          </p>
+
+          <h2>
+            Choose a path into the journal.
+          </h2>
+
+          <p>
+            Each category has its own focus, voice, and growing
+            collection of work.
+          </p>
+
+        </div>
+
+        <div class="journal-category-grid">
+
+          <a
+            class="journal-category-card category-theory"
+            href="journal/theory.html"
+          >
+
+            <div
+              class="journal-category-icon"
+              aria-hidden="true"
+            >
+              ✦
+            </div>
+
+            <h2>
+              The Theory in Day-to-Day Life
+            </h2>
+
+            <p>
+              Philosophical writing that applies Synchronic Self
+              Theory to ordinary experience, encouraging readers to
+              reconsider familiar patterns and arrive at their own
+              conclusions.
+            </p>
+
+            <span class="journal-card-link">
+              Explore the Theory
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+
+          <a
+            class="journal-category-card category-tarot"
+            href="journal/tarot.html"
+          >
+
+            <div
+              class="journal-category-icon"
+              aria-hidden="true"
+            >
+              🪞
+            </div>
+
+            <h2>
+              Tarot
+            </h2>
+
+            <p>
+              Educational resources, practical how-to guides, deck
+              reviews, reading techniques, symbolism, and thoughtful
+              discussion about working with tarot.
+            </p>
+
+            <span class="journal-card-link">
+              Explore Tarot
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+
+          <a
+            class="journal-category-card category-runes"
+            href="journal/runes.html"
+          >
+
+            <div
+              class="journal-category-icon"
+              aria-hidden="true"
+            >
+              ᚱ
+            </div>
+
+            <h2>
+              Runes
+            </h2>
+
+            <p>
+              Educational guides to rune casting, practical methods,
+              rune-set reviews, symbolism, interpretation, and the
+              tools used to build a grounded rune practice.
+            </p>
+
+            <span class="journal-card-link">
+              Explore Runes
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         WHAT TO EXPECT
+         ====================================================== -->
+
+    <section class="section topic-expectations">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            What to Expect
+          </p>
+
+          <h2>
+            Three topics, each serving a different purpose.
+          </h2>
+
+        </div>
+
+        <div class="topic-expectations-grid">
+
+          <article class="topic-expectation">
+
+            <h3>
+              The Theory in Day-to-Day Life
+            </h3>
+
+            <p>
+              This section uses Synchronic Self Theory as a lens rather
+              than a rulebook. Its purpose is to leave readers with new
+              perspectives to consider for themselves. The writing may
+              examine perception, projection, relationships, identity,
+              symbolism, choice, and the patterns that become visible
+              when inner and outer experience begin reflecting one
+              another.
+            </p>
+
+          </article>
+
+
+          <article class="topic-expectation">
+
+            <h3>
+              Tarot
+            </h3>
+
+            <p>
+              This section is built around useful, educational content.
+              Expect practical how-to guides, explanations of reading
+              methods, discussions of card symbolism, deck reviews, and
+              observations drawn from working with different tarot
+              systems. It’s meant to help readers understand the tools,
+              not merely admire them from across a velvet table.
+            </p>
+
+          </article>
+
+
+          <article class="topic-expectation">
+
+            <h3>
+              Runes
+            </h3>
+
+            <p>
+              This section focuses on learning how to work with runes
+              thoughtfully. It includes casting methods, interpretation
+              techniques, rune-set reviews, practical considerations,
+              and educational material designed to make the system more
+              approachable without stripping away its depth.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CLOSING
+         ====================================================== -->
+
+    <section class="section journal-closing">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Read, Reflect, Decide
+        </p>
+
+        <h2>
+          A mirror can offer perspective. It can’t do your thinking
+          for you.
+        </h2>
+
+        <p>
+          The journal isn’t built around fixed answers. It’s built
+          around better questions, practical knowledge, and the freedom
+          to decide what meaning you carry forward.
+        </p>
+
+        <a
+          class="button button-primary"
+          href="journal/theory.html"
+        >
+          Begin with the Theory
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================
+       SITE FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <a
+          class="footer-site-name"
+          href="../index.html"
+        >
+          Synchronic Self Theory
+        </a>
+
+        <p>
+          As above, so below.<br>
+          As within, so without.
+        </p>
+
+      </div>
+
+      <nav
+        class="footer-navigation"
+        aria-label="Footer navigation"
+      >
+        <a href="journal.html">
+          Journal
+        </a>
+
+        <a href="tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="runes.html">
+          Rune Casting
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+      </nav>
+
+      <div class="footer-credit">
+
+        <p>
+          Powered by
+          <a
+            href="https://ghostwritestudios.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GhostWrite Studios
+          </a>
+        </p>
+
+        <p>
+          Original philosophy and writing by Rory Kelly.
+        </p>
+
+        <p>
+          &copy; 2026 Rory Kelly. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================
+       MOBILE NAVIGATION
+       ====================================================== -->
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    const primaryNavigation = document.querySelector(
+      ".primary-navigation"
+    );
+
+    if (menuToggle && primaryNavigation) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen =
+          menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+        primaryNavigation.classList.toggle(
+          "navigation-open"
+        );
+      });
+    }
+  </script>
+
+</body>
+</html>

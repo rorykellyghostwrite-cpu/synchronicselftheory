@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Tarot Readings | Synchronic Self Theory
+  </title>
+
+  <meta
+    name="description"
+    content="Explore tarot through Synchronic Self Theory, learn about Rory Kelly's Trickster's Journey, Crow Tarot, Black Tarot, and Sacred Symbols Oracle decks, and request an online tarot reading."
+  >
+
+  <meta
+    name="keywords"
+    content="tarot readings, online tarot reading, Synchronic Self Theory, Trickster's Journey Tarot, Crow Tarot, Black Tarot, Sacred Symbols Oracle, shadow work, tarot deck choice, Rory Kelly"
+  >
+
+  <meta name="author" content="Rory Kelly">
+
+  <meta
+    property="og:title"
+    content="Tarot Readings | Synchronic Self Theory"
+  >
+
+  <meta
+    property="og:description"
+    content="Tarot as a reflective system for projection, recognition, integration, and conscious choice."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://synchronicselftheory.com/pages/tarot.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://synchronicselftheory.com/trickster-spread(1).png"
+  >
+
+  <link
+    rel="canonical"
+    href="https://synchronicselftheory.com/pages/tarot.html"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../styles.css"
+  >
+
+  <style>
+    /* ======================================================
+       TAROT PAGE
+       These styles apply only to pages/tarot.html.
+       ====================================================== */
+
+    .tarot-hero {
+      position: relative;
+      display: grid;
+      min-height: 720px;
+      overflow: hidden;
+      place-items: center;
+      isolation: isolate;
+    }
+
+    .tarot-hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background-image: url("../trickster-spread(1).png");
+      background-position: center 48%;
+      background-size: cover;
+      content: "";
+      filter:
+        brightness(0.45)
+        contrast(1.08)
+        saturate(0.82);
+      transform: scale(1.025);
+    }
+
+    .tarot-hero::after {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 6, 9, 0.98) 0%,
+          rgba(5, 6, 9, 0.84) 46%,
+          rgba(5, 6, 9, 0.48) 76%,
+          rgba(5, 6, 9, 0.66) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(5, 6, 9, 0.12) 0%,
+          rgba(5, 6, 9, 0.34) 56%,
+          rgba(5, 6, 9, 0.98) 100%
+        );
+      content: "";
+    }
+
+    .tarot-hero-inner {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+      padding: 8rem 1.5rem;
+    }
+
+    .tarot-hero-copy {
+      max-width: 860px;
+    }
+
+    .tarot-hero h1 {
+      margin-bottom: 1.5rem;
+      font-size: clamp(3.5rem, 8vw, 7.3rem);
+    }
+
+    .tarot-hero .lead {
+      max-width: 760px;
+      margin-bottom: 0;
+    }
+
+    .tarot-introduction {
+      background:
+        radial-gradient(
+          circle at 20% 0%,
+          rgba(240, 178, 74, 0.08),
+          transparent 30rem
+        ),
+        linear-gradient(
+          180deg,
+          #090b0f,
+          #0d1016
+        );
+    }
+
+    .tarot-introduction .section-inner {
+      max-width: 900px;
+    }
+
+    .sst-process-section {
+      background:
+        radial-gradient(
+          circle at 88% 10%,
+          rgba(94, 168, 255, 0.07),
+          transparent 30rem
+        ),
+        var(--background);
+    }
+
+    .sst-process-grid {
+      display: grid;
+      gap: 1.3rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .sst-process-card {
+      position: relative;
+      padding: 2rem;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.04),
+          rgba(255, 255, 255, 0.01)
+        ),
+        var(--background-card);
+      box-shadow: 0 22px 55px rgba(0, 0, 0, 0.3);
+    }
+
+    .sst-process-card::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(
+        90deg,
+        var(--fire),
+        var(--gold)
+      );
+      content: "";
+    }
+
+    .sst-process-number {
+      display: inline-block;
+      margin-bottom: 1.3rem;
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+    }
+
+    .sst-process-card h3 {
+      font-size: 1.45rem;
+    }
+
+    .sst-process-card p {
+      margin-bottom: 0;
+      font-size: 0.96rem;
+    }
+
+    .deck-section {
+      background:
+        radial-gradient(
+          circle at 10% 15%,
+          rgba(255, 90, 31, 0.07),
+          transparent 28rem
+        ),
+        #0b0e13;
+    }
+
+    .deck-section-alt {
+      background:
+        radial-gradient(
+          circle at 90% 15%,
+          rgba(94, 168, 255, 0.07),
+          transparent 28rem
+        ),
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .deck-layout {
+      display: grid;
+      align-items: center;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 1.08fr)
+        minmax(0, 0.92fr);
+    }
+
+    .deck-layout.reverse {
+      grid-template-columns:
+        minmax(0, 0.92fr)
+        minmax(0, 1.08fr);
+    }
+
+    .deck-layout.reverse .deck-gallery {
+      order: 2;
+    }
+
+    .deck-layout.reverse .deck-copy {
+      order: 1;
+    }
+
+    .deck-gallery {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .deck-gallery figure {
+      margin: 0;
+    }
+
+    .deck-gallery img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      box-shadow: 0 26px 70px rgba(0, 0, 0, 0.45);
+      object-fit: cover;
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .deck-gallery img:hover {
+      border-color: rgba(240, 178, 74, 0.34);
+      box-shadow:
+        0 32px 78px rgba(0, 0, 0, 0.56),
+        0 0 30px rgba(240, 178, 74, 0.05);
+      transform: translateY(-4px);
+    }
+
+    .deck-gallery figure:first-child {
+      grid-column: 1 / -1;
+    }
+
+    .deck-gallery figure:first-child img {
+      aspect-ratio: 16 / 10;
+    }
+
+    .deck-gallery figure:last-child img {
+      aspect-ratio: 4 / 3;
+    }
+
+    .deck-copy {
+      padding: clamp(1rem, 3vw, 2rem);
+    }
+
+    .deck-copy h2 {
+      margin-bottom: 1.3rem;
+      font-size: clamp(2.3rem, 4.7vw, 4.3rem);
+    }
+
+    .deck-copy h3 {
+      margin-top: 2rem;
+      color: var(--gold-soft);
+    }
+
+    .deck-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .deck-label {
+      display: inline-flex;
+      margin-bottom: 1.2rem;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid rgba(240, 178, 74, 0.24);
+      border-radius: 999px;
+      background: rgba(240, 178, 74, 0.06);
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .reading-method {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border-left: 3px solid var(--gold);
+      border-radius: 0 var(--radius-small) var(--radius-small) 0;
+      background:
+        linear-gradient(
+          120deg,
+          rgba(240, 178, 74, 0.08),
+          rgba(255, 255, 255, 0.015)
+        );
+    }
+
+    .reading-method h3 {
+      margin-top: 0;
+    }
+
+    .reading-method p:last-child {
+      margin-bottom: 0;
+    }
+
+    .deck-comparison-section {
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(240, 178, 74, 0.07),
+          transparent 30rem
+        ),
+        var(--background);
+    }
+
+    .deck-comparison-grid {
+      display: grid;
+      gap: 1.3rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .deck-comparison-card {
+      position: relative;
+      padding: 2rem;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.008)
+        ),
+        var(--background-raised);
+      box-shadow: 0 22px 55px rgba(0, 0, 0, 0.3);
+    }
+
+    .deck-comparison-card::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(
+        90deg,
+        var(--storm),
+        var(--gold)
+      );
+      content: "";
+    }
+
+    .deck-comparison-card h3 {
+      margin-top: 0.6rem;
+      font-size: 1.5rem;
+    }
+
+    .deck-comparison-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .tarot-oracle-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .tarot-oracle-layout {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .system-card {
+      padding: clamp(2rem, 4vw, 3rem);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.04),
+          rgba(255, 255, 255, 0.01)
+        ),
+        var(--background-card);
+      box-shadow: 0 26px 68px rgba(0, 0, 0, 0.34);
+    }
+
+    .system-card h3 {
+      font-size: clamp(1.9rem, 3vw, 2.8rem);
+    }
+
+    .system-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .reading-service-section {
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(255, 90, 31, 0.11),
+          transparent 33rem
+        ),
+        var(--background);
+    }
+
+    .reading-service-layout {
+      display: grid;
+      align-items: start;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 0.88fr)
+        minmax(0, 1.12fr);
+    }
+
+    .reading-process {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .reading-step {
+      display: grid;
+      padding: 1.5rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background: var(--background-card);
+      gap: 1.2rem;
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .reading-step-number {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(240, 178, 74, 0.24);
+      border-radius: 50%;
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.76rem;
+      font-weight: 800;
+      place-items: center;
+    }
+
+    .reading-step h3 {
+      margin-bottom: 0.45rem;
+      font-size: 1.25rem;
+    }
+
+    .reading-step p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .tarot-cta {
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(94, 168, 255, 0.13),
+          transparent 34rem
+        ),
+        #090a0e;
+      text-align: center;
+    }
+
+    .tarot-cta p:not(.section-label) {
+      max-width: 720px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .tarot-cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 1050px) {
+      .sst-process-grid,
+      .deck-comparison-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 980px) {
+      .deck-layout,
+      .deck-layout.reverse,
+      .reading-service-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .deck-layout.reverse .deck-gallery,
+      .deck-layout.reverse .deck-copy {
+        order: initial;
+      }
+
+      .tarot-oracle-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .tarot-hero {
+        min-height: 620px;
+      }
+
+      .tarot-hero-inner {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+
+      .sst-process-grid,
+      .deck-comparison-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .deck-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .deck-gallery figure:first-child {
+        grid-column: auto;
+      }
+
+      .deck-gallery figure:first-child img,
+      .deck-gallery figure:last-child img {
+        aspect-ratio: 4 / 3;
+      }
+
+      .tarot-cta-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .tarot-cta-actions .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================================================
+       SITE HEADER
+       ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="studio-credit studio-credit-top">
+      <span>Powered by</span>
+
+      <a
+        href="https://ghostwritestudios.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GhostWrite Studios
+      </a>
+    </div>
+
+    <div class="header-inner">
+
+      <a
+        class="site-identity"
+        href="../index.html"
+        aria-label="Synchronic Self Theory home"
+      >
+        <span class="site-name">
+          Synchronic Self Theory
+        </span>
+
+        <span class="site-motto">
+          As within, so without.
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        id="primary-navigation"
+        class="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a href="journal.html">
+          Journal
+        </a>
+
+        <a
+          class="active"
+          href="tarot.html"
+        >
+          Tarot Readings
+        </a>
+
+        <a href="runes.html">
+          Rune Casting
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+         ====================================================== -->
+
+    <section class="tarot-hero">
+
+      <div class="tarot-hero-inner">
+
+        <div class="tarot-hero-copy">
+
+          <p class="eyebrow">
+            Symbols, projection, and conscious reflection
+          </p>
+
+          <h1>
+            Tarot Readings
+          </h1>
+
+          <p class="lead">
+            Tarot doesn’t remove uncertainty. It gives uncertainty a
+            symbolic language so the patterns beneath a question can be
+            examined more clearly.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         TAROT THROUGH SST
+         ====================================================== -->
+
+    <section class="section tarot-introduction">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Tarot Through Synchronic Self Theory
+        </p>
+
+        <h2>
+          The cards don’t arrive outside the question. They become part
+          of the question’s reflective field.
+        </h2>
+
+        <p class="lead">
+          In Synchronic Self Theory, tarot works as a structured
+          conversation between the questioner, the reader, the cards
+          drawn, and the patterns already active in the questioner’s
+          life.
+        </p>
+
+        <p>
+          The cards aren’t treated as fixed commands handed down by an
+          external authority. Their imagery creates a symbolic field in
+          which projections, fears, desires, assumptions, conflicts,
+          and unrealized choices can become visible.
+        </p>
+
+        <p>
+          A reading begins with perception. A card creates recognition
+          through image, archetype, position, or emotional response.
+          The meaning that emerges is then tested against the question,
+          the surrounding cards, and the lived reality of the person
+          receiving the reading.
+        </p>
+
+        <p>
+          The goal isn’t obedience to the cards. It’s reintegration:
+          taking what the reading reveals and deciding how that insight
+          should influence thought, behavior, planning, boundaries, or
+          conscious action.
+        </p>
+
+        <blockquote class="featured-quote">
+          <p>
+            Tarot doesn’t do your thinking for you. It shows you where
+            your thinking may already be trapped.
+          </p>
+        </blockquote>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         SST READING PROCESS
+         ====================================================== -->
+
+    <section class="section sst-process-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            The Reflective Process
+          </p>
+
+          <h2>
+            A reading moves through the same cycle as the theory.
+          </h2>
+
+          <p>
+            Each reading is interpreted through perception, projection,
+            recognition, and reintegration.
+          </p>
+
+        </div>
+
+        <div class="sst-process-grid">
+
+          <article class="sst-process-card">
+
+            <span class="sst-process-number">
+              01
+            </span>
+
+            <h3>
+              Perception
+            </h3>
+
+            <p>
+              The cards introduce images, archetypes, relationships,
+              and tensions that give the question a visible symbolic
+              structure.
+            </p>
+
+          </article>
+
+
+          <article class="sst-process-card">
+
+            <span class="sst-process-number">
+              02
+            </span>
+
+            <h3>
+              Projection
+            </h3>
+
+            <p>
+              The questioner and reader notice what emotions,
+              assumptions, memories, or interpretations are being
+              projected onto the cards.
+            </p>
+
+          </article>
+
+
+          <article class="sst-process-card">
+
+            <span class="sst-process-number">
+              03
+            </span>
+
+            <h3>
+              Recognition
+            </h3>
+
+            <p>
+              The spread reveals a pattern that may connect the
+              question to motives, choices, conflicts, or possibilities
+              that weren’t previously obvious.
+            </p>
+
+          </article>
+
+
+          <article class="sst-process-card">
+
+            <span class="sst-process-number">
+              04
+            </span>
+
+            <h3>
+              Reintegration
+            </h3>
+
+            <p>
+              The reading becomes useful when the insight is translated
+              into a decision, boundary, experiment, conversation, or
+              new way of approaching the situation.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         TRICKSTER'S JOURNEY
+         ====================================================== -->
+
+    <section class="section deck-section">
+
+      <div class="section-inner deck-layout">
+
+        <div class="deck-gallery">
+
+          <figure>
+            <img
+              src="../trickster-spread(1).png"
+              alt="Trickster's Journey tarot deck spread across a dark wooden table with Japanese-inspired artwork and guidebook"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="../trickster-deck(1).png"
+              alt="Trickster's Journey tarot deck and guidebook by Jia Sung"
+              loading="lazy"
+            >
+          </figure>
+
+        </div>
+
+        <div class="deck-copy">
+
+          <span class="deck-label">
+            Strategic Direction
+          </span>
+
+          <p class="section-label">
+            Trickster’s Journey Tarot
+          </p>
+
+          <h2>
+            Finding the path of least resistance
+          </h2>
+
+          <p class="lead">
+            Trickster’s Journey is the deck I use for long-term game
+            planning, strategic questions, and identifying the path of
+            least resistance through a complicated situation.
+          </p>
+
+          <p>
+            Its imagery doesn’t approach life as a clean contest between
+            correct and incorrect choices. The trickster survives by
+            noticing openings, changing perspective, moving around
+            rigid structures, and understanding when direct force is
+            less effective than adaptation.
+          </p>
+
+          <p>
+            This makes the deck especially useful when the question
+            isn’t simply, “What should I do?” but, “What sequence of
+            choices creates the strongest long-term position?”
+          </p>
+
+          <div class="reading-method">
+
+            <h3>
+              No fixed reversed meanings
+            </h3>
+
+            <p>
+              I don’t use a separate inverse meaning system with this
+              deck. When a card appears reversed, both its upright and
+              inverse meanings are considered together.
+            </p>
+
+            <p>
+              A reversed card may indicate tension between the card’s
+              possibilities, a blocked expression of its energy, or a
+              situation in which both interpretations are active at the
+              same time. The reversal complicates the meaning rather
+              than simply turning it into its opposite.
+            </p>
+
+          </div>
+
+          <h3>
+            Best suited for
+          </h3>
+
+          <p>
+            Long-term planning, career strategy, creative projects,
+            difficult transitions, competing priorities, complicated
+            relationships, and questions where the easiest route may
+            also be the most intelligent one.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CROW TAROT
+         ====================================================== -->
+
+    <section class="section deck-section-alt">
+
+      <div class="section-inner deck-layout reverse">
+
+        <div class="deck-gallery">
+
+          <figure>
+            <img
+              src="../crow-spread(1).png"
+              alt="Crow Tarot cards arranged in an eight-card spread on a dark wooden table"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="../crow-deck(1).png"
+              alt="Crow Tarot deck box created by MJ Cullinane"
+              loading="lazy"
+            >
+          </figure>
+
+        </div>
+
+        <div class="deck-copy">
+
+          <span class="deck-label">
+            Growth and Integration
+          </span>
+
+          <p class="section-label">
+            Crow Tarot
+          </p>
+
+          <h2>
+            Tracking personal and spiritual development
+          </h2>
+
+          <p class="lead">
+            Crow Tarot is the deck I use to examine personal growth,
+            spiritual development, shadow integration, and the movement
+            between past lessons and current choices.
+          </p>
+
+          <p>
+            Crows are intelligent, social, observant, and capable of
+            remembering both danger and generosity. Symbolically,
+            they’re natural messengers between what has been learned,
+            what’s being carried, and what still needs to be integrated.
+          </p>
+
+          <p>
+            This deck tends to reveal development as a process rather
+            than a destination. It asks whether insight has actually
+            changed behavior, whether an old lesson has been embodied,
+            and whether the seeker is moving forward or merely
+            repeating familiar language about growth.
+          </p>
+
+          <div class="reading-method">
+
+            <h3>
+              The eight-card crow carrying a message spread
+            </h3>
+
+            <p>
+              This deck has a special eight-card spread built around
+              the image of a crow carrying a message.
+            </p>
+
+            <p>
+              The eight positions track the origin of the message, what
+              the seeker already knows, what remains hidden, what has
+              been integrated, what continues to resist integration,
+              the influence of the present environment, the next stage
+              of growth, and the message being carried forward.
+            </p>
+
+          </div>
+
+          <h3>
+            Best suited for
+          </h3>
+
+          <p>
+            Spiritual growth, personal integration, recurring lessons,
+            healing after major change, identity development, evaluating
+            progress, and understanding where insight hasn’t yet become
+            lived behavior.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         BLACK TAROT
+         ====================================================== -->
+
+    <section class="section deck-section">
+
+      <div class="section-inner deck-layout">
+
+        <div class="deck-gallery">
+
+          <figure>
+            <img
+              src="../black-spread(1).png"
+              alt="The Black Tarot cards arranged in a dark gothic spread beside the guidebook"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="../black-deck(1).png"
+              alt="The Black Tarot deck box featuring gothic monochrome artwork by Victoria Iva"
+              loading="lazy"
+            >
+          </figure>
+
+        </div>
+
+        <div class="deck-copy">
+
+          <span class="deck-label">
+            Shadow Work
+          </span>
+
+          <p class="section-label">
+            The Black Tarot
+          </p>
+
+          <h2>
+            When the question needs to enter the shadow
+          </h2>
+
+          <p class="lead">
+            The Black Tarot, featuring gothic-inspired artwork by
+            Victoria Iva, is the deck I use when the question is rooted
+            in shadow work, avoidance, fear, repression, contradiction,
+            or the parts of the self that resist being seen directly.
+          </p>
+
+          <p>
+            Its monochrome imagery strips away much of the comfort and
+            familiarity people often bring to traditional tarot. The
+            cards feel less interested in reassurance and more
+            interested in the structures beneath the reassurance.
+          </p>
+
+          <p>
+            This deck often speaks from the position of the shadow
+            itself. It doesn’t necessarily tell the questioner what
+            they’re consciously trying to understand. It reveals what
+            the question may be protecting, disguising, displacing, or
+            refusing to confront.
+          </p>
+
+          <div class="reading-method">
+
+            <h3>
+              The three-card spread
+            </h3>
+
+            <p>
+              I favor a three-card spread with this deck because its
+              imagery is dense and psychologically charged. More cards
+              don’t always produce more clarity. Sometimes they merely
+              give the conscious mind more places to hide.
+            </p>
+
+            <p>
+              The three positions are interpreted as the visible issue,
+              the shadow beneath it, and the point of integration. The
+              spread stays narrow enough to preserve focus while still
+              revealing the conflict between conscious narrative and
+              unconscious pattern.
+            </p>
+
+          </div>
+
+          <h3>
+            Best suited for
+          </h3>
+
+          <p>
+            Shadow work, fear, avoidance, grief, emotional contradiction,
+            self-sabotage, hidden motives, difficult truths, repeating
+            patterns, and questions where reassurance would be less
+            useful than honest recognition.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         SACRED SYMBOLS ORACLE
+         ====================================================== -->
+
+    <section class="section deck-section-alt">
+
+      <div class="section-inner deck-layout reverse">
+
+        <div class="deck-gallery">
+
+          <figure>
+            <img
+              src="../oracle-spread(1).png"
+              alt="Sacred Symbols Oracle cards arranged on a dark wooden table with the red guidebook and deck"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="../oracle-deck(1).png"
+              alt="Sacred Symbols Oracle Deck for Divination and Meditation by Marcella Kroll"
+              loading="lazy"
+            >
+          </figure>
+
+        </div>
+
+        <div class="deck-copy">
+
+          <span class="deck-label">
+            Direct Symbolic Focus
+          </span>
+
+          <p class="section-label">
+            Sacred Symbols Oracle
+          </p>
+
+          <h2>
+            A single symbol can narrow the entire conversation
+          </h2>
+
+          <p class="lead">
+            The Sacred Symbols Oracle is used when the question benefits
+            from direct symbolic language rather than the layered
+            narrative structure of tarot.
+          </p>
+
+          <p>
+            Its cards focus on specific images, states, boundaries,
+            emotions, cycles, and symbolic concepts. That makes the deck
+            useful for clarifying the central theme of a reading,
+            identifying what requires attention, or providing a final
+            message after a tarot spread.
+          </p>
+
+          <p>
+            The oracle deck can stand alone, but it also works well as a
+            companion system. A tarot spread may reveal the larger
+            psychological narrative, while an oracle card identifies
+            the symbol or principle the questioner should carry forward.
+          </p>
+
+          <h3>
+            Best suited for
+          </h3>
+
+          <p>
+            Focused reflection, meditation, identifying the central
+            theme of a situation, clarifying a tarot reading, setting an
+            intention, or receiving a concise symbolic message without
+            constructing a full narrative spread.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         TAROT VS ORACLE
+         ====================================================== -->
+
+    <section class="section tarot-oracle-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Tarot and Oracle
+          </p>
+
+          <h2>
+            They’re related tools, but they aren’t the same system.
+          </h2>
+
+          <p>
+            Both use imagery and symbolism, but they organize meaning in
+            different ways.
+          </p>
+
+        </div>
+
+        <div class="tarot-oracle-layout">
+
+          <article class="system-card">
+
+            <p class="section-label">
+              Tarot
+            </p>
+
+            <h3>
+              A structured symbolic language
+            </h3>
+
+            <p>
+              Tarot follows an established framework built from the
+              Major Arcana, Minor Arcana, numbered cards, court cards,
+              suits, elemental relationships, and recurring archetypal
+              patterns.
+            </p>
+
+            <p>
+              That structure allows individual cards to interact as
+              parts of a larger narrative. Position, sequence, suit,
+              number, and surrounding cards all influence the reading.
+            </p>
+
+            <p>
+              Tarot is especially useful when a question needs depth,
+              movement, conflict, chronology, or an examination of how
+              several forces are interacting at once.
+            </p>
+
+          </article>
+
+
+          <article class="system-card">
+
+            <p class="section-label">
+              Oracle
+            </p>
+
+            <h3>
+              A deck-defined symbolic vocabulary
+            </h3>
+
+            <p>
+              Oracle decks aren’t bound to tarot’s seventy-eight-card
+              structure. Each creator determines the deck’s number of
+              cards, categories, imagery, meanings, and method of use.
+            </p>
+
+            <p>
+              Oracle readings are often more direct because each card
+              can function as a focused concept, message, emotional
+              state, or symbolic instruction without having to fit
+              within tarot’s larger architecture.
+            </p>
+
+            <p>
+              Oracle is especially useful when the question needs a
+              central theme, meditation point, clarifying symbol, or
+              concise message rather than a full archetypal narrative.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         DECK COMPARISON
+         ====================================================== -->
+
+    <section class="section deck-comparison-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Choosing a Deck
+          </p>
+
+          <h2>
+            Each deck approaches the mirror from a different angle.
+          </h2>
+
+          <p>
+            Clients may choose a deck when requesting a reading or leave
+            the selection to me based on the question.
+          </p>
+
+        </div>
+
+        <div class="deck-comparison-grid">
+
+          <article class="deck-comparison-card">
+
+            <p class="section-label">
+              Trickster’s Journey
+            </p>
+
+            <h3>
+              Strategy
+            </h3>
+
+            <p>
+              Best for long-term planning, finding openings, adapting to
+              complex circumstances, and identifying the path of least
+              resistance.
+            </p>
+
+          </article>
+
+
+          <article class="deck-comparison-card">
+
+            <p class="section-label">
+              Crow Tarot
+            </p>
+
+            <h3>
+              Integration
+            </h3>
+
+            <p>
+              Best for tracking spiritual and personal growth, recurring
+              lessons, identity development, and the movement from
+              insight into lived change.
+            </p>
+
+          </article>
+
+
+          <article class="deck-comparison-card">
+
+            <p class="section-label">
+              The Black Tarot
+            </p>
+
+            <h3>
+              Shadow
+            </h3>
+
+            <p>
+              Best for hidden motives, fear, avoidance, difficult truths,
+              self-sabotage, contradiction, and the parts of a question
+              that resist conscious recognition.
+            </p>
+
+          </article>
+
+
+          <article class="deck-comparison-card">
+
+            <p class="section-label">
+              Sacred Symbols Oracle
+            </p>
+
+            <h3>
+              Focus
+            </h3>
+
+            <p>
+              Best for concise symbolic messages, clarifying a larger
+              reading, identifying the central theme, or creating a
+              focused point for reflection and meditation.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         ONLINE READINGS
+         ====================================================== -->
+
+    <section class="section reading-service-section">
+
+      <div class="section-inner reading-service-layout">
+
+        <div class="reading-service-copy">
+
+          <p class="section-label">
+            Online Tarot Readings
+          </p>
+
+          <h2>
+            Choose your question and the symbolic language used to
+            explore it.
+          </h2>
+
+          <p class="lead">
+            Online readings allow you to submit a question, choose a
+            deck, and receive an interpretation centered on the cards,
+            their positions, and the pattern created across the spread.
+          </p>
+
+          <p>
+            Readings are offered as reflective guidance rather than
+            guaranteed prediction. I’ll explain what the cards suggest,
+            where tensions appear, how the images relate to one another,
+            and what perspectives the spread introduces.
+          </p>
+
+          <p>
+            You remain responsible for deciding what applies, what
+            doesn’t, and what action you choose to take after the
+            reading. The cards may open the door. They don’t get to
+            march through your life wearing your shoes.
+          </p>
+
+        </div>
+
+
+        <div class="reading-process">
+
+          <article class="reading-step">
+
+            <span class="reading-step-number">
+              01
+            </span>
+
+            <div>
+              <h3>
+                Submit your question
+              </h3>
+
+              <p>
+                Explain what you’d like the reading to examine. Open
+                questions usually create more useful readings than
+                questions limited to a simple yes or no.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="reading-step">
+
+            <span class="reading-step-number">
+              02
+            </span>
+
+            <div>
+              <h3>
+                Choose a deck
+              </h3>
+
+              <p>
+                Select Trickster’s Journey, Crow Tarot, The Black Tarot,
+                or Sacred Symbols Oracle. You may also leave the choice
+                to me.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="reading-step">
+
+            <span class="reading-step-number">
+              03
+            </span>
+
+            <div>
+              <h3>
+                Receive the interpretation
+              </h3>
+
+              <p>
+                I’ll interpret the spread as a connected symbolic
+                pattern and explain how its individual cards contribute
+                to the larger reading.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         SERVICE CTA
+         ====================================================== -->
+
+    <section class="section tarot-cta">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Request a Reading
+        </p>
+
+        <h2>
+          Bring the question. Choose the deck. Enter the reflection.
+        </h2>
+
+        <p>
+          Online tarot and oracle readings are available through
+          Synchronic Self Theory. Use the contact page to ask about
+          formats, scheduling, pricing, or which deck may best suit your
+          question.
+        </p>
+
+        <div class="tarot-cta-actions">
+
+          <a
+            class="button button-primary"
+            href="contact.html"
+          >
+            Request a Tarot Reading
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="journal/tarot.html"
+          >
+            Visit the Tarot Journal
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================
+       SITE FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <a
+          class="footer-site-name"
+          href="../index.html"
+        >
+          Synchronic Self Theory
+        </a>
+
+        <p>
+          As above, so below.<br>
+          As within, so without.
+        </p>
+
+      </div>
+
+      <nav
+        class="footer-navigation"
+        aria-label="Footer navigation"
+      >
+        <a href="journal.html">
+          Journal
+        </a>
+
+        <a href="tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="runes.html">
+          Rune Casting
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+      </nav>
+
+      <div class="footer-credit">
+
+        <p>
+          Powered by
+          <a
+            href="https://ghostwritestudios.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GhostWrite Studios
+          </a>
+        </p>
+
+        <p>
+          Original philosophy and writing by Rory Kelly.
+        </p>
+
+        <p>
+          &copy; 2026 Rory Kelly. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================
+       MOBILE NAVIGATION
+       ====================================================== -->
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    const primaryNavigation = document.querySelector(
+      ".primary-navigation"
+    );
+
+    if (menuToggle && primaryNavigation) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen =
+          menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+        primaryNavigation.classList.toggle(
+          "navigation-open"
+        );
+      });
+    }
+  </script>
+
+</body>
+</html>

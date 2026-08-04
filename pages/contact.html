@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Contact | Synchronic Self Theory
+  </title>
+
+  <meta
+    name="description"
+    content="Contact Rory Kelly about tarot readings, rune casting, upcoming books, media inquiries, or Synchronic Self Theory."
+  >
+
+  <meta
+    name="keywords"
+    content="contact Rory Kelly, tarot readings, rune casting, Synchronic Self Theory books, tarot booking, rune reading"
+  >
+
+  <meta name="author" content="Rory Kelly">
+
+  <meta
+    property="og:title"
+    content="Contact Synchronic Self Theory"
+  >
+
+  <meta
+    property="og:description"
+    content="Contact Rory Kelly about tarot readings, rune casting, and upcoming philosophical works."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://synchronicselftheory.com/pages/contact.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://synchronicselftheory.com/sst-phoenix.png"
+  >
+
+  <link
+    rel="canonical"
+    href="https://synchronicselftheory.com/pages/contact.html"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../styles.css"
+  >
+
+  <style>
+    /* ======================================================
+       CONTACT PAGE
+       These styles apply only to pages/contact.html.
+       ====================================================== */
+
+    .contact-hero {
+      position: relative;
+      display: grid;
+      min-height: 500px;
+      overflow: hidden;
+      place-items: center;
+      isolation: isolate;
+    }
+
+    .contact-hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background-image: url("../sst-phoenix.png");
+      background-position: center 42%;
+      background-size: cover;
+      content: "";
+      filter:
+        brightness(0.42)
+        contrast(1.08)
+        saturate(0.82);
+      transform: scale(1.02);
+    }
+
+    .contact-hero::after {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 6, 9, 0.97) 0%,
+          rgba(5, 6, 9, 0.79) 50%,
+          rgba(5, 6, 9, 0.42) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(5, 6, 9, 0.12) 0%,
+          rgba(5, 6, 9, 0.48) 58%,
+          rgba(5, 6, 9, 0.98) 100%
+        );
+      content: "";
+    }
+
+    .contact-hero-inner {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+      padding: 7rem 1.5rem;
+    }
+
+    .contact-hero-copy {
+      max-width: 790px;
+    }
+
+    .contact-hero h1 {
+      margin-bottom: 1.5rem;
+      font-size: clamp(3rem, 7vw, 6.4rem);
+    }
+
+    .contact-hero .lead {
+      margin-bottom: 0;
+    }
+
+    .contact-main {
+      background:
+        radial-gradient(
+          circle at 15% 0%,
+          rgba(255, 90, 31, 0.09),
+          transparent 30rem
+        ),
+        radial-gradient(
+          circle at 90% 30%,
+          rgba(94, 168, 255, 0.07),
+          transparent 28rem
+        ),
+        var(--background);
+    }
+
+    .contact-layout {
+      display: grid;
+      align-items: start;
+      gap: 3rem;
+      grid-template-columns:
+        minmax(0, 0.82fr)
+        minmax(0, 1.18fr);
+    }
+
+    .contact-information {
+      position: sticky;
+      top: 2rem;
+    }
+
+    .contact-information h2 {
+      font-size: clamp(2.1rem, 4vw, 3.7rem);
+    }
+
+    .contact-information > p {
+      max-width: 580px;
+    }
+
+    .contact-purpose-list {
+      display: grid;
+      margin: 2.2rem 0;
+      gap: 1rem;
+    }
+
+    .contact-purpose {
+      padding: 1.3rem 1.4rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.032),
+          rgba(255, 255, 255, 0.01)
+        ),
+        var(--background-raised);
+    }
+
+    .contact-purpose h3 {
+      margin-bottom: 0.45rem;
+      font-size: 1.15rem;
+    }
+
+    .contact-purpose p {
+      margin-bottom: 0;
+      font-size: 0.94rem;
+    }
+
+    .direct-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+      transition:
+        color var(--transition),
+        gap var(--transition);
+    }
+
+    .direct-email:hover,
+    .direct-email:focus-visible {
+      gap: 0.85rem;
+      color: var(--gold-soft);
+    }
+
+    .contact-form-panel {
+      padding: clamp(1.7rem, 4vw, 3rem);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.042),
+          rgba(255, 255, 255, 0.012)
+        ),
+        var(--background-card);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+    }
+
+    .contact-form-panel h2 {
+      margin-bottom: 0.8rem;
+      font-size: clamp(2rem, 3.7vw, 3.2rem);
+    }
+
+    .form-introduction {
+      margin-bottom: 2rem;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 1.35rem;
+    }
+
+    .form-row {
+      display: grid;
+      gap: 1.2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .form-field {
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .form-field label {
+      color: var(--text-primary);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      width: 100%;
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-small);
+      background: rgba(6, 7, 10, 0.74);
+      color: var(--text-primary);
+      outline: none;
+      transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+    }
+
+    .form-field input,
+    .form-field select {
+      min-height: 52px;
+      padding: 0.8rem 0.95rem;
+    }
+
+    .form-field textarea {
+      min-height: 190px;
+      padding: 0.95rem;
+      line-height: 1.65;
+      resize: vertical;
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+      color: var(--text-muted);
+    }
+
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-color: var(--storm);
+      background: rgba(8, 10, 14, 0.94);
+      box-shadow: 0 0 0 4px rgba(94, 168, 255, 0.12);
+    }
+
+    .form-field select {
+      cursor: pointer;
+    }
+
+    .form-field select option {
+      background: var(--background-card);
+      color: var(--text-primary);
+    }
+
+    .form-note {
+      margin: 0;
+      color: var(--text-muted);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.78rem;
+      line-height: 1.55;
+    }
+
+    .form-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.4rem;
+    }
+
+    .contact-form button {
+      cursor: pointer;
+    }
+
+    .email-fallback {
+      color: var(--text-secondary);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.86rem;
+    }
+
+    .email-fallback a {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .email-fallback a:hover,
+    .email-fallback a:focus-visible {
+      color: var(--gold-soft);
+    }
+
+    .contact-expectations {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .expectations-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .expectation-card {
+      padding: 2rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.032),
+          rgba(255, 255, 255, 0.009)
+        ),
+        var(--background-raised);
+    }
+
+    .expectation-number {
+      display: inline-block;
+      margin-bottom: 1.2rem;
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+    }
+
+    .expectation-card p {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 900px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-information {
+        position: static;
+      }
+
+      .expectations-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .contact-hero {
+        min-height: 460px;
+      }
+
+      .contact-hero-inner {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .form-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .form-actions .button {
+        width: 100%;
+      }
+
+      .email-fallback {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================================================
+       SITE HEADER
+       ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="studio-credit studio-credit-top">
+      <span>Powered by</span>
+
+      <a
+        href="https://ghostwritestudios.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GhostWrite Studios
+      </a>
+    </div>
+
+    <div class="header-inner">
+
+      <a
+        class="site-identity"
+        href="../index.html"
+        aria-label="Synchronic Self Theory home"
+      >
+        <span class="site-name">
+          Synchronic Self Theory
+        </span>
+
+        <span class="site-motto">
+          As within, so without.
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        id="primary-navigation"
+        class="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a href="journal.html">
+          Journal
+        </a>
+
+        <a href="tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="runes.html">
+          Rune Casting
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a
+          class="active"
+          href="contact.html"
+        >
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ======================================================
+         CONTACT HERO
+         ====================================================== -->
+
+    <section class="contact-hero">
+
+      <div class="contact-hero-inner">
+
+        <div class="contact-hero-copy">
+
+          <p class="eyebrow">
+            Readings, questions, and upcoming work
+          </p>
+
+          <h1>
+            Contact Synchronic Self Theory
+          </h1>
+
+          <p class="lead">
+            Reach out about tarot readings, rune casting, upcoming
+            books, philosophical work, or the projects currently
+            taking shape behind the looking glass.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CONTACT FORM
+         ====================================================== -->
+
+    <section class="section contact-main">
+
+      <div class="section-inner contact-layout">
+
+        <div class="contact-information">
+
+          <p class="section-label">
+            Begin the Conversation
+          </p>
+
+          <h2>
+            Choose what you’re contacting me about.
+          </h2>
+
+          <p>
+            Use the form to ask about a reading, learn more about
+            upcoming books, or send a general message connected to
+            Synchronic Self Theory.
+          </p>
+
+          <div class="contact-purpose-list">
+
+            <article class="contact-purpose">
+              <h3>Tarot Readings</h3>
+
+              <p>
+                Ask about available reading formats, scheduling,
+                choosing a deck, or what kind of reading may suit
+                your question.
+              </p>
+            </article>
+
+            <article class="contact-purpose">
+              <h3>Rune Casting</h3>
+
+              <p>
+                Ask about rune casting, available rune sets,
+                scheduling, or how a casting differs from a tarot
+                reading.
+              </p>
+            </article>
+
+            <article class="contact-purpose">
+              <h3>Upcoming Books</h3>
+
+              <p>
+                Request information about Synchronic Self Theory,
+                related philosophical works, and future publication
+                announcements.
+              </p>
+            </article>
+
+          </div>
+
+          <a
+            class="direct-email"
+            href="mailto:rory@ghostwritestudios.com"
+          >
+            rory@ghostwritestudios.com
+            <span aria-hidden="true">→</span>
+          </a>
+
+        </div>
+
+
+        <div class="contact-form-panel">
+
+          <p class="section-label">
+            Send a Message
+          </p>
+
+          <h2>
+            What would you like to discuss?
+          </h2>
+
+          <p class="form-introduction">
+            Complete the form and your email application will open
+            with the message addressed to Rory Kelly.
+          </p>
+
+          <form
+            id="contact-form"
+            class="contact-form"
+          >
+
+            <div class="form-row">
+
+              <div class="form-field">
+                <label for="name">
+                  Name
+                </label>
+
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Your name"
+                  required
+                >
+              </div>
+
+              <div class="form-field">
+                <label for="email">
+                  Email address
+                </label>
+
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                >
+              </div>
+
+            </div>
+
+
+            <div class="form-field">
+              <label for="topic">
+                Contact topic
+              </label>
+
+              <select
+                id="topic"
+                name="topic"
+                required
+              >
+                <option value="" selected disabled>
+                  Select a topic
+                </option>
+
+                <option value="Tarot Reading">
+                  Tarot Reading
+                </option>
+
+                <option value="Rune Casting">
+                  Rune Casting
+                </option>
+
+                <option value="Information About Upcoming Books">
+                  Information About Upcoming Books
+                </option>
+              </select>
+            </div>
+
+
+            <div class="form-field">
+              <label for="subject">
+                Subject
+              </label>
+
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                placeholder="A short description of your message"
+                required
+              >
+            </div>
+
+
+            <div class="form-field">
+              <label for="message">
+                Message
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me what you’d like to know."
+                required
+              ></textarea>
+            </div>
+
+
+            <p class="form-note">
+              This form opens your default email application. Your
+              message won’t be transmitted until you review and send it.
+            </p>
+
+
+            <div class="form-actions">
+
+              <button
+                class="button button-primary"
+                type="submit"
+              >
+                Prepare Email
+              </button>
+
+              <p class="email-fallback">
+                Email not opening?
+                <a href="mailto:rory@ghostwritestudios.com">
+                  Send directly
+                </a>
+              </p>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         WHAT HAPPENS NEXT
+         ====================================================== -->
+
+    <section class="section contact-expectations">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            What Happens Next
+          </p>
+
+          <h2>
+            Clear questions make better conversations.
+          </h2>
+
+          <p>
+            Include enough detail for me to understand what you’re
+            looking for, particularly when asking about a reading.
+          </p>
+
+        </div>
+
+        <div class="expectations-grid">
+
+          <article class="expectation-card">
+
+            <span class="expectation-number">
+              01
+            </span>
+
+            <h3>
+              Choose a topic
+            </h3>
+
+            <p>
+              Select tarot, rune casting, or upcoming books so your
+              message arrives with a clear subject line.
+            </p>
+
+          </article>
+
+          <article class="expectation-card">
+
+            <span class="expectation-number">
+              02
+            </span>
+
+            <h3>
+              Describe your question
+            </h3>
+
+            <p>
+              Explain what you’re seeking without including private
+              information you wouldn’t normally send through email.
+            </p>
+
+          </article>
+
+          <article class="expectation-card">
+
+            <span class="expectation-number">
+              03
+            </span>
+
+            <h3>
+              Review before sending
+            </h3>
+
+            <p>
+              Your email application will open with the message
+              prepared, giving you a final chance to review it before
+              sending.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================
+       SITE FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <a
+          class="footer-site-name"
+          href="../index.html"
+        >
+          Synchronic Self Theory
+        </a>
+
+        <p>
+          As above, so below.<br>
+          As within, so without.
+        </p>
+
+      </div>
+
+      <nav
+        class="footer-navigation"
+        aria-label="Footer navigation"
+      >
+        <a href="journal.html">
+          Journal
+        </a>
+
+        <a href="tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="runes.html">
+          Rune Casting
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+      </nav>
+
+      <div class="footer-credit">
+
+        <p>
+          Powered by
+          <a
+            href="https://ghostwritestudios.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GhostWrite Studios
+          </a>
+        </p>
+
+        <p>
+          Original philosophy and writing by Rory Kelly.
+        </p>
+
+        <p>
+          &copy; 2026 Rory Kelly. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================
+       EMAIL FORM AND MOBILE NAVIGATION
+       ====================================================== -->
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    const primaryNavigation = document.querySelector(
+      ".primary-navigation"
+    );
+
+    if (menuToggle && primaryNavigation) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen =
+          menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+        primaryNavigation.classList.toggle(
+          "navigation-open"
+        );
+      });
+    }
+
+
+    const contactForm = document.querySelector("#contact-form");
+
+    if (contactForm) {
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const name = document.querySelector("#name").value.trim();
+        const email = document.querySelector("#email").value.trim();
+        const topic = document.querySelector("#topic").value;
+        const subject = document.querySelector("#subject").value.trim();
+        const message = document.querySelector("#message").value.trim();
+
+        const emailSubject =
+          `${topic}: ${subject}`;
+
+        const emailBody = [
+          `Name: ${name}`,
+          `Email: ${email}`,
+          `Contact topic: ${topic}`,
+          "",
+          "Message:",
+          message
+        ].join("\n");
+
+        const mailtoLink =
+          "mailto:rory@ghostwritestudios.com" +
+          `?subject=${encodeURIComponent(emailSubject)}` +
+          `&body=${encodeURIComponent(emailBody)}`;
+
+        window.location.href = mailtoLink;
+      });
+    }
+  </script>
+
+</body>
+</html>

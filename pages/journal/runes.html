@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Rune Journal | Synchronic Self Theory
+  </title>
+
+  <meta
+    name="description"
+    content="Explore rune casting, rune materials, Norse mythology, individual rune meanings, and weekly collective rune castings through the Synchronic Self Theory Journal."
+  >
+
+  <meta
+    name="keywords"
+    content="rune casting lessons, rune meanings, Elder Futhark definitions, rune materials, Norse rune mythology, weekly rune casting, collective rune reading, Synchronic Self Theory, Rory Kelly"
+  >
+
+  <meta name="author" content="Rory Kelly">
+
+  <meta
+    property="og:title"
+    content="Rune Journal | Synchronic Self Theory"
+  >
+
+  <meta
+    property="og:description"
+    content="Rune-casting education, material symbolism, mythology, definitions, and weekly collective castings."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://synchronicselftheory.com/pages/journal/runes.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://synchronicselftheory.com/runes-1.jpeg"
+  >
+
+  <link
+    rel="canonical"
+    href="https://synchronicselftheory.com/pages/journal/runes.html"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../../styles.css"
+  >
+
+  <style>
+    /* ======================================================
+       RUNE JOURNAL LANDING PAGE
+       Applies only to pages/journal/runes.html
+       ====================================================== */
+
+    .rune-journal-hero {
+      position: relative;
+      display: grid;
+      min-height: 700px;
+      overflow: hidden;
+      place-items: center;
+      isolation: isolate;
+    }
+
+    .rune-journal-hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background-image: url("../../runes-1.jpeg");
+      background-position: center 50%;
+      background-size: cover;
+      content: "";
+      filter:
+        brightness(0.42)
+        contrast(1.08)
+        saturate(0.82);
+      transform: scale(1.025);
+    }
+
+    .rune-journal-hero::after {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 6, 9, 0.98) 0%,
+          rgba(5, 6, 9, 0.84) 46%,
+          rgba(5, 6, 9, 0.5) 76%,
+          rgba(5, 6, 9, 0.68) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(5, 6, 9, 0.12) 0%,
+          rgba(5, 6, 9, 0.35) 55%,
+          rgba(5, 6, 9, 0.98) 100%
+        );
+      content: "";
+    }
+
+    .rune-journal-hero-inner {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+      padding: 8rem 1.5rem;
+    }
+
+    .rune-journal-hero-copy {
+      max-width: 920px;
+    }
+
+    .rune-journal-hero h1 {
+      max-width: 1000px;
+      margin-bottom: 1.5rem;
+      font-size: clamp(3.3rem, 8vw, 7.2rem);
+    }
+
+    .rune-journal-hero .lead {
+      max-width: 790px;
+      margin-bottom: 0;
+    }
+
+    .journal-introduction {
+      background:
+        radial-gradient(
+          circle at 18% 0%,
+          rgba(94, 168, 255, 0.08),
+          transparent 30rem
+        ),
+        linear-gradient(
+          180deg,
+          #090b0f,
+          #0d1016
+        );
+    }
+
+    .journal-introduction .section-inner {
+      max-width: 900px;
+    }
+
+    .journal-principle {
+      margin: 3rem 0;
+      padding: clamp(1.8rem, 4vw, 2.8rem);
+      border: 1px solid rgba(240, 178, 74, 0.22);
+      border-left: 4px solid var(--gold);
+      border-radius:
+        0
+        var(--radius-medium)
+        var(--radius-medium)
+        0;
+      background:
+        linear-gradient(
+          120deg,
+          rgba(240, 178, 74, 0.08),
+          rgba(94, 168, 255, 0.025)
+        );
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .journal-principle p {
+      margin-bottom: 0;
+      color: var(--text-primary);
+      font-size: clamp(1.3rem, 3vw, 2.05rem);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .coverage-section {
+      background:
+        radial-gradient(
+          circle at 86% 10%,
+          rgba(240, 178, 74, 0.07),
+          transparent 30rem
+        ),
+        var(--background);
+    }
+
+    .coverage-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .coverage-card {
+      position: relative;
+      display: flex;
+      min-height: 100%;
+      padding: clamp(2rem, 4vw, 3rem);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.042),
+          rgba(255, 255, 255, 0.01)
+        ),
+        var(--background-card);
+      box-shadow: 0 25px 68px rgba(0, 0, 0, 0.33);
+      flex-direction: column;
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+    }
+
+    .coverage-card::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 4px;
+      content: "";
+    }
+
+    .coverage-card:nth-child(1)::before {
+      background: linear-gradient(
+        90deg,
+        var(--storm),
+        var(--gold)
+      );
+    }
+
+    .coverage-card:nth-child(2)::before {
+      background: linear-gradient(
+        90deg,
+        var(--gold),
+        var(--fire)
+      );
+    }
+
+    .coverage-card:nth-child(3)::before {
+      background: linear-gradient(
+        90deg,
+        var(--storm-deep),
+        var(--storm-bright)
+      );
+    }
+
+    .coverage-card:nth-child(4)::before {
+      background: linear-gradient(
+        90deg,
+        var(--fire),
+        var(--gold-soft)
+      );
+    }
+
+    .coverage-card:nth-child(5)::before {
+      background: linear-gradient(
+        90deg,
+        var(--gold-soft),
+        var(--storm)
+      );
+    }
+
+    .coverage-card:hover {
+      border-color: rgba(240, 178, 74, 0.34);
+      background: var(--background-card-hover);
+      box-shadow: 0 34px 80px rgba(0, 0, 0, 0.43);
+      transform: translateY(-6px);
+    }
+
+    .coverage-icon {
+      display: grid;
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1.7rem;
+      border: 1px solid rgba(240, 178, 74, 0.22);
+      border-radius: 50%;
+      background:
+        radial-gradient(
+          circle,
+          rgba(240, 178, 74, 0.12),
+          transparent 72%
+        );
+      color: var(--gold-soft);
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+      font-size: 1.65rem;
+      place-items: center;
+    }
+
+    .coverage-card h2 {
+      margin-bottom: 1rem;
+      font-size: clamp(1.9rem, 3.3vw, 3rem);
+    }
+
+    .coverage-card h3 {
+      margin-top: 1.8rem;
+      color: var(--gold-soft);
+      font-size: 1.2rem;
+    }
+
+    .coverage-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .casting-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .casting-layout {
+      display: grid;
+      align-items: start;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+    }
+
+    .casting-copy {
+      position: sticky;
+      top: 2rem;
+    }
+
+    .casting-copy h2 {
+      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+    }
+
+    .casting-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .casting-item {
+      display: grid;
+      padding: 1.6rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.032),
+          rgba(255, 255, 255, 0.008)
+        ),
+        var(--background-card);
+      gap: 1.2rem;
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .casting-number {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(94, 168, 255, 0.26);
+      border-radius: 50%;
+      color: var(--storm-bright);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.75rem;
+      font-weight: 800;
+      place-items: center;
+    }
+
+    .casting-item h3 {
+      margin-bottom: 0.45rem;
+      font-size: 1.3rem;
+    }
+
+    .casting-item p {
+      margin-bottom: 0;
+      font-size: 0.96rem;
+    }
+
+    .materials-section {
+      background:
+        radial-gradient(
+          circle at 15% 10%,
+          rgba(240, 178, 74, 0.08),
+          transparent 29rem
+        ),
+        var(--background);
+    }
+
+    .materials-panel {
+      display: grid;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(94, 168, 255, 0.045),
+          rgba(240, 178, 74, 0.035)
+        ),
+        var(--background-raised);
+      box-shadow: 0 32px 86px rgba(0, 0, 0, 0.38);
+      grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 0.9fr);
+    }
+
+    .materials-copy,
+    .materials-list {
+      padding: clamp(2.2rem, 5vw, 4.5rem);
+    }
+
+    .materials-copy {
+      border-right: 1px solid var(--border-subtle);
+    }
+
+    .materials-copy h2 {
+      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+    }
+
+    .materials-list {
+      display: flex;
+      justify-content: center;
+      background:
+        radial-gradient(
+          circle at 80% 15%,
+          rgba(94, 168, 255, 0.1),
+          transparent 18rem
+        );
+      flex-direction: column;
+    }
+
+    .materials-list h3 {
+      margin-bottom: 1.5rem;
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+    }
+
+    .material-item {
+      padding: 1.15rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .material-item:last-child {
+      border-bottom: 0;
+    }
+
+    .material-item strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--gold-soft);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .material-item p {
+      margin-bottom: 0;
+    }
+
+    .mythology-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .mythology-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .mythology-card {
+      padding: 2.2rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.036),
+          rgba(255, 255, 255, 0.009)
+        ),
+        var(--background-card);
+      box-shadow: 0 24px 62px rgba(0, 0, 0, 0.3);
+    }
+
+    .mythology-card h3 {
+      font-size: clamp(1.55rem, 2.8vw, 2.2rem);
+    }
+
+    .mythology-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .definitions-section {
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(94, 168, 255, 0.09),
+          transparent 34rem
+        ),
+        var(--background);
+    }
+
+    .definitions-layout {
+      display: grid;
+      align-items: center;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
+    }
+
+    .definitions-copy h2 {
+      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+    }
+
+    .definitions-panel {
+      padding: clamp(2rem, 4vw, 3rem);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        radial-gradient(
+          circle at 80% 10%,
+          rgba(240, 178, 74, 0.11),
+          transparent 19rem
+        ),
+        var(--background-card);
+      box-shadow: 0 28px 74px rgba(0, 0, 0, 0.38);
+    }
+
+    .definitions-panel h3 {
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+    }
+
+    .definition-detail {
+      padding: 1.15rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .definition-detail:last-child {
+      border-bottom: 0;
+    }
+
+    .definition-detail strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--gold-soft);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .definition-detail p {
+      margin-bottom: 0;
+    }
+
+    .collective-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .collective-layout {
+      display: grid;
+      align-items: center;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 0.95fr)
+        minmax(0, 1.05fr);
+    }
+
+    .collective-panel {
+      padding: clamp(2rem, 4vw, 3rem);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        radial-gradient(
+          circle at 80% 10%,
+          rgba(94, 168, 255, 0.11),
+          transparent 19rem
+        ),
+        var(--background-card);
+      box-shadow: 0 28px 74px rgba(0, 0, 0, 0.38);
+    }
+
+    .collective-panel h3 {
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+    }
+
+    .collective-detail {
+      padding: 1.15rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .collective-detail:last-child {
+      border-bottom: 0;
+    }
+
+    .collective-detail strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--gold-soft);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .collective-detail p {
+      margin-bottom: 0;
+    }
+
+    .collective-copy h2 {
+      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+    }
+
+    .journal-purpose-section {
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(240, 178, 74, 0.08),
+          transparent 34rem
+        ),
+        var(--background);
+    }
+
+    .purpose-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .purpose-card {
+      padding: 2rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.009)
+        ),
+        var(--background-raised);
+    }
+
+    .purpose-card h3 {
+      font-size: 1.45rem;
+    }
+
+    .purpose-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .category-navigation {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .category-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .category-card {
+      display: flex;
+      min-height: 100%;
+      padding: 2rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.009)
+        ),
+        var(--background-raised);
+      flex-direction: column;
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .category-card:hover,
+    .category-card:focus-visible {
+      border-color: rgba(240, 178, 74, 0.34);
+      box-shadow: 0 26px 65px rgba(0, 0, 0, 0.36);
+      transform: translateY(-5px);
+    }
+
+    .category-card h3 {
+      font-size: 1.55rem;
+    }
+
+    .category-card p {
+      flex-grow: 1;
+    }
+
+    .category-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      transition:
+        color var(--transition),
+        gap var(--transition);
+    }
+
+    .category-card:hover .category-link,
+    .category-card:focus-visible .category-link {
+      gap: 0.8rem;
+      color: var(--gold-soft);
+    }
+
+    .rune-journal-closing {
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(94, 168, 255, 0.13),
+          transparent 34rem
+        ),
+        #090a0e;
+      text-align: center;
+    }
+
+    .rune-journal-closing p:not(.section-label) {
+      max-width: 720px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .closing-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 980px) {
+      .casting-layout,
+      .definitions-layout,
+      .collective-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .casting-copy {
+        position: static;
+      }
+
+      .materials-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .materials-copy {
+        border-right: 0;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .mythology-grid,
+      .purpose-grid,
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .rune-journal-hero {
+        min-height: 620px;
+      }
+
+      .rune-journal-hero-inner {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+
+      .coverage-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .closing-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .closing-actions .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================================================
+       SITE HEADER
+       ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="studio-credit studio-credit-top">
+      <span>Powered by</span>
+
+      <a
+        href="https://ghostwritestudios.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GhostWrite Studios
+      </a>
+    </div>
+
+    <div class="header-inner">
+
+      <a
+        class="site-identity"
+        href="../../index.html"
+        aria-label="Synchronic Self Theory home"
+      >
+        <span class="site-name">
+          Synchronic Self Theory
+        </span>
+
+        <span class="site-motto">
+          As within, so without.
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        id="primary-navigation"
+        class="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="../../index.html">
+          Home
+        </a>
+
+        <a
+          class="active"
+          href="../journal.html"
+        >
+          Journal
+        </a>
+
+        <a href="../tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="../runes.html">
+          Rune Casting
+        </a>
+
+        <a href="../projects.html">
+          Projects
+        </a>
+
+        <a href="../contact.html">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+         ====================================================== -->
+
+    <section class="rune-journal-hero">
+
+      <div class="rune-journal-hero-inner">
+
+        <div class="rune-journal-hero-copy">
+
+          <p class="eyebrow">
+            History, practice, symbolism, and weekly reflection
+          </p>
+
+          <h1>
+            The Rune Journal
+          </h1>
+
+          <p class="lead">
+            Rune-casting education, material symbolism, mythology,
+            individual rune meanings, and weekly collective castings
+            interpreted through Synchronic Self Theory.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         INTRODUCTION
+         ====================================================== -->
+
+    <section class="section journal-introduction">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Learning the Runic Language
+        </p>
+
+        <h2>
+          A rune carries a sound, a name, a symbol, and a relationship
+          with the runes cast beside it.
+        </h2>
+
+        <p class="lead">
+          The Rune Journal is the educational side of rune casting
+          within Synchronic Self Theory. It’s where history, mythology,
+          materials, definitions, casting methods, and interpretation
+          are examined in greater depth.
+        </p>
+
+        <p>
+          Runes weren’t created as a modern fortune-telling system.
+          They began as written characters used by Germanic-speaking
+          peoples, and their later symbolic use developed around the
+          ideas carried by their names, sounds, poems, myths, and
+          surviving inscriptions.
+        </p>
+
+        <p>
+          Learning rune casting therefore requires more than memorizing
+          a short definition for each symbol. A rune’s meaning changes
+          according to the question, its placement, nearby runes,
+          orientation, casting method, material, and the pattern created
+          by the cast as a whole.
+        </p>
+
+        <div class="journal-principle">
+
+          <p>
+            The rune provides the symbol. The cast reveals the
+            relationship. Interpretation begins where the two meet.
+          </p>
+
+        </div>
+
+        <p>
+          This section will help readers understand that relationship
+          through practical education, historical context, individual
+          rune study, and a recurring collective casting.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         COVERAGE
+         ====================================================== -->
+
+    <section class="section coverage-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            What This Journal Covers
+          </p>
+
+          <h2>
+            Five paths into understanding the runes.
+          </h2>
+
+          <p>
+            The journal combines history, technique, material awareness,
+            and regular practice instead of pretending a rune dictionary
+            alone can do all the heavy lifting.
+          </p>
+
+        </div>
+
+        <div class="coverage-grid">
+
+          <article class="coverage-card">
+
+            <div
+              class="coverage-icon"
+              aria-hidden="true"
+            >
+              ᚱ
+            </div>
+
+            <h2>
+              Rune Casting
+            </h2>
+
+            <p>
+              Practical education on preparing a question, choosing a
+              casting method, reading placement, identifying
+              relationships, and interpreting the cast as one connected
+              pattern.
+            </p>
+
+            <h3>
+              The focus
+            </h3>
+
+            <p>
+              Single-rune draws, three-rune casts, larger casting
+              patterns, orientation, position, context, clarifying
+              questions, and the difference between reflection and
+              forced prediction.
+            </p>
+
+          </article>
+
+
+          <article class="coverage-card">
+
+            <div
+              class="coverage-icon"
+              aria-hidden="true"
+            >
+              ◈
+            </div>
+
+            <h2>
+              Rune Materials
+            </h2>
+
+            <p>
+              Examination of how stone, ceramic, wood, bone, glass,
+              metal, and other materials change the physical and
+              symbolic character of a rune set.
+            </p>
+
+            <h3>
+              The focus
+            </h3>
+
+            <p>
+              Weight, texture, durability, visibility, portability,
+              symbolism, craftsmanship, casting behavior, and choosing
+              a material suited to the reader’s intended practice.
+            </p>
+
+          </article>
+
+
+          <article class="coverage-card">
+
+            <div
+              class="coverage-icon"
+              aria-hidden="true"
+            >
+              ◉
+            </div>
+
+            <h2>
+              Runic Mythology
+            </h2>
+
+            <p>
+              Articles exploring Odin’s sacrifice, the world tree,
+              Mímir’s well, Freyja’s magical knowledge, fate, wisdom,
+              ordeal, and the mythological ideas surrounding the runes.
+            </p>
+
+            <h3>
+              The focus
+            </h3>
+
+            <p>
+              Separating surviving sources from modern interpretation
+              while examining why these myths still matter to
+              contemporary rune practice.
+            </p>
+
+          </article>
+
+
+          <article class="coverage-card">
+
+            <div
+              class="coverage-icon"
+              aria-hidden="true"
+            >
+              ᚠ
+            </div>
+
+            <h2>
+              Runes and Their Definitions
+            </h2>
+
+            <p>
+              Individual study of the runes, including their names,
+              sounds, historical associations, rune poems, symbolic
+              meanings, and relationships with nearby runes.
+            </p>
+
+            <h3>
+              The focus
+            </h3>
+
+            <p>
+              Upright meanings, contextual meanings, tensions between
+              runes, modern interpretation, and why one-word
+              definitions rarely survive contact with an actual cast.
+            </p>
+
+          </article>
+
+
+          <article class="coverage-card">
+
+            <div
+              class="coverage-icon"
+              aria-hidden="true"
+            >
+              ✦
+            </div>
+
+            <h2>
+              Weekly Collective Casting
+            </h2>
+
+            <p>
+              A recurring rune cast examining the shared themes,
+              tensions, movements, and questions that may be useful for
+              the wider community during the coming week.
+            </p>
+
+            <h3>
+              The focus
+            </h3>
+
+            <p>
+              Collective reflection, practical choices, points of
+              resistance, emerging opportunities, personal
+              responsibility, and questions readers can consider in
+              their own circumstances.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         RUNE CASTING
+         ====================================================== -->
+
+    <section class="section casting-section">
+
+      <div class="section-inner casting-layout">
+
+        <div class="casting-copy">
+
+          <p class="section-label">
+            Rune-Casting Lessons
+          </p>
+
+          <h2>
+            A casting is a pattern, not a row of isolated definitions.
+          </h2>
+
+          <p class="lead">
+            Rune-casting lessons in this journal will focus on how the
+            symbols interact, how placement changes meaning, and how a
+            reader builds an interpretation without forcing certainty.
+          </p>
+
+          <p>
+            The aim isn’t to create one mandatory casting system. It’s
+            to give readers enough structure to understand why a cast
+            works and enough flexibility to develop a method suited to
+            their own practice.
+          </p>
+
+        </div>
+
+
+        <div class="casting-list">
+
+          <article class="casting-item">
+
+            <span class="casting-number">
+              01
+            </span>
+
+            <div>
+              <h3>
+                Forming the question
+              </h3>
+
+              <p>
+                Learning how to ask questions that create room for
+                movement, reflection, and useful interpretation rather
+                than reducing the cast to a strained yes or no.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="casting-item">
+
+            <span class="casting-number">
+              02
+            </span>
+
+            <div>
+              <h3>
+                Choosing the cast
+              </h3>
+
+              <p>
+                Matching single-rune, three-rune, and larger casting
+                methods to the depth and complexity of the question.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="casting-item">
+
+            <span class="casting-number">
+              03
+            </span>
+
+            <div>
+              <h3>
+                Reading position
+              </h3>
+
+              <p>
+                Understanding how placement, proximity, direction,
+                grouping, separation, and orientation influence the
+                relationship between runes.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="casting-item">
+
+            <span class="casting-number">
+              04
+            </span>
+
+            <div>
+              <h3>
+                Building the pattern
+              </h3>
+
+              <p>
+                Moving from individual definitions toward the larger
+                tension, movement, or sequence created by the entire
+                cast.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="casting-item">
+
+            <span class="casting-number">
+              05
+            </span>
+
+            <div>
+              <h3>
+                Testing the interpretation
+              </h3>
+
+              <p>
+                Comparing the symbolic reading with the questioner’s
+                lived circumstances and recognizing where projection,
+                preference, fear, or wishful thinking may be entering.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         RUNE MATERIALS
+         ====================================================== -->
+
+    <section class="section materials-section">
+
+      <div class="section-inner">
+
+        <div class="materials-panel">
+
+          <div class="materials-copy">
+
+            <p class="section-label">
+              Materials and Meaning
+            </p>
+
+            <h2>
+              The symbol may remain the same. The experience of casting
+              it doesn’t.
+            </h2>
+
+            <p class="lead">
+              The material used for a rune set affects its weight,
+              texture, sound, durability, visibility, movement, and
+              symbolic atmosphere.
+            </p>
+
+            <p>
+              A ceramic rune and a polished stone rune may carry the
+              same symbol, but they don’t land with the same sound,
+              move across a casting surface in the same way, or create
+              the same visual emphasis.
+            </p>
+
+            <p>
+              Articles in this section will examine both practical and
+              symbolic considerations. The goal isn’t to declare one
+              material inherently more powerful. It’s to understand how
+              different materials support different styles of practice.
+            </p>
+
+            <p>
+              A rune set should be readable, durable enough for its
+              intended use, physically comfortable to handle, and suited
+              to the kinds of castings the reader expects to perform.
+            </p>
+
+          </div>
+
+
+          <div class="materials-list">
+
+            <h3>
+              What material changes
+            </h3>
+
+            <div class="material-item">
+
+              <strong>
+                Weight
+              </strong>
+
+              <p>
+                Heavier runes land firmly and may remain closer to where
+                they fall, while lighter materials can scatter farther
+                across the casting surface.
+              </p>
+
+            </div>
+
+            <div class="material-item">
+
+              <strong>
+                Texture
+              </strong>
+
+              <p>
+                Smooth, rough, porous, and polished surfaces affect how
+                the runes feel in the hand and how easily they move
+                against one another.
+              </p>
+
+            </div>
+
+            <div class="material-item">
+
+              <strong>
+                Visibility
+              </strong>
+
+              <p>
+                Contrast between the symbol and the material matters,
+                particularly when reading several runes across a larger
+                casting area.
+              </p>
+
+            </div>
+
+            <div class="material-item">
+
+              <strong>
+                Durability
+              </strong>
+
+              <p>
+                Different materials respond differently to repeated
+                casting, travel, moisture, impact, and ordinary use.
+              </p>
+
+            </div>
+
+            <div class="material-item">
+
+              <strong>
+                Symbolic association
+              </strong>
+
+              <p>
+                Earth, fire, craftsmanship, natural formation, color,
+                rarity, and cultural history may influence how a reader
+                relates to a particular set.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         MYTHOLOGY
+         ====================================================== -->
+
+    <section class="section mythology-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            The Mythology Behind the Runes
+          </p>
+
+          <h2>
+            Knowledge, sacrifice, fate, and the cost of seeing more.
+          </h2>
+
+          <p>
+            The mythology surrounding the runes gives them a symbolic
+            context that reaches far beyond a list of convenient
+            divinatory keywords.
+          </p>
+
+        </div>
+
+        <div class="mythology-grid">
+
+          <article class="mythology-card">
+
+            <p class="section-label">
+              Odin
+            </p>
+
+            <h3>
+              The ordeal of knowledge
+            </h3>
+
+            <p>
+              Odin’s myths connect wisdom with sacrifice. His eye is
+              exchanged for a drink from Mímir’s well, while his
+              discovery of the runes comes through a separate ordeal on
+              the world tree.
+            </p>
+
+            <p>
+              These stories present knowledge as something that changes
+              the seeker because it requires the surrender of an earlier
+              way of seeing.
+            </p>
+
+          </article>
+
+
+          <article class="mythology-card">
+
+            <p class="section-label">
+              Freyja
+            </p>
+
+            <h3>
+              Magic, intuition, and embodied knowing
+            </h3>
+
+            <p>
+              Freyja is associated with seiðr, hidden knowledge, fate,
+              desire, transformation, and magical practice. Modern rune
+              traditions often place her beside the runes as a symbol
+              of intuitive and receptive knowledge.
+            </p>
+
+            <p>
+              Her role provides a counterpoint to Odin’s pursuit:
+              knowledge may be sought through ordeal, but it may also be
+              entered through intuition, relationship, embodiment, and
+              altered perception.
+            </p>
+
+          </article>
+
+
+          <article class="mythology-card">
+
+            <p class="section-label">
+              Fate and the World Tree
+            </p>
+
+            <h3>
+              Pattern within a larger system
+            </h3>
+
+            <p>
+              Norse mythology places individual lives within a larger
+              network of forces, relationships, memory, consequence,
+              and fate.
+            </p>
+
+            <p>
+              Rune casting reflects this interconnected view. One rune
+              rarely explains the entire situation. Meaning emerges
+              through the relationship between the symbol, the cast,
+              the question, and the wider pattern already in motion.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         RUNE DEFINITIONS
+         ====================================================== -->
+
+    <section class="section definitions-section">
+
+      <div class="section-inner definitions-layout">
+
+        <div class="definitions-copy">
+
+          <p class="section-label">
+            Runes and Their Definitions
+          </p>
+
+          <h2>
+            A definition is a beginning, not the entire interpretation.
+          </h2>
+
+          <p class="lead">
+            The rune reference section will examine individual runes
+            through their names, sounds, historical associations,
+            symbolic meanings, rune poems, and relationships with other
+            runes.
+          </p>
+
+          <p>
+            Short definitions are useful for orientation, but they can
+            become misleading when treated as fixed answers. A rune
+            associated with wealth may also speak about exchange,
+            responsibility, movement, attachment, value, or the burden
+            of maintaining what has been gained.
+          </p>
+
+          <p>
+            Meaning changes according to context. The same rune may
+            describe an opportunity in one cast, a warning in another,
+            and a tension between two competing forces in a third.
+          </p>
+
+        </div>
+
+
+        <div class="definitions-panel">
+
+          <h3>
+            What each rune study will examine
+          </h3>
+
+          <div class="definition-detail">
+
+            <strong>
+              Name and sound
+            </strong>
+
+            <p>
+              The rune’s phonetic value and the name traditionally used
+              to identify it.
+            </p>
+
+          </div>
+
+          <div class="definition-detail">
+
+            <strong>
+              Historical context
+            </strong>
+
+            <p>
+              Inscriptions, alphabet position, surviving evidence, and
+              the limits of what can be stated with confidence.
+            </p>
+
+          </div>
+
+          <div class="definition-detail">
+
+            <strong>
+              Rune poems
+            </strong>
+
+            <p>
+              The poetic images and cultural associations preserved in
+              later runic traditions.
+            </p>
+
+          </div>
+
+          <div class="definition-detail">
+
+            <strong>
+              Symbolic meaning
+            </strong>
+
+            <p>
+              The themes commonly associated with the rune in modern
+              reflective and divinatory practice.
+            </p>
+
+          </div>
+
+          <div class="definition-detail">
+
+            <strong>
+              Relationships
+            </strong>
+
+            <p>
+              How the rune’s meaning changes when placed beside symbols
+              that support, oppose, redirect, or complicate it.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         WEEKLY COLLECTIVE CASTING
+         ====================================================== -->
+
+    <section class="section collective-section">
+
+      <div class="section-inner collective-layout">
+
+        <div class="collective-panel">
+
+          <h3>
+            What each casting will provide
+          </h3>
+
+          <div class="collective-detail">
+
+            <strong>
+              The current influence
+            </strong>
+
+            <p>
+              The primary force, condition, or shared pattern shaping
+              the casting.
+            </p>
+
+          </div>
+
+          <div class="collective-detail">
+
+            <strong>
+              The resistance
+            </strong>
+
+            <p>
+              The obstacle, contradiction, inherited pattern, or point
+              of tension that may complicate movement.
+            </p>
+
+          </div>
+
+          <div class="collective-detail">
+
+            <strong>
+              The movement
+            </strong>
+
+            <p>
+              The direction in which the pattern appears to be
+              developing if current conditions continue.
+            </p>
+
+          </div>
+
+          <div class="collective-detail">
+
+            <strong>
+              The reflection
+            </strong>
+
+            <p>
+              A question readers can apply to their own circumstances
+              without pretending the collective cast describes every
+              individual life identically.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="collective-copy">
+
+          <p class="section-label">
+            Weekly Collective Casting
+          </p>
+
+          <h2>
+            A shared symbolic pattern for the week ahead.
+          </h2>
+
+          <p class="lead">
+            The weekly collective casting will examine themes,
+            pressures, movements, and points of reflection that may be
+            useful for the broader community to consider.
+          </p>
+
+          <p>
+            A collective cast doesn’t claim that every reader will
+            encounter the same event. The runes describe a symbolic
+            pattern that may appear differently according to each
+            person’s circumstances, relationships, work, decisions, and
+            stage of development.
+          </p>
+
+          <p>
+            Readers are encouraged to notice what creates useful
+            recognition, question what doesn’t fit, and keep their own
+            evidence and judgment firmly involved. The runes are old.
+            They’re not offended by critical thinking.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         PURPOSE
+         ====================================================== -->
+
+    <section class="section journal-purpose-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            The Purpose of the Rune Journal
+          </p>
+
+          <h2>
+            Education should make the symbols more understandable, not
+            more mysterious for marketing purposes.
+          </h2>
+
+          <p>
+            This section is intended to help readers build a thoughtful,
+            historically aware, practical relationship with rune
+            casting.
+          </p>
+
+        </div>
+
+        <div class="purpose-grid">
+
+          <article class="purpose-card">
+
+            <h3>
+              Learn the system
+            </h3>
+
+            <p>
+              Understand the runes as letters, names, symbols,
+              historical artifacts, mythological images, and parts of a
+              connected casting language.
+            </p>
+
+          </article>
+
+
+          <article class="purpose-card">
+
+            <h3>
+              Develop discernment
+            </h3>
+
+            <p>
+              Recognize the difference between an interpretation
+              supported by the cast and one being distorted by fear,
+              preference, projection, or a desperate need for certainty.
+            </p>
+
+          </article>
+
+
+          <article class="purpose-card">
+
+            <h3>
+              Build a grounded practice
+            </h3>
+
+            <p>
+              Use casting lessons, material guidance, mythology,
+              individual rune studies, and collective casts to develop a
+              method that remains flexible, responsible, and useful.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         JOURNAL NAVIGATION
+         ====================================================== -->
+
+    <section class="section category-navigation">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Explore the Journal
+          </p>
+
+          <h2>
+            Continue through the three journal categories.
+          </h2>
+
+        </div>
+
+        <div class="category-grid">
+
+          <a
+            class="category-card"
+            href="theory.html"
+          >
+
+            <h3>
+              The Theory in Day-to-Day Life
+            </h3>
+
+            <p>
+              Projection, manifestation, personal and spiritual growth,
+              Jungian psychology, philosophy, and the patterns shaping
+              ordinary experience.
+            </p>
+
+            <span class="category-link">
+              Explore the theory journal
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+
+          <a
+            class="category-card"
+            href="tarot.html"
+          >
+
+            <h3>
+              Tarot
+            </h3>
+
+            <p>
+              Tarot lessons, deck selection, practical questions,
+              reading methods, symbolism, and weekly collective
+              readings.
+            </p>
+
+            <span class="category-link">
+              Explore the tarot journal
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+
+          <a
+            class="category-card"
+            href="runes.html"
+          >
+
+            <h3>
+              Runes
+            </h3>
+
+            <p>
+              Casting methods, rune materials, mythology, definitions,
+              symbolic interpretation, and weekly collective castings.
+            </p>
+
+            <span class="category-link">
+              Current section
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CLOSING
+         ====================================================== -->
+
+    <section class="section rune-journal-closing">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Cast, Interpret, Reflect
+        </p>
+
+        <h2>
+          The runes become useful when their symbols deepen your
+          understanding instead of replacing it.
+        </h2>
+
+        <p>
+          This journal will grow through practical lessons, individual
+          rune studies, material reviews, mythological context, and
+          weekly castings designed to create reflection without
+          demanding blind agreement.
+        </p>
+
+        <div class="closing-actions">
+
+          <a
+            class="button button-primary"
+            href="../runes.html"
+          >
+            Explore Rune Casting
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="../journal.html"
+          >
+            Return to the Journal
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================
+       SITE FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <a
+          class="footer-site-name"
+          href="../../index.html"
+        >
+          Synchronic Self Theory
+        </a>
+
+        <p>
+          As above, so below.<br>
+          As within, so without.
+        </p>
+
+      </div>
+
+      <nav
+        class="footer-navigation"
+        aria-label="Footer navigation"
+      >
+        <a href="../journal.html">
+          Journal
+        </a>
+
+        <a href="../tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="../runes.html">
+          Rune Casting
+        </a>
+
+        <a href="../projects.html">
+          Projects
+        </a>
+
+        <a href="../contact.html">
+          Contact
+        </a>
+      </nav>
+
+      <div class="footer-credit">
+
+        <p>
+          Powered by
+          <a
+            href="https://ghostwritestudios.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GhostWrite Studios
+          </a>
+        </p>
+
+        <p>
+          Original philosophy and writing by Rory Kelly.
+        </p>
+
+        <p>
+          &copy; 2026 Rory Kelly. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================
+       MOBILE NAVIGATION
+       ====================================================== -->
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    const primaryNavigation = document.querySelector(
+      ".primary-navigation"
+    );
+
+    if (menuToggle && primaryNavigation) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen =
+          menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+        primaryNavigation.classList.toggle(
+          "navigation-open"
+        );
+      });
+    }
+  </script>
+
+</body>
+</html>

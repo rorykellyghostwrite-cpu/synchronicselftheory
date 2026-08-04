@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Tarot Journal | Synchronic Self Theory
+  </title>
+
+  <meta
+    name="description"
+    content="Explore tarot lessons, guidance for choosing a tarot deck, tarot Q&A articles, and weekly collective readings through the Synchronic Self Theory Journal."
+  >
+
+  <meta
+    name="keywords"
+    content="tarot lessons, how to choose a tarot deck, tarot questions and answers, weekly tarot reading, collective tarot reading, tarot education, Synchronic Self Theory, Rory Kelly"
+  >
+
+  <meta name="author" content="Rory Kelly">
+
+  <meta
+    property="og:title"
+    content="Tarot Journal | Synchronic Self Theory"
+  >
+
+  <meta
+    property="og:description"
+    content="Tarot lessons, deck selection guidance, practical questions, and weekly collective readings."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://synchronicselftheory.com/pages/journal/tarot.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://synchronicselftheory.com/trickster-spread(1).png"
+  >
+
+  <link
+    rel="canonical"
+    href="https://synchronicselftheory.com/pages/journal/tarot.html"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../../styles.css"
+  >
+
+  <style>
+    /* ======================================================
+       TAROT JOURNAL LANDING PAGE
+       Applies only to pages/journal/tarot.html
+       ====================================================== */
+
+    .tarot-journal-hero {
+      position: relative;
+      display: grid;
+      min-height: 700px;
+      overflow: hidden;
+      place-items: center;
+      isolation: isolate;
+    }
+
+    .tarot-journal-hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background-image: url("../../trickster-spread(1).png");
+      background-position: center 48%;
+      background-size: cover;
+      content: "";
+      filter:
+        brightness(0.42)
+        contrast(1.08)
+        saturate(0.82);
+      transform: scale(1.025);
+    }
+
+    .tarot-journal-hero::after {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 6, 9, 0.98) 0%,
+          rgba(5, 6, 9, 0.84) 46%,
+          rgba(5, 6, 9, 0.5) 76%,
+          rgba(5, 6, 9, 0.67) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(5, 6, 9, 0.12) 0%,
+          rgba(5, 6, 9, 0.34) 55%,
+          rgba(5, 6, 9, 0.98) 100%
+        );
+      content: "";
+    }
+
+    .tarot-journal-hero-inner {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+      padding: 8rem 1.5rem;
+    }
+
+    .tarot-journal-hero-copy {
+      max-width: 920px;
+    }
+
+    .tarot-journal-hero h1 {
+      max-width: 1000px;
+      margin-bottom: 1.5rem;
+      font-size: clamp(3.3rem, 8vw, 7.2rem);
+    }
+
+    .tarot-journal-hero .lead {
+      max-width: 790px;
+      margin-bottom: 0;
+    }
+
+    .journal-introduction {
+      background:
+        radial-gradient(
+          circle at 18% 0%,
+          rgba(240, 178, 74, 0.08),
+          transparent 30rem
+        ),
+        linear-gradient(
+          180deg,
+          #090b0f,
+          #0d1016
+        );
+    }
+
+    .journal-introduction .section-inner {
+      max-width: 900px;
+    }
+
+    .journal-principle {
+      margin: 3rem 0;
+      padding: clamp(1.8rem, 4vw, 2.8rem);
+      border: 1px solid rgba(240, 178, 74, 0.22);
+      border-left: 4px solid var(--gold);
+      border-radius:
+        0
+        var(--radius-medium)
+        var(--radius-medium)
+        0;
+      background:
+        linear-gradient(
+          120deg,
+          rgba(240, 178, 74, 0.08),
+          rgba(94, 168, 255, 0.025)
+        );
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .journal-principle p {
+      margin-bottom: 0;
+      color: var(--text-primary);
+      font-size: clamp(1.3rem, 3vw, 2.05rem);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .coverage-section {
+      background:
+        radial-gradient(
+          circle at 86% 10%,
+          rgba(255, 90, 31, 0.07),
+          transparent 30rem
+        ),
+        var(--background);
+    }
+
+    .coverage-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .coverage-card {
+      position: relative;
+      display: flex;
+      min-height: 100%;
+      padding: clamp(2rem, 4vw, 3rem);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.042),
+          rgba(255, 255, 255, 0.01)
+        ),
+        var(--background-card);
+      box-shadow: 0 25px 68px rgba(0, 0, 0, 0.33);
+      flex-direction: column;
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+    }
+
+    .coverage-card::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 4px;
+      content: "";
+    }
+
+    .coverage-card:nth-child(1)::before {
+      background: linear-gradient(
+        90deg,
+        var(--gold),
+        var(--fire)
+      );
+    }
+
+    .coverage-card:nth-child(2)::before {
+      background: linear-gradient(
+        90deg,
+        var(--storm),
+        var(--gold)
+      );
+    }
+
+    .coverage-card:nth-child(3)::before {
+      background: linear-gradient(
+        90deg,
+        var(--fire),
+        var(--gold-soft)
+      );
+    }
+
+    .coverage-card:nth-child(4)::before {
+      background: linear-gradient(
+        90deg,
+        var(--storm-deep),
+        var(--storm-bright)
+      );
+    }
+
+    .coverage-card:hover {
+      border-color: rgba(240, 178, 74, 0.34);
+      background: var(--background-card-hover);
+      box-shadow: 0 34px 80px rgba(0, 0, 0, 0.43);
+      transform: translateY(-6px);
+    }
+
+    .coverage-icon {
+      display: grid;
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1.7rem;
+      border: 1px solid rgba(240, 178, 74, 0.22);
+      border-radius: 50%;
+      background:
+        radial-gradient(
+          circle,
+          rgba(240, 178, 74, 0.12),
+          transparent 72%
+        );
+      color: var(--gold-soft);
+      font-size: 1.55rem;
+      place-items: center;
+    }
+
+    .coverage-card h2 {
+      margin-bottom: 1rem;
+      font-size: clamp(1.9rem, 3.3vw, 3rem);
+    }
+
+    .coverage-card h3 {
+      margin-top: 1.8rem;
+      color: var(--gold-soft);
+      font-size: 1.2rem;
+    }
+
+    .coverage-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .coverage-card p {
+      flex-grow: 0;
+    }
+
+    .lesson-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .lesson-layout {
+      display: grid;
+      align-items: start;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+    }
+
+    .lesson-copy {
+      position: sticky;
+      top: 2rem;
+    }
+
+    .lesson-copy h2 {
+      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+    }
+
+    .lesson-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .lesson-item {
+      display: grid;
+      padding: 1.6rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.032),
+          rgba(255, 255, 255, 0.008)
+        ),
+        var(--background-card);
+      gap: 1.2rem;
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .lesson-number {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(240, 178, 74, 0.25);
+      border-radius: 50%;
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.75rem;
+      font-weight: 800;
+      place-items: center;
+    }
+
+    .lesson-item h3 {
+      margin-bottom: 0.45rem;
+      font-size: 1.3rem;
+    }
+
+    .lesson-item p {
+      margin-bottom: 0;
+      font-size: 0.96rem;
+    }
+
+    .deck-choice-section {
+      background:
+        radial-gradient(
+          circle at 15% 10%,
+          rgba(94, 168, 255, 0.08),
+          transparent 29rem
+        ),
+        var(--background);
+    }
+
+    .deck-choice-panel {
+      display: grid;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(94, 168, 255, 0.045),
+          rgba(240, 178, 74, 0.035)
+        ),
+        var(--background-raised);
+      box-shadow: 0 32px 86px rgba(0, 0, 0, 0.38);
+      grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 0.9fr);
+    }
+
+    .deck-choice-copy,
+    .deck-choice-questions {
+      padding: clamp(2.2rem, 5vw, 4.5rem);
+    }
+
+    .deck-choice-copy {
+      border-right: 1px solid var(--border-subtle);
+    }
+
+    .deck-choice-copy h2 {
+      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+    }
+
+    .deck-choice-questions {
+      display: flex;
+      justify-content: center;
+      background:
+        radial-gradient(
+          circle at 80% 15%,
+          rgba(240, 178, 74, 0.1),
+          transparent 18rem
+        );
+      flex-direction: column;
+    }
+
+    .deck-choice-questions h3 {
+      margin-bottom: 1.5rem;
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+    }
+
+    .choice-question {
+      padding: 1.15rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .choice-question:last-child {
+      border-bottom: 0;
+    }
+
+    .choice-question strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--gold-soft);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .choice-question p {
+      margin-bottom: 0;
+    }
+
+    .qa-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .qa-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .qa-card {
+      padding: 2.2rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.036),
+          rgba(255, 255, 255, 0.009)
+        ),
+        var(--background-card);
+      box-shadow: 0 24px 62px rgba(0, 0, 0, 0.3);
+    }
+
+    .qa-card h3 {
+      font-size: clamp(1.55rem, 2.8vw, 2.2rem);
+    }
+
+    .qa-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .collective-section {
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(255, 90, 31, 0.1),
+          transparent 34rem
+        ),
+        var(--background);
+    }
+
+    .collective-layout {
+      display: grid;
+      align-items: center;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
+    }
+
+    .collective-copy h2 {
+      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+    }
+
+    .collective-panel {
+      padding: clamp(2rem, 4vw, 3rem);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        radial-gradient(
+          circle at 80% 10%,
+          rgba(240, 178, 74, 0.11),
+          transparent 19rem
+        ),
+        var(--background-card);
+      box-shadow: 0 28px 74px rgba(0, 0, 0, 0.38);
+    }
+
+    .collective-panel h3 {
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+    }
+
+    .collective-detail {
+      padding: 1.15rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .collective-detail:last-child {
+      border-bottom: 0;
+    }
+
+    .collective-detail strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--gold-soft);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .collective-detail p {
+      margin-bottom: 0;
+    }
+
+    .journal-purpose-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .purpose-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .purpose-card {
+      padding: 2rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.009)
+        ),
+        var(--background-raised);
+    }
+
+    .purpose-card h3 {
+      font-size: 1.45rem;
+    }
+
+    .purpose-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .category-navigation {
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(94, 168, 255, 0.09),
+          transparent 33rem
+        ),
+        var(--background);
+    }
+
+    .category-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .category-card {
+      display: flex;
+      min-height: 100%;
+      padding: 2rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.009)
+        ),
+        var(--background-raised);
+      flex-direction: column;
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .category-card:hover,
+    .category-card:focus-visible {
+      border-color: rgba(240, 178, 74, 0.34);
+      box-shadow: 0 26px 65px rgba(0, 0, 0, 0.36);
+      transform: translateY(-5px);
+    }
+
+    .category-card h3 {
+      font-size: 1.55rem;
+    }
+
+    .category-card p {
+      flex-grow: 1;
+    }
+
+    .category-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      transition:
+        color var(--transition),
+        gap var(--transition);
+    }
+
+    .category-card:hover .category-link,
+    .category-card:focus-visible .category-link {
+      gap: 0.8rem;
+      color: var(--gold-soft);
+    }
+
+    .tarot-journal-closing {
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(240, 178, 74, 0.12),
+          transparent 34rem
+        ),
+        #090a0e;
+      text-align: center;
+    }
+
+    .tarot-journal-closing p:not(.section-label) {
+      max-width: 720px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .closing-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 980px) {
+      .lesson-layout,
+      .collective-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .lesson-copy {
+        position: static;
+      }
+
+      .deck-choice-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .deck-choice-copy {
+        border-right: 0;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .qa-grid,
+      .purpose-grid,
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .tarot-journal-hero {
+        min-height: 620px;
+      }
+
+      .tarot-journal-hero-inner {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+
+      .coverage-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .closing-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .closing-actions .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================================================
+       SITE HEADER
+       ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="studio-credit studio-credit-top">
+      <span>Powered by</span>
+
+      <a
+        href="https://ghostwritestudios.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GhostWrite Studios
+      </a>
+    </div>
+
+    <div class="header-inner">
+
+      <a
+        class="site-identity"
+        href="../../index.html"
+        aria-label="Synchronic Self Theory home"
+      >
+        <span class="site-name">
+          Synchronic Self Theory
+        </span>
+
+        <span class="site-motto">
+          As within, so without.
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        id="primary-navigation"
+        class="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="../../index.html">
+          Home
+        </a>
+
+        <a
+          class="active"
+          href="../journal.html"
+        >
+          Journal
+        </a>
+
+        <a href="../tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="../runes.html">
+          Rune Casting
+        </a>
+
+        <a href="../projects.html">
+          Projects
+        </a>
+
+        <a href="../contact.html">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+         ====================================================== -->
+
+    <section class="tarot-journal-hero">
+
+      <div class="tarot-journal-hero-inner">
+
+        <div class="tarot-journal-hero-copy">
+
+          <p class="eyebrow">
+            Education, practice, and weekly reflection
+          </p>
+
+          <h1>
+            The Tarot Journal
+          </h1>
+
+          <p class="lead">
+            Tarot lessons, guidance for choosing a deck, practical
+            questions and answers, and a weekly collective reading
+            interpreted through Synchronic Self Theory.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         INTRODUCTION
+         ====================================================== -->
+
+    <section class="section journal-introduction">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Learning the Language of Tarot
+        </p>
+
+        <h2>
+          Tarot becomes more useful when the reader understands the
+          system instead of merely memorizing definitions.
+        </h2>
+
+        <p class="lead">
+          The Tarot Journal is the educational side of tarot within
+          Synchronic Self Theory. It’s where the structure of the deck,
+          the logic behind spreads, the differences between decks, and
+          the practical realities of reading are examined in greater
+          detail.
+        </p>
+
+        <p>
+          The goal isn’t to create another rigid collection of meanings
+          that readers are expected to repeat word for word. Tarot
+          imagery changes according to context, position, surrounding
+          cards, the question being asked, and the deck’s own symbolic
+          language.
+        </p>
+
+        <p>
+          Learning tarot therefore requires more than memorizing
+          seventy-eight short definitions. It requires pattern
+          recognition, visual literacy, intuition, discipline, and the
+          ability to distinguish what the cards are showing from what
+          the reader hopes they’re showing.
+        </p>
+
+        <div class="journal-principle">
+
+          <p>
+            The cards provide the structure. Interpretation happens in
+            the relationship between the image, the question, and the
+            reader.
+          </p>
+
+        </div>
+
+        <p>
+          This section will focus on helping readers develop that
+          relationship for themselves through education, examples,
+          practical questions, and regular collective readings.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         COVERAGE
+         ====================================================== -->
+
+    <section class="section coverage-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            What This Journal Covers
+          </p>
+
+          <h2>
+            Four ways of learning how tarot works.
+          </h2>
+
+          <p>
+            The journal combines foundational education with practical
+            application, because theory without use eventually becomes
+            decorative clutter for the mind.
+          </p>
+
+        </div>
+
+        <div class="coverage-grid">
+
+          <article class="coverage-card">
+
+            <div
+              class="coverage-icon"
+              aria-hidden="true"
+            >
+              🃏
+            </div>
+
+            <h2>
+              Tarot Lessons
+            </h2>
+
+            <p>
+              Educational articles explaining how tarot is structured,
+              how card relationships develop, how spreads work, and how
+              readers move beyond isolated definitions.
+            </p>
+
+            <h3>
+              The focus
+            </h3>
+
+            <p>
+              Major and Minor Arcana, suits, numbers, court cards,
+              upright and reversed cards, spread positions, visual
+              symbolism, and interpreting multiple cards as one
+              connected system.
+            </p>
+
+          </article>
+
+
+          <article class="coverage-card">
+
+            <div
+              class="coverage-icon"
+              aria-hidden="true"
+            >
+              ◉
+            </div>
+
+            <h2>
+              Choosing a Deck
+            </h2>
+
+            <p>
+              Guidance for understanding how artwork, structure, card
+              stock, guidebooks, symbolism, readability, and personal
+              purpose affect whether a deck is actually useful.
+            </p>
+
+            <h3>
+              The focus
+            </h3>
+
+            <p>
+              Choosing a first deck, identifying decks suited to
+              specific reading styles, recognizing aesthetic attraction
+              without mistaking it for compatibility, and deciding
+              whether a deck belongs in regular practice.
+            </p>
+
+          </article>
+
+
+          <article class="coverage-card">
+
+            <div
+              class="coverage-icon"
+              aria-hidden="true"
+            >
+              ?
+            </div>
+
+            <h2>
+              Tarot Q&amp;A
+            </h2>
+
+            <p>
+              Practical articles answering the questions that arise
+              when someone moves from admiring tarot into actually
+              working with it.
+            </p>
+
+            <h3>
+              The focus
+            </h3>
+
+            <p>
+              Reading for yourself, reading reversals, asking useful
+              questions, choosing spreads, handling difficult cards,
+              cleansing decks, repeating readings, interpretation
+              blocks, and distinguishing intuition from projection.
+            </p>
+
+          </article>
+
+
+          <article class="coverage-card">
+
+            <div
+              class="coverage-icon"
+              aria-hidden="true"
+            >
+              ✦
+            </div>
+
+            <h2>
+              Weekly Collective Reading
+            </h2>
+
+            <p>
+              A recurring reading examining the symbolic themes,
+              tensions, and possibilities that may be useful for the
+              wider community to consider during the coming week.
+            </p>
+
+            <h3>
+              The focus
+            </h3>
+
+            <p>
+              Collective patterns, shared pressure points, practical
+              reflection, personal responsibility, and questions
+              readers can carry into their own week without treating
+              the reading as a fixed prediction.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         TAROT LESSONS
+         ====================================================== -->
+
+    <section class="section lesson-section">
+
+      <div class="section-inner lesson-layout">
+
+        <div class="lesson-copy">
+
+          <p class="section-label">
+            Tarot Lessons
+          </p>
+
+          <h2>
+            Learn the system before trying to command it.
+          </h2>
+
+          <p class="lead">
+            Tarot lessons in this journal will begin with the structure
+            beneath the imagery and move toward more complex
+            interpretation.
+          </p>
+
+          <p>
+            The purpose isn’t to force every reader into one correct
+            method. It’s to provide enough understanding that readers
+            can recognize why an interpretation works instead of
+            depending entirely on memorized guidebook language.
+          </p>
+
+        </div>
+
+
+        <div class="lesson-list">
+
+          <article class="lesson-item">
+
+            <span class="lesson-number">
+              01
+            </span>
+
+            <div>
+              <h3>
+                Structure
+              </h3>
+
+              <p>
+                Understanding the Major Arcana, Minor Arcana, suits,
+                numbers, and court cards as parts of one symbolic
+                framework.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="lesson-item">
+
+            <span class="lesson-number">
+              02
+            </span>
+
+            <div>
+              <h3>
+                Visual language
+              </h3>
+
+              <p>
+                Learning how posture, direction, color, landscape,
+                objects, repetition, contrast, and absence contribute
+                meaning beyond the card title.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="lesson-item">
+
+            <span class="lesson-number">
+              03
+            </span>
+
+            <div>
+              <h3>
+                Card relationships
+              </h3>
+
+              <p>
+                Reading cards as a connected pattern rather than a row
+                of unrelated definitions placed beside one another.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="lesson-item">
+
+            <span class="lesson-number">
+              04
+            </span>
+
+            <div>
+              <h3>
+                Context
+              </h3>
+
+              <p>
+                Understanding how the question, spread position,
+                surrounding cards, and deck design change the way one
+                card may be interpreted.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="lesson-item">
+
+            <span class="lesson-number">
+              05
+            </span>
+
+            <div>
+              <h3>
+                Reflection
+              </h3>
+
+              <p>
+                Recognizing where interpretation is revealing the
+                spread and where the reader may be projecting fear,
+                preference, certainty, or personal narrative onto it.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CHOOSING A DECK
+         ====================================================== -->
+
+    <section class="section deck-choice-section">
+
+      <div class="section-inner">
+
+        <div class="deck-choice-panel">
+
+          <div class="deck-choice-copy">
+
+            <p class="section-label">
+              How to Choose a Deck
+            </p>
+
+            <h2>
+              A beautiful deck isn’t automatically a readable deck.
+            </h2>
+
+            <p class="lead">
+              Choosing a tarot deck is partly aesthetic, but appearance
+              is only one factor in whether the deck will work for the
+              reader’s actual goals.
+            </p>
+
+            <p>
+              A deck may have extraordinary artwork and still be
+              difficult to read. Another may appear visually simple but
+              offer clear emotional movement, useful symbolism, and
+              strong card relationships.
+            </p>
+
+            <p>
+              Articles in this section will examine the practical
+              questions behind deck selection, including whether the
+              imagery supports intuitive reading, whether the guidebook
+              explains the creator’s system, whether the cards are
+              physically manageable, and whether the deck suits the
+              kind of questions the reader intends to ask.
+            </p>
+
+            <p>
+              There isn’t one universal best deck. There are decks that
+              are better suited to particular readers, questions, and
+              styles of interpretation.
+            </p>
+
+          </div>
+
+
+          <div class="deck-choice-questions">
+
+            <h3>
+              Questions worth asking
+            </h3>
+
+            <div class="choice-question">
+
+              <strong>
+                Can you read the imagery?
+              </strong>
+
+              <p>
+                The artwork should offer enough symbolic information to
+                support interpretation rather than forcing every answer
+                back into the guidebook.
+              </p>
+
+            </div>
+
+            <div class="choice-question">
+
+              <strong>
+                Does the deck fit your purpose?
+              </strong>
+
+              <p>
+                A deck suited to shadow work may not be the deck you
+                reach for when planning practical next steps.
+              </p>
+
+            </div>
+
+            <div class="choice-question">
+
+              <strong>
+                Does the structure make sense?
+              </strong>
+
+              <p>
+                Some decks closely follow familiar tarot systems. Others
+                rebuild the meanings, suits, or arcana around a new
+                symbolic framework.
+              </p>
+
+            </div>
+
+            <div class="choice-question">
+
+              <strong>
+                Will you actually use it?
+              </strong>
+
+              <p>
+                A deck that remains untouched because it feels too
+                precious, confusing, or physically awkward isn’t
+                serving much purpose beyond shelf decoration.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         Q&A
+         ====================================================== -->
+
+    <section class="section qa-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Tarot Questions and Answers
+          </p>
+
+          <h2>
+            Practical questions deserve more than mystical fog.
+          </h2>
+
+          <p>
+            The Q&amp;A section will address the uncertainties that arise
+            during actual practice without pretending every reader must
+            follow the same ritual or method.
+          </p>
+
+        </div>
+
+        <div class="qa-grid">
+
+          <article class="qa-card">
+
+            <h3>
+              Reading technique
+            </h3>
+
+            <p>
+              Questions about spreads, reversals, clarifying cards,
+              shuffling, jumper cards, repeated cards, reading order,
+              and how much structure a reading actually needs.
+            </p>
+
+          </article>
+
+
+          <article class="qa-card">
+
+            <h3>
+              Interpretation
+            </h3>
+
+            <p>
+              Questions about conflicting cards, difficult imagery,
+              unclear readings, emotional bias, intuition, projection,
+              and knowing when an interpretation is being forced.
+            </p>
+
+          </article>
+
+
+          <article class="qa-card">
+
+            <h3>
+              Ethics and boundaries
+            </h3>
+
+            <p>
+              Questions about reading for other people, consent,
+              predictive claims, privacy, repeated readings, emotional
+              dependence, and recognizing when tarot isn’t the right
+              tool for the situation.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         WEEKLY COLLECTIVE READING
+         ====================================================== -->
+
+    <section class="section collective-section">
+
+      <div class="section-inner collective-layout">
+
+        <div class="collective-copy">
+
+          <p class="section-label">
+            Weekly Collective Reading
+          </p>
+
+          <h2>
+            A shared reflection for the week ahead.
+          </h2>
+
+          <p class="lead">
+            The weekly collective reading will examine the themes,
+            pressures, opportunities, and points of reflection that may
+            be useful for the broader community to consider.
+          </p>
+
+          <p>
+            A collective reading doesn’t claim that every person will
+            experience the same event. It identifies symbolic patterns
+            that may resonate differently according to each reader’s
+            circumstances.
+          </p>
+
+          <p>
+            Readers are encouraged to take what creates useful
+            recognition, question what doesn’t fit, and avoid treating a
+            general reading as a substitute for personal evidence or
+            judgment.
+          </p>
+
+        </div>
+
+
+        <div class="collective-panel">
+
+          <h3>
+            What each reading will provide
+          </h3>
+
+          <div class="collective-detail">
+
+            <strong>
+              The central theme
+            </strong>
+
+            <p>
+              The primary symbolic pattern shaping the reading and the
+              question it asks the collective to consider.
+            </p>
+
+          </div>
+
+          <div class="collective-detail">
+
+            <strong>
+              The tension
+            </strong>
+
+            <p>
+              The conflict, obstacle, contradiction, or unintegrated
+              influence that may complicate the week.
+            </p>
+
+          </div>
+
+          <div class="collective-detail">
+
+            <strong>
+              The opportunity
+            </strong>
+
+            <p>
+              The opening, shift in perspective, or practical movement
+              that may become available through conscious response.
+            </p>
+
+          </div>
+
+          <div class="collective-detail">
+
+            <strong>
+              The reflection
+            </strong>
+
+            <p>
+              A question readers can carry into their own decisions,
+              relationships, creative work, or personal development.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         PURPOSE
+         ====================================================== -->
+
+    <section class="section journal-purpose-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            The Purpose of the Tarot Journal
+          </p>
+
+          <h2>
+            Education should make readers more independent.
+          </h2>
+
+          <p>
+            This section is intended to help readers develop their own
+            understanding of tarot rather than remain dependent on one
+            reader, one guidebook, or one fixed interpretation system.
+          </p>
+
+        </div>
+
+        <div class="purpose-grid">
+
+          <article class="purpose-card">
+
+            <h3>
+              Learn the structure
+            </h3>
+
+            <p>
+              Understand how tarot is organized and why its recurring
+              patterns allow individual cards to form larger
+              narratives.
+            </p>
+
+          </article>
+
+
+          <article class="purpose-card">
+
+            <h3>
+              Develop discernment
+            </h3>
+
+            <p>
+              Recognize the difference between an interpretation
+              supported by the spread and one being distorted by fear,
+              preference, projection, or forced certainty.
+            </p>
+
+          </article>
+
+
+          <article class="purpose-card">
+
+            <h3>
+              Build a personal practice
+            </h3>
+
+            <p>
+              Use lessons, questions, deck guidance, and collective
+              readings to develop a method that remains thoughtful,
+              ethical, flexible, and grounded.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         JOURNAL NAVIGATION
+         ====================================================== -->
+
+    <section class="section category-navigation">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Explore the Journal
+          </p>
+
+          <h2>
+            Continue through the three journal categories.
+          </h2>
+
+        </div>
+
+        <div class="category-grid">
+
+          <a
+            class="category-card"
+            href="theory.html"
+          >
+
+            <h3>
+              The Theory in Day-to-Day Life
+            </h3>
+
+            <p>
+              Projection, manifestation, personal and spiritual growth,
+              Jungian psychology, philosophy, and the patterns shaping
+              ordinary experience.
+            </p>
+
+            <span class="category-link">
+              Explore the theory journal
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+
+          <a
+            class="category-card"
+            href="tarot.html"
+          >
+
+            <h3>
+              Tarot
+            </h3>
+
+            <p>
+              Lessons, deck selection, practical questions, reading
+              methods, symbolism, and weekly collective readings.
+            </p>
+
+            <span class="category-link">
+              Current section
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+
+          <a
+            class="category-card"
+            href="runes.html"
+          >
+
+            <h3>
+              Runes
+            </h3>
+
+            <p>
+              Rune-casting methods, symbolic interpretation, rune-set
+              reviews, practical education, and thoughtful engagement
+              with the runic tradition.
+            </p>
+
+            <span class="category-link">
+              Explore the rune journal
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CLOSING
+         ====================================================== -->
+
+    <section class="section tarot-journal-closing">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Learn the Cards, Question the Reading
+        </p>
+
+        <h2>
+          Tarot should expand your ability to interpret, not replace
+          your ability to think.
+        </h2>
+
+        <p>
+          This journal will grow through practical lessons, honest
+          questions, deck analysis, and weekly readings designed to
+          provide reflection without demanding blind agreement.
+        </p>
+
+        <div class="closing-actions">
+
+          <a
+            class="button button-primary"
+            href="../tarot.html"
+          >
+            Explore Tarot Readings
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="../journal.html"
+          >
+            Return to the Journal
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================
+       SITE FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <a
+          class="footer-site-name"
+          href="../../index.html"
+        >
+          Synchronic Self Theory
+        </a>
+
+        <p>
+          As above, so below.<br>
+          As within, so without.
+        </p>
+
+      </div>
+
+      <nav
+        class="footer-navigation"
+        aria-label="Footer navigation"
+      >
+        <a href="../journal.html">
+          Journal
+        </a>
+
+        <a href="../tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="../runes.html">
+          Rune Casting
+        </a>
+
+        <a href="../projects.html">
+          Projects
+        </a>
+
+        <a href="../contact.html">
+          Contact
+        </a>
+      </nav>
+
+      <div class="footer-credit">
+
+        <p>
+          Powered by
+          <a
+            href="https://ghostwritestudios.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GhostWrite Studios
+          </a>
+        </p>
+
+        <p>
+          Original philosophy and writing by Rory Kelly.
+        </p>
+
+        <p>
+          &copy; 2026 Rory Kelly. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================
+       MOBILE NAVIGATION
+       ====================================================== -->
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    const primaryNavigation = document.querySelector(
+      ".primary-navigation"
+    );
+
+    if (menuToggle && primaryNavigation) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen =
+          menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+        primaryNavigation.classList.toggle(
+          "navigation-open"
+        );
+      });
+    }
+  </script>
+
+</body>
+</html>

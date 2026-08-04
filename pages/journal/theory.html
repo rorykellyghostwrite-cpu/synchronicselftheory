@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    The Theory in Day-to-Day Life | Synchronic Self Theory Journal
+  </title>
+
+  <meta
+    name="description"
+    content="Explore the core themes of Synchronic Self Theory, including projection, manifestation, personal and spiritual growth, Jungian psychology, philosophy, synchronicity, and conscious integration."
+  >
+
+  <meta
+    name="keywords"
+    content="Synchronic Self Theory, projection psychology, manifestation philosophy, Jungian psychology, spiritual growth, personal growth, synchronicity, individuation, shadow work, Rory Kelly"
+  >
+
+  <meta name="author" content="Rory Kelly">
+
+  <meta
+    property="og:title"
+    content="The Theory in Day-to-Day Life"
+  >
+
+  <meta
+    property="og:description"
+    content="A journal exploring projection, manifestation, Jungian psychology, philosophy, and the patterns connecting inner experience with outer life."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://synchronicselftheory.com/pages/journal/theory.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://synchronicselftheory.com/sst-thunderbird.png"
+  >
+
+  <link
+    rel="canonical"
+    href="https://synchronicselftheory.com/pages/journal/theory.html"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../../styles.css"
+  >
+
+  <style>
+    /* ======================================================
+       THEORY JOURNAL LANDING PAGE
+       These styles apply only to pages/journal/theory.html.
+       ====================================================== */
+
+    .theory-hero {
+      position: relative;
+      display: grid;
+      min-height: 720px;
+      overflow: hidden;
+      place-items: center;
+      isolation: isolate;
+    }
+
+    .theory-hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background-image: url("../../sst-thunderbird.png");
+      background-position: center 38%;
+      background-size: cover;
+      content: "";
+      filter:
+        brightness(0.42)
+        contrast(1.08)
+        saturate(0.76);
+      transform: scale(1.025);
+    }
+
+    .theory-hero::after {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 6, 9, 0.98) 0%,
+          rgba(5, 6, 9, 0.84) 47%,
+          rgba(5, 6, 9, 0.48) 77%,
+          rgba(5, 6, 9, 0.68) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(5, 6, 9, 0.12) 0%,
+          rgba(5, 6, 9, 0.36) 56%,
+          rgba(5, 6, 9, 0.98) 100%
+        );
+      content: "";
+    }
+
+    .theory-hero-inner {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+      padding: 8rem 1.5rem;
+    }
+
+    .theory-hero-copy {
+      max-width: 920px;
+    }
+
+    .theory-hero h1 {
+      max-width: 1000px;
+      margin-bottom: 1.5rem;
+      font-size: clamp(3.2rem, 7.5vw, 7rem);
+    }
+
+    .theory-hero .lead {
+      max-width: 780px;
+      margin-bottom: 0;
+    }
+
+    .theory-introduction {
+      background:
+        radial-gradient(
+          circle at 18% 0%,
+          rgba(94, 168, 255, 0.08),
+          transparent 30rem
+        ),
+        linear-gradient(
+          180deg,
+          #090b0f,
+          #0d1016
+        );
+    }
+
+    .theory-introduction .section-inner {
+      max-width: 900px;
+    }
+
+    .core-principle {
+      margin: 3rem 0;
+      padding: clamp(1.8rem, 4vw, 2.8rem);
+      border: 1px solid rgba(240, 178, 74, 0.22);
+      border-left: 4px solid var(--gold);
+      border-radius:
+        0
+        var(--radius-medium)
+        var(--radius-medium)
+        0;
+      background:
+        linear-gradient(
+          120deg,
+          rgba(240, 178, 74, 0.08),
+          rgba(94, 168, 255, 0.025)
+        );
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .core-principle p {
+      margin-bottom: 0;
+      color: var(--text-primary);
+      font-size: clamp(1.35rem, 3vw, 2.15rem);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .themes-section {
+      background:
+        radial-gradient(
+          circle at 85% 10%,
+          rgba(255, 90, 31, 0.07),
+          transparent 30rem
+        ),
+        var(--background);
+    }
+
+    .themes-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .theme-card {
+      position: relative;
+      min-height: 100%;
+      padding: clamp(2rem, 4vw, 3rem);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.04),
+          rgba(255, 255, 255, 0.01)
+        ),
+        var(--background-card);
+      box-shadow: 0 24px 65px rgba(0, 0, 0, 0.32);
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+    }
+
+    .theme-card::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 4px;
+      content: "";
+    }
+
+    .theme-card:nth-child(1)::before {
+      background: linear-gradient(
+        90deg,
+        var(--storm),
+        var(--storm-bright)
+      );
+    }
+
+    .theme-card:nth-child(2)::before {
+      background: linear-gradient(
+        90deg,
+        var(--gold),
+        var(--fire)
+      );
+    }
+
+    .theme-card:nth-child(3)::before {
+      background: linear-gradient(
+        90deg,
+        var(--fire),
+        var(--gold-soft)
+      );
+    }
+
+    .theme-card:nth-child(4)::before {
+      background: linear-gradient(
+        90deg,
+        var(--storm-deep),
+        var(--gold)
+      );
+    }
+
+    .theme-card:hover {
+      border-color: rgba(240, 178, 74, 0.32);
+      background: var(--background-card-hover);
+      box-shadow: 0 32px 78px rgba(0, 0, 0, 0.42);
+      transform: translateY(-6px);
+    }
+
+    .theme-symbol {
+      display: grid;
+      width: 62px;
+      height: 62px;
+      margin-bottom: 1.6rem;
+      border: 1px solid rgba(240, 178, 74, 0.22);
+      border-radius: 50%;
+      background:
+        radial-gradient(
+          circle,
+          rgba(240, 178, 74, 0.12),
+          transparent 72%
+        );
+      color: var(--gold-soft);
+      font-size: 1.55rem;
+      place-items: center;
+    }
+
+    .theme-card h2 {
+      margin-bottom: 1rem;
+      font-size: clamp(1.9rem, 3.3vw, 3rem);
+    }
+
+    .theme-card h3 {
+      margin-top: 1.8rem;
+      color: var(--gold-soft);
+      font-size: 1.22rem;
+    }
+
+    .theme-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .projection-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .projection-layout {
+      display: grid;
+      align-items: start;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+    }
+
+    .projection-copy {
+      position: sticky;
+      top: 2rem;
+    }
+
+    .projection-copy h2 {
+      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+    }
+
+    .projection-process {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .projection-step {
+      display: grid;
+      padding: 1.6rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.032),
+          rgba(255, 255, 255, 0.008)
+        ),
+        var(--background-card);
+      gap: 1.25rem;
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .projection-number {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(94, 168, 255, 0.26);
+      border-radius: 50%;
+      color: var(--storm-bright);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.75rem;
+      font-weight: 800;
+      place-items: center;
+    }
+
+    .projection-step h3 {
+      margin-bottom: 0.45rem;
+      font-size: 1.3rem;
+    }
+
+    .projection-step p {
+      margin-bottom: 0;
+      font-size: 0.96rem;
+    }
+
+    .manifestation-section {
+      background:
+        radial-gradient(
+          circle at 15% 15%,
+          rgba(240, 178, 74, 0.08),
+          transparent 29rem
+        ),
+        var(--background);
+    }
+
+    .manifestation-panel {
+      display: grid;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(240, 178, 74, 0.05),
+          rgba(94, 168, 255, 0.025)
+        ),
+        var(--background-raised);
+      box-shadow: 0 32px 85px rgba(0, 0, 0, 0.38);
+      grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 0.9fr);
+    }
+
+    .manifestation-copy,
+    .manifestation-contrast {
+      padding: clamp(2.2rem, 5vw, 4.5rem);
+    }
+
+    .manifestation-copy {
+      border-right: 1px solid var(--border-subtle);
+    }
+
+    .manifestation-copy h2 {
+      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+    }
+
+    .manifestation-contrast {
+      display: flex;
+      justify-content: center;
+      background:
+        radial-gradient(
+          circle at 80% 15%,
+          rgba(255, 90, 31, 0.1),
+          transparent 18rem
+        );
+      flex-direction: column;
+    }
+
+    .manifestation-contrast h3 {
+      margin-bottom: 1.5rem;
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+    }
+
+    .contrast-item {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .contrast-item:last-child {
+      border-bottom: 0;
+    }
+
+    .contrast-item strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--gold-soft);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .contrast-item p {
+      margin-bottom: 0;
+    }
+
+    .growth-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .growth-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .growth-card {
+      padding: 2.2rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.036),
+          rgba(255, 255, 255, 0.009)
+        ),
+        var(--background-card);
+      box-shadow: 0 24px 62px rgba(0, 0, 0, 0.3);
+    }
+
+    .growth-card h3 {
+      font-size: clamp(1.6rem, 2.8vw, 2.25rem);
+    }
+
+    .growth-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .journal-purpose-section {
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(94, 168, 255, 0.1),
+          transparent 34rem
+        ),
+        var(--background);
+    }
+
+    .purpose-layout {
+      display: grid;
+      align-items: center;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 0.95fr);
+    }
+
+    .purpose-copy h2 {
+      font-size: clamp(2.3rem, 4.5vw, 4.2rem);
+    }
+
+    .purpose-principles {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .purpose-principle {
+      padding: 1.5rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background: var(--background-card);
+    }
+
+    .purpose-principle h3 {
+      margin-bottom: 0.45rem;
+      font-size: 1.25rem;
+    }
+
+    .purpose-principle p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .category-navigation {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .category-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .category-card {
+      display: flex;
+      min-height: 100%;
+      padding: 2rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.009)
+        ),
+        var(--background-raised);
+      flex-direction: column;
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .category-card:hover,
+    .category-card:focus-visible {
+      border-color: rgba(240, 178, 74, 0.34);
+      box-shadow: 0 26px 65px rgba(0, 0, 0, 0.36);
+      transform: translateY(-5px);
+    }
+
+    .category-card h3 {
+      font-size: 1.55rem;
+    }
+
+    .category-card p {
+      flex-grow: 1;
+    }
+
+    .category-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      transition:
+        color var(--transition),
+        gap var(--transition);
+    }
+
+    .category-card:hover .category-link,
+    .category-card:focus-visible .category-link {
+      gap: 0.8rem;
+      color: var(--gold-soft);
+    }
+
+    .theory-closing {
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(255, 90, 31, 0.12),
+          transparent 34rem
+        ),
+        #090a0e;
+      text-align: center;
+    }
+
+    .theory-closing p:not(.section-label) {
+      max-width: 720px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .closing-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 980px) {
+      .projection-layout,
+      .purpose-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .projection-copy {
+        position: static;
+      }
+
+      .manifestation-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .manifestation-copy {
+        border-right: 0;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .growth-grid,
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .theory-hero {
+        min-height: 620px;
+      }
+
+      .theory-hero-inner {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+
+      .themes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .closing-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .closing-actions .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================================================
+       SITE HEADER
+       ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="studio-credit studio-credit-top">
+      <span>Powered by</span>
+
+      <a
+        href="https://ghostwritestudios.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GhostWrite Studios
+      </a>
+    </div>
+
+    <div class="header-inner">
+
+      <a
+        class="site-identity"
+        href="../../index.html"
+        aria-label="Synchronic Self Theory home"
+      >
+        <span class="site-name">
+          Synchronic Self Theory
+        </span>
+
+        <span class="site-motto">
+          As within, so without.
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        id="primary-navigation"
+        class="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="../../index.html">
+          Home
+        </a>
+
+        <a
+          class="active"
+          href="../journal.html"
+        >
+          Journal
+        </a>
+
+        <a href="../tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="../runes.html">
+          Rune Casting
+        </a>
+
+        <a href="../projects.html">
+          Projects
+        </a>
+
+        <a href="../contact.html">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+         ====================================================== -->
+
+    <section class="theory-hero">
+
+      <div class="theory-hero-inner">
+
+        <div class="theory-hero-copy">
+
+          <p class="eyebrow">
+            Synchronic Self Theory in everyday life
+          </p>
+
+          <h1>
+            The Theory in Day-to-Day Life
+          </h1>
+
+          <p class="lead">
+            A journal exploring projection, manifestation, personal and
+            spiritual growth, Jungian psychology, philosophy, and the
+            patterns connecting inner experience with the world around
+            us.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         INTRODUCTION
+         ====================================================== -->
+
+    <section class="section theory-introduction">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          The Reflective Field
+        </p>
+
+        <h2>
+          The world doesn’t only happen around us. We participate in
+          how it takes shape.
+        </h2>
+
+        <p class="lead">
+          Synchronic Self Theory begins with a simple principle:
+          consciousness projects patterns into experience, and the
+          universe reflects those patterns back through perception,
+          relationships, repetition, symbolism, conflict, coincidence,
+          and consequence.
+        </p>
+
+        <div class="core-principle">
+
+          <p>
+            As above, so below. As within, so without.
+          </p>
+
+        </div>
+
+        <p>
+          This doesn’t mean every event is consciously created, that
+          suffering is deserved, or that thought alone controls the
+          external world. It means our beliefs, fears, expectations,
+          wounds, desires, and assumptions influence what we notice,
+          how we interpret it, how we respond, and what our responses
+          invite in return.
+        </p>
+
+        <p>
+          The theory treats reality as participatory rather than
+          passive. We encounter the world through an internal system
+          already shaped by memory, identity, emotion, language, and
+          unconscious material. What appears outside us often becomes a
+          surface onto which that internal material is projected.
+        </p>
+
+        <p>
+          The journal doesn’t ask readers to accept a fixed doctrine.
+          Its purpose is to offer new perspectives, test familiar
+          assumptions, and leave readers with questions they can think
+          through for themselves.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CORE THEMES
+         ====================================================== -->
+
+    <section class="section themes-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Core Themes
+          </p>
+
+          <h2>
+            The journal follows the places where inner life meets outer
+            experience.
+          </h2>
+
+          <p>
+            These themes overlap because human psychology has never
+            respected the neat filing system we keep trying to impose
+            on it.
+          </p>
+
+        </div>
+
+        <div class="themes-grid">
+
+          <!-- ================================================
+               PROJECTION
+               ================================================ -->
+
+          <article class="theme-card">
+
+            <div
+              class="theme-symbol"
+              aria-hidden="true"
+            >
+              🪞
+            </div>
+
+            <h2>
+              Projection
+            </h2>
+
+            <p>
+              Projection occurs when internal material is experienced
+              as though it belongs entirely to someone or something
+              outside us. A fear becomes another person’s hostility. An
+              unmet need becomes proof of rejection. A disowned trait
+              becomes unbearable when we recognize it in someone else.
+            </p>
+
+            <p>
+              Projection isn’t treated only as an error. It’s
+              information. The emotional charge surrounding a person,
+              symbol, event, or conflict may reveal something within the
+              psyche that hasn’t yet been consciously integrated.
+            </p>
+
+            <h3>
+              Questions explored
+            </h3>
+
+            <p>
+              How projection shapes relationships, how to distinguish
+              intuition from assumption, why certain people trigger
+              disproportionate reactions, and how recognition can turn
+              conflict into self-knowledge.
+            </p>
+
+          </article>
+
+
+          <!-- ================================================
+               MANIFESTATION
+               ================================================ -->
+
+          <article class="theme-card">
+
+            <div
+              class="theme-symbol"
+              aria-hidden="true"
+            >
+              ✦
+            </div>
+
+            <h2>
+              Manifestation
+            </h2>
+
+            <p>
+              Manifestation is examined as participation, not magical
+              consumerism. The theory doesn’t claim that thinking about
+              an outcome guarantees its arrival or that unwanted events
+              prove someone failed to maintain the correct vibration.
+            </p>
+
+            <p>
+              What we project influences attention, expectation,
+              behavior, persistence, interpretation, and the social
+              responses our behavior produces. In that sense, internal
+              configuration affects which possibilities we recognize
+              and which ones we repeatedly undermine.
+            </p>
+
+            <h3>
+              Questions explored
+            </h3>
+
+            <p>
+              How intention becomes action, why some goals remain
+              fantasy, how expectation shapes opportunity, and where
+              manifestation language becomes avoidance, blame, or
+              denial of material reality.
+            </p>
+
+          </article>
+
+
+          <!-- ================================================
+               GROWTH
+               ================================================ -->
+
+          <article class="theme-card">
+
+            <div
+              class="theme-symbol"
+              aria-hidden="true"
+            >
+              🔥
+            </div>
+
+            <h2>
+              Personal and Spiritual Growth
+            </h2>
+
+            <p>
+              Growth isn’t treated as permanent serenity or escape from
+              contradiction. It’s the increasing ability to recognize
+              patterns, regulate responses, hold tension, make conscious
+              choices, and translate insight into behavior.
+            </p>
+
+            <p>
+              Spiritual growth becomes meaningful when it changes how a
+              person relates to responsibility, uncertainty, power,
+              grief, desire, conflict, and other people. Language about
+              awakening means very little when the same unconscious
+              pattern continues controlling the room.
+            </p>
+
+            <h3>
+              Questions explored
+            </h3>
+
+            <p>
+              How insight becomes integration, how identity changes
+              after major transformation, why growth can create
+              isolation, and how spiritual language sometimes disguises
+              avoidance rather than development.
+            </p>
+
+          </article>
+
+
+          <!-- ================================================
+               JUNGIAN PSYCHOLOGY
+               ================================================ -->
+
+          <article class="theme-card">
+
+            <div
+              class="theme-symbol"
+              aria-hidden="true"
+            >
+              ◉
+            </div>
+
+            <h2>
+              Jungian Psychology and Philosophy
+            </h2>
+
+            <p>
+              Jungian psychology provides much of the theory’s
+              vocabulary: projection, shadow, archetype, individuation,
+              synchronicity, persona, ego, Self, and the psychological
+              tension between conscious identity and unconscious life.
+            </p>
+
+            <p>
+              The journal also explores philosophy more broadly,
+              including questions of consciousness, meaning, identity,
+              free will, perception, responsibility, paradox, and the
+              relationship between the observer and the world being
+              observed.
+            </p>
+
+            <h3>
+              Questions explored
+            </h3>
+
+            <p>
+              What individuation changes, how archetypes shape personal
+              experience, where Jung’s ideas remain useful, and how
+              philosophy can deepen life without becoming another place
+              to hide from it.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         PROJECTION CYCLE
+         ====================================================== -->
+
+    <section class="section projection-section">
+
+      <div class="section-inner projection-layout">
+
+        <div class="projection-copy">
+
+          <p class="section-label">
+            Projection and Reintegration
+          </p>
+
+          <h2>
+            What appears outside may begin as something unrecognized
+            within.
+          </h2>
+
+          <p class="lead">
+            The theory follows projection through a recurring cycle. The
+            goal isn’t to eliminate projection entirely. It’s to shorten
+            the distance between projecting a pattern and recognizing
+            what that pattern reveals.
+          </p>
+
+          <p>
+            The more quickly a projection can be recognized, examined,
+            and reintegrated, the less likely it is to control behavior
+            while pretending to be objective reality.
+          </p>
+
+        </div>
+
+
+        <div class="projection-process">
+
+          <article class="projection-step">
+
+            <span class="projection-number">
+              01
+            </span>
+
+            <div>
+              <h3>
+                Perception
+              </h3>
+
+              <p>
+                An event, relationship, phrase, image, or coincidence
+                creates an emotional charge and demands attention.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="projection-step">
+
+            <span class="projection-number">
+              02
+            </span>
+
+            <div>
+              <h3>
+                Projection
+              </h3>
+
+              <p>
+                The psyche interprets the experience through existing
+                beliefs, wounds, expectations, desires, and unresolved
+                archetypal patterns.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="projection-step">
+
+            <span class="projection-number">
+              03
+            </span>
+
+            <div>
+              <h3>
+                Recognition
+              </h3>
+
+              <p>
+                The question changes from “Why is this happening to me?”
+                to “What might this reaction be showing me?”
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="projection-step">
+
+            <span class="projection-number">
+              04
+            </span>
+
+            <div>
+              <h3>
+                Reintegration
+              </h3>
+
+              <p>
+                Insight is translated into changed behavior, clearer
+                boundaries, communication, creative work, emotional
+                regulation, or conscious choice.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         MANIFESTATION
+         ====================================================== -->
+
+    <section class="section manifestation-section">
+
+      <div class="section-inner">
+
+        <div class="manifestation-panel">
+
+          <div class="manifestation-copy">
+
+            <p class="section-label">
+              Manifestation Without Magical Blame
+            </p>
+
+            <h2>
+              The universe reflects patterns. It isn’t a vending
+              machine.
+            </h2>
+
+            <p class="lead">
+              Synchronic Self Theory interprets manifestation as a
+              feedback relationship between inner configuration and
+              outer participation.
+            </p>
+
+            <p>
+              Belief influences what a person considers possible.
+              Expectation influences what they notice. Identity
+              influences what they attempt. Fear influences what they
+              avoid. Behavior influences how other people respond.
+              Repetition eventually creates conditions that feel like
+              fate.
+            </p>
+
+            <p>
+              That doesn’t mean consciousness controls everything. It
+              means consciousness participates in more than it usually
+              recognizes.
+            </p>
+
+            <p>
+              The journal examines both the useful and dangerous sides
+              of manifestation language, especially where empowerment
+              crosses into victim-blaming, denial, passivity, or the
+              belief that difficult material circumstances can be
+              solved through positive thought alone.
+            </p>
+
+          </div>
+
+
+          <div class="manifestation-contrast">
+
+            <h3>
+              What the theory distinguishes
+            </h3>
+
+            <div class="contrast-item">
+
+              <strong>
+                Intention
+              </strong>
+
+              <p>
+                A direction consciously chosen and supported through
+                attention, action, and adaptation.
+              </p>
+
+            </div>
+
+            <div class="contrast-item">
+
+              <strong>
+                Projection
+              </strong>
+
+              <p>
+                Internal assumptions shaping how events, people, and
+                possibilities are interpreted.
+              </p>
+
+            </div>
+
+            <div class="contrast-item">
+
+              <strong>
+                Participation
+              </strong>
+
+              <p>
+                The practical ways behavior, communication, persistence,
+                preparation, and choice influence outcomes.
+              </p>
+
+            </div>
+
+            <div class="contrast-item">
+
+              <strong>
+                Control
+              </strong>
+
+              <p>
+                The illusion that internal alignment can guarantee every
+                desired external result.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         GROWTH
+         ====================================================== -->
+
+    <section class="section growth-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Growth and Individuation
+          </p>
+
+          <h2>
+            Becoming whole doesn’t mean becoming uncomplicated.
+          </h2>
+
+          <p>
+            Growth is measured less by how enlightened someone sounds
+            and more by what they can recognize, tolerate, integrate,
+            and change.
+          </p>
+
+        </div>
+
+        <div class="growth-grid">
+
+          <article class="growth-card">
+
+            <p class="section-label">
+              Personal Growth
+            </p>
+
+            <h3>
+              Awareness becoming behavior
+            </h3>
+
+            <p>
+              Personal growth involves recognizing repeated patterns,
+              understanding their origins, and choosing responses that
+              aren’t merely automatic recreations of the past.
+            </p>
+
+            <p>
+              Insight matters, but changed behavior is where the theory
+              becomes visible.
+            </p>
+
+          </article>
+
+
+          <article class="growth-card">
+
+            <p class="section-label">
+              Spiritual Growth
+            </p>
+
+            <h3>
+              Meaning without escape
+            </h3>
+
+            <p>
+              Spiritual growth involves developing a deeper relationship
+              with meaning, mystery, responsibility, and connection
+              without using spirituality to avoid pain, evidence,
+              accountability, or ordinary human limits.
+            </p>
+
+            <p>
+              Transcendence that can’t survive daily life probably
+              wasn’t very transcendent.
+            </p>
+
+          </article>
+
+
+          <article class="growth-card">
+
+            <p class="section-label">
+              Individuation
+            </p>
+
+            <h3>
+              Becoming distinctly yourself
+            </h3>
+
+            <p>
+              Individuation is the continuing process of integrating
+              conscious and unconscious material into a more coherent
+              identity.
+            </p>
+
+            <p>
+              It doesn’t make a person superior. It may, however, make
+              returning to an earlier identity impossible once the
+              difference has been consciously accepted.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         PURPOSE OF THE JOURNAL
+         ====================================================== -->
+
+    <section class="section journal-purpose-section">
+
+      <div class="section-inner purpose-layout">
+
+        <div class="purpose-copy">
+
+          <p class="section-label">
+            What This Journal Is For
+          </p>
+
+          <h2>
+            New perspectives, not borrowed conclusions.
+          </h2>
+
+          <p class="lead">
+            The Theory in Day-to-Day Life isn’t meant to tell readers
+            what every experience means. It’s meant to provide tools for
+            examining meaning without surrendering independent thought.
+          </p>
+
+          <p>
+            Articles in this section may begin with psychology,
+            philosophy, relationships, creativity, symbolism, religion,
+            identity, work, conflict, or ordinary events that reveal a
+            larger pattern.
+          </p>
+
+          <p>
+            The purpose remains the same: leave the reader with a
+            perspective worth considering, a question worth carrying,
+            or a familiar situation seen from an angle they hadn’t
+            previously examined.
+          </p>
+
+        </div>
+
+
+        <div class="purpose-principles">
+
+          <article class="purpose-principle">
+
+            <h3>
+              No forced agreement
+            </h3>
+
+            <p>
+              Readers aren’t required to accept every interpretation or
+              treat the theory as an authority beyond question.
+            </p>
+
+          </article>
+
+
+          <article class="purpose-principle">
+
+            <h3>
+              No certainty theater
+            </h3>
+
+            <p>
+              Ambiguity, contradiction, and uncertainty are treated as
+              part of serious inquiry rather than embarrassing flaws to
+              be hidden behind confident language.
+            </p>
+
+          </article>
+
+
+          <article class="purpose-principle">
+
+            <h3>
+              No separation from life
+            </h3>
+
+            <p>
+              Psychology and philosophy are examined through their
+              consequences in relationships, decisions, behavior,
+              creativity, work, identity, and ordinary experience.
+            </p>
+
+          </article>
+
+
+          <article class="purpose-principle">
+
+            <h3>
+              No substitute for judgment
+            </h3>
+
+            <p>
+              Reflection should expand a person’s capacity to think,
+              not replace it with another system of automatic answers.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         JOURNAL CATEGORY NAVIGATION
+         ====================================================== -->
+
+    <section class="section category-navigation">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Explore the Journal
+          </p>
+
+          <h2>
+            Continue through the three journal categories.
+          </h2>
+
+        </div>
+
+        <div class="category-grid">
+
+          <a
+            class="category-card"
+            href="theory.html"
+          >
+
+            <h3>
+              The Theory in Day-to-Day Life
+            </h3>
+
+            <p>
+              Philosophy, projection, manifestation, growth,
+              synchronicity, Jungian psychology, and the patterns
+              shaping everyday experience.
+            </p>
+
+            <span class="category-link">
+              Current section
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+
+          <a
+            class="category-card"
+            href="tarot.html"
+          >
+
+            <h3>
+              Tarot
+            </h3>
+
+            <p>
+              Educational guides, reading methods, symbolism, deck
+              reviews, practical techniques, and deeper exploration of
+              tarot systems.
+            </p>
+
+            <span class="category-link">
+              Explore the tarot journal
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+
+          <a
+            class="category-card"
+            href="runes.html"
+          >
+
+            <h3>
+              Runes
+            </h3>
+
+            <p>
+              Rune-casting methods, symbolic interpretation, rune-set
+              reviews, practical education, and thoughtful engagement
+              with the runic tradition.
+            </p>
+
+            <span class="category-link">
+              Explore the rune journal
+              <span aria-hidden="true">→</span>
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CLOSING
+         ====================================================== -->
+
+    <section class="section theory-closing">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Think Through the Mirror
+        </p>
+
+        <h2>
+          A theory becomes useful when it changes the questions we’re
+          capable of asking.
+        </h2>
+
+        <p>
+          This journal will continue growing as Synchronic Self Theory
+          develops through writing, lived experience, reflection, and
+          conversation.
+        </p>
+
+        <div class="closing-actions">
+
+          <a
+            class="button button-primary"
+            href="../journal.html"
+          >
+            Return to the Journal
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="../contact.html"
+          >
+            Contact Rory Kelly
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================
+       SITE FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <a
+          class="footer-site-name"
+          href="../../index.html"
+        >
+          Synchronic Self Theory
+        </a>
+
+        <p>
+          As above, so below.<br>
+          As within, so without.
+        </p>
+
+      </div>
+
+      <nav
+        class="footer-navigation"
+        aria-label="Footer navigation"
+      >
+        <a href="../journal.html">
+          Journal
+        </a>
+
+        <a href="../tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="../runes.html">
+          Rune Casting
+        </a>
+
+        <a href="../projects.html">
+          Projects
+        </a>
+
+        <a href="../contact.html">
+          Contact
+        </a>
+      </nav>
+
+      <div class="footer-credit">
+
+        <p>
+          Powered by
+          <a
+            href="https://ghostwritestudios.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GhostWrite Studios
+          </a>
+        </p>
+
+        <p>
+          Original philosophy and writing by Rory Kelly.
+        </p>
+
+        <p>
+          &copy; 2026 Rory Kelly. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================
+       MOBILE NAVIGATION
+       ====================================================== -->
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    const primaryNavigation = document.querySelector(
+      ".primary-navigation"
+    );
+
+    if (menuToggle && primaryNavigation) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen =
+          menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+        primaryNavigation.classList.toggle(
+          "navigation-open"
+        );
+      });
+    }
+  </script>
+
+</body>
+</html>

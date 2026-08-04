@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Projects | Synchronic Self Theory
+  </title>
+
+  <meta
+    name="description"
+    content="Explore The Black Book, its future companion The Yellow Book, and The Mirror's Edge Tarot, an expanded Jungian tarot system created by Rory Kelly."
+  >
+
+  <meta
+    name="keywords"
+    content="Synchronic Self Theory projects, The Black Book, The Yellow Book, Mirror's Edge Tarot, Jungian tarot, Wonderland Arcana, individuation, shadow work, Rory Kelly"
+  >
+
+  <meta name="author" content="Rory Kelly">
+
+  <meta
+    property="og:title"
+    content="Projects | Synchronic Self Theory"
+  >
+
+  <meta
+    property="og:description"
+    content="Books, tarot, philosophy, and symbolic systems developed through Synchronic Self Theory."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://synchronicselftheory.com/pages/projects.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://synchronicselftheory.com/outlier.png"
+  >
+
+  <link
+    rel="canonical"
+    href="https://synchronicselftheory.com/pages/projects.html"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../styles.css"
+  >
+
+  <style>
+    /* ======================================================
+       PROJECTS PAGE
+       These styles apply only to pages/projects.html.
+       ====================================================== */
+
+    .projects-hero {
+      position: relative;
+      display: grid;
+      min-height: 720px;
+      overflow: hidden;
+      place-items: center;
+      isolation: isolate;
+    }
+
+    .projects-hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background-image: url("../outlier.png");
+      background-position: center 28%;
+      background-size: cover;
+      content: "";
+      filter:
+        brightness(0.46)
+        contrast(1.05)
+        saturate(0.8);
+      transform: scale(1.025);
+    }
+
+    .projects-hero::after {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 6, 9, 0.98) 0%,
+          rgba(5, 6, 9, 0.82) 46%,
+          rgba(5, 6, 9, 0.48) 76%,
+          rgba(5, 6, 9, 0.64) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(5, 6, 9, 0.12) 0%,
+          rgba(5, 6, 9, 0.36) 56%,
+          rgba(5, 6, 9, 0.98) 100%
+        );
+      content: "";
+    }
+
+    .projects-hero-inner {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+      padding: 8rem 1.5rem;
+    }
+
+    .projects-hero-copy {
+      max-width: 860px;
+    }
+
+    .projects-hero h1 {
+      margin-bottom: 1.5rem;
+      font-size: clamp(3.4rem, 8vw, 7.4rem);
+    }
+
+    .projects-hero .lead {
+      max-width: 760px;
+      margin-bottom: 0;
+    }
+
+    .projects-introduction {
+      background:
+        radial-gradient(
+          circle at 20% 0%,
+          rgba(240, 178, 74, 0.08),
+          transparent 30rem
+        ),
+        linear-gradient(
+          180deg,
+          #090b0f,
+          #0d1016
+        );
+    }
+
+    .projects-introduction .section-inner {
+      max-width: 860px;
+    }
+
+    .project-section {
+      background:
+        radial-gradient(
+          circle at 85% 10%,
+          rgba(94, 168, 255, 0.06),
+          transparent 30rem
+        ),
+        var(--background);
+    }
+
+    .project-section-alt {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #090b0f
+        );
+    }
+
+    .project-layout {
+      display: grid;
+      align-items: center;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+    }
+
+    .project-layout.reverse {
+      grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
+    }
+
+    .project-layout.reverse .project-visual {
+      order: 2;
+    }
+
+    .project-layout.reverse .project-copy {
+      order: 1;
+    }
+
+    .project-copy h2 {
+      margin-bottom: 1.2rem;
+    }
+
+    .project-copy h3 {
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+      color: var(--gold-soft);
+    }
+
+    .project-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-status {
+      display: inline-flex;
+      margin-bottom: 1.3rem;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid rgba(240, 178, 74, 0.26);
+      border-radius: 999px;
+      background: rgba(240, 178, 74, 0.06);
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .project-visual {
+      position: relative;
+    }
+
+    .project-visual::before {
+      position: absolute;
+      inset: -12px;
+      z-index: -1;
+      border: 1px solid rgba(240, 178, 74, 0.16);
+      border-radius: calc(var(--radius-large) + 8px);
+      content: "";
+    }
+
+    .project-visual img {
+      width: 100%;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      box-shadow:
+        0 32px 85px rgba(0, 0, 0, 0.5),
+        0 0 45px rgba(240, 178, 74, 0.05);
+      object-fit: cover;
+    }
+
+    .book-visual {
+      display: grid;
+      min-height: 620px;
+      padding: clamp(2rem, 5vw, 4rem);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        radial-gradient(
+          circle at 50% 22%,
+          rgba(94, 168, 255, 0.14),
+          transparent 19rem
+        ),
+        linear-gradient(
+          145deg,
+          #151923,
+          #080a0e
+        );
+      box-shadow: 0 32px 85px rgba(0, 0, 0, 0.5);
+      align-content: center;
+      text-align: center;
+    }
+
+    .book-visual-yellow {
+      background:
+        radial-gradient(
+          circle at 50% 22%,
+          rgba(240, 178, 74, 0.18),
+          transparent 20rem
+        ),
+        linear-gradient(
+          145deg,
+          #1b160d,
+          #090806
+        );
+    }
+
+    .book-symbol {
+      display: grid;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 2rem;
+      border: 1px solid rgba(240, 178, 74, 0.26);
+      border-radius: 50%;
+      background:
+        radial-gradient(
+          circle,
+          rgba(240, 178, 74, 0.12),
+          transparent 70%
+        );
+      color: var(--gold-soft);
+      font-size: 3rem;
+      place-items: center;
+    }
+
+    .book-visual h3 {
+      margin-bottom: 0.7rem;
+      font-size: clamp(2.2rem, 4vw, 4rem);
+    }
+
+    .book-visual p {
+      max-width: 460px;
+      margin-right: auto;
+      margin-bottom: 0;
+      margin-left: auto;
+      color: var(--text-secondary);
+      font-style: italic;
+    }
+
+    .book-pair-section {
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(255, 90, 31, 0.07),
+          transparent 30rem
+        ),
+        #080a0f;
+    }
+
+    .book-pair-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .book-card {
+      position: relative;
+      padding: clamp(2rem, 5vw, 3.5rem);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.04),
+          rgba(255, 255, 255, 0.012)
+        ),
+        var(--background-card);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .book-card::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 4px;
+      content: "";
+    }
+
+    .book-card-black::before {
+      background: linear-gradient(
+        90deg,
+        var(--storm-deep),
+        var(--storm-bright)
+      );
+    }
+
+    .book-card-yellow::before {
+      background: linear-gradient(
+        90deg,
+        var(--gold),
+        var(--gold-soft)
+      );
+    }
+
+    .book-card h3 {
+      font-size: clamp(1.9rem, 3vw, 2.8rem);
+    }
+
+    .book-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .mirror-section {
+      background:
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(255, 90, 31, 0.08),
+          transparent 30rem
+        ),
+        radial-gradient(
+          circle at 90% 55%,
+          rgba(94, 168, 255, 0.06),
+          transparent 30rem
+        ),
+        #0b0e13;
+    }
+
+    .mirror-introduction {
+      max-width: 900px;
+      margin-bottom: 4rem;
+    }
+
+    .mirror-introduction p:last-child {
+      margin-bottom: 0;
+    }
+
+    .tarot-gallery {
+      display: grid;
+      gap: 1.3rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .tarot-gallery figure {
+      margin: 0;
+    }
+
+    .tarot-gallery img {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      box-shadow: 0 22px 55px rgba(0, 0, 0, 0.42);
+      object-fit: cover;
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .tarot-gallery img:hover {
+      border-color: rgba(240, 178, 74, 0.34);
+      box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.55),
+        0 0 30px rgba(240, 178, 74, 0.05);
+      transform: translateY(-5px);
+    }
+
+    .tarot-gallery figcaption {
+      padding-top: 0.8rem;
+      color: var(--text-muted);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+
+    .extra-arcana-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .extra-arcana-intro {
+      max-width: 880px;
+      margin-bottom: 4rem;
+    }
+
+    .extra-arcana-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .arcana-card {
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background: var(--background-card);
+      box-shadow: 0 28px 75px rgba(0, 0, 0, 0.42);
+    }
+
+    .arcana-card img {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+    }
+
+    .arcana-card-copy {
+      padding: 2rem;
+    }
+
+    .arcana-card-copy h3 {
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+    }
+
+    .arcana-card-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .pawn-section {
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(240, 178, 74, 0.08),
+          transparent 30rem
+        ),
+        var(--background);
+    }
+
+    .pawn-introduction {
+      max-width: 860px;
+      margin-bottom: 4rem;
+    }
+
+    .pawn-grid {
+      display: grid;
+      align-items: stretch;
+      gap: 2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pawn-card {
+      display: grid;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.04),
+          rgba(255, 255, 255, 0.01)
+        ),
+        var(--background-card);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.4);
+      grid-template-rows: auto 1fr;
+    }
+
+    .pawn-card img {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+    }
+
+    .pawn-copy {
+      padding: 2rem;
+    }
+
+    .pawn-copy h3 {
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+    }
+
+    .pawn-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .development-section {
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(255, 90, 31, 0.12),
+          transparent 32rem
+        ),
+        #090a0e;
+      text-align: center;
+    }
+
+    .development-section p:not(.section-label) {
+      max-width: 720px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (max-width: 980px) {
+      .project-layout,
+      .project-layout.reverse {
+        grid-template-columns: 1fr;
+      }
+
+      .project-layout.reverse .project-visual,
+      .project-layout.reverse .project-copy {
+        order: initial;
+      }
+
+      .book-pair-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tarot-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .projects-hero {
+        min-height: 620px;
+      }
+
+      .projects-hero-inner {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+
+      .extra-arcana-grid,
+      .pawn-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tarot-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .book-visual {
+        min-height: 500px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================================================
+       SITE HEADER
+       ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="studio-credit studio-credit-top">
+      <span>Powered by</span>
+
+      <a
+        href="https://ghostwritestudios.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GhostWrite Studios
+      </a>
+    </div>
+
+    <div class="header-inner">
+
+      <a
+        class="site-identity"
+        href="../index.html"
+        aria-label="Synchronic Self Theory home"
+      >
+        <span class="site-name">
+          Synchronic Self Theory
+        </span>
+
+        <span class="site-motto">
+          As within, so without.
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        id="primary-navigation"
+        class="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a href="journal.html">
+          Journal
+        </a>
+
+        <a href="tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="runes.html">
+          Rune Casting
+        </a>
+
+        <a
+          class="active"
+          href="projects.html"
+        >
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+         ====================================================== -->
+
+    <section class="projects-hero">
+
+      <div class="projects-hero-inner">
+
+        <div class="projects-hero-copy">
+
+          <p class="eyebrow">
+            Books, philosophy, and symbolic systems
+          </p>
+
+          <h1>
+            Projects
+          </h1>
+
+          <p class="lead">
+            Synchronic Self Theory isn’t confined to one book or one
+            practice. It’s being developed through philosophical work,
+            lived experience, original tarot, and symbolic systems
+            designed to leave room for the reader’s own reflection.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         INTRODUCTION
+         ====================================================== -->
+
+    <section class="section projects-introduction">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          From Theory to Experience
+        </p>
+
+        <h2>
+          An idea becomes meaningful when it survives contact with life.
+        </h2>
+
+        <p class="lead">
+          The projects developed through Synchronic Self Theory explore
+          the relationship between inner psychology and outer
+          experience. Some explain the framework. Others examine what
+          happens when that framework is lived rather than merely
+          understood.
+        </p>
+
+        <p>
+          Together, the books and tarot system form different entrances
+          into the same question: what happens when consciousness
+          recognizes itself through the patterns it encounters?
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         THE BLACK BOOK
+         ====================================================== -->
+
+    <section class="section project-section">
+
+      <div class="section-inner project-layout">
+
+        <div class="project-visual">
+
+          <div class="book-visual">
+
+            <div
+              class="book-symbol"
+              aria-hidden="true"
+            >
+              ◉
+            </div>
+
+            <h3>
+              The Black Book
+            </h3>
+
+            <p>
+              The theory, structure, and psychological architecture
+              of the Synchronic Self.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="project-copy">
+
+          <span class="project-status">
+            Manuscript in Development
+          </span>
+
+          <p class="section-label">
+            The Theory
+          </p>
+
+          <h2>
+            The Black Book
+          </h2>
+
+          <p class="lead">
+            <em>The Black Book</em> is the theoretical foundation of
+            Synchronic Self Theory. It maps the psyche as a
+            self-regulating system shaped by perception, projection,
+            recognition, and reintegration.
+          </p>
+
+          <p>
+            The book examines synchronicity as conscious feedback,
+            drawing from Jungian psychology, archetypal systems,
+            reflective dialogue, and lived observation. It isn’t
+            presented as doctrine, revelation, or an instruction to
+            assign supernatural meaning to every coincidence.
+          </p>
+
+          <p>
+            Instead, it asks readers to consider how internal patterns
+            shape the world they perceive, how relationships become
+            mirrors, and how recognizing projection can move the psyche
+            toward greater coherence.
+          </p>
+
+          <h3>
+            A map of the system
+          </h3>
+
+          <p>
+            The Black Book establishes the Integration Cycle, the
+            Synchronic Field, the archetypal ecosystem, and the
+            relationship between inner state and outer reflection.
+            It’s the framework beneath the philosophy.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         THE YELLOW BOOK
+         ====================================================== -->
+
+    <section class="section project-section project-section-alt">
+
+      <div class="section-inner project-layout reverse">
+
+        <div class="project-visual">
+
+          <div class="book-visual book-visual-yellow">
+
+            <div
+              class="book-symbol"
+              aria-hidden="true"
+            >
+              ✦
+            </div>
+
+            <h3>
+              The Yellow Book
+            </h3>
+
+            <p>
+              The lived experience of practicing the theory while
+              still inside the world it describes.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="project-copy">
+
+          <span class="project-status">
+            Future Companion
+          </span>
+
+          <p class="section-label">
+            The Experience
+          </p>
+
+          <h2>
+            The Yellow Book
+          </h2>
+
+          <p class="lead">
+            If <em>The Black Book</em> is the theory,
+            <em>The Yellow Book</em> will be the lived experience.
+          </p>
+
+          <p>
+            It’ll explore what happens after the framework has been
+            understood and the work has to continue in ordinary life.
+            Insight doesn’t remove conflict, uncertainty, attachment,
+            ambition, grief, or contradiction. It changes how those
+            experiences are recognized and carried.
+          </p>
+
+          <p>
+            The Yellow Book won’t attempt to prove the theory again.
+            It’ll document the tension between understanding a pattern
+            intellectually and embodying that understanding through
+            decisions, relationships, work, survival, and creative
+            practice.
+          </p>
+
+          <h3>
+            Theory meets consequence
+          </h3>
+
+          <p>
+            The companion book will focus on the part no clean diagram
+            can fully capture: how integration behaves when life keeps
+            moving, the mirror keeps answering, and the person looking
+            into it is still changing.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         BOOK RELATIONSHIP
+         ====================================================== -->
+
+    <section class="section book-pair-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Two Parts of One Work
+          </p>
+
+          <h2>
+            One explains the map. The other walks the territory.
+          </h2>
+
+        </div>
+
+        <div class="book-pair-grid">
+
+          <article class="book-card book-card-black">
+
+            <p class="section-label">
+              The Black Book
+            </p>
+
+            <h3>
+              The structure of the theory
+            </h3>
+
+            <p>
+              The psychological model, the Integration Cycle,
+              archetypal dynamics, synchronic feedback, and the
+              relationship between the psyche and the world it
+              interprets.
+            </p>
+
+          </article>
+
+          <article class="book-card book-card-yellow">
+
+            <p class="section-label">
+              The Yellow Book
+            </p>
+
+            <h3>
+              The theory as lived experience
+            </h3>
+
+            <p>
+              What the framework looks like when it moves out of
+              abstraction and into relationships, uncertainty,
+              survival, creativity, choice, contradiction, and
+              continued individuation.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         MIRROR'S EDGE TAROT
+         ====================================================== -->
+
+    <section
+      id="mirrors-edge-tarot"
+      class="section mirror-section"
+    >
+
+      <div class="section-inner">
+
+        <div class="mirror-introduction">
+
+          <span class="project-status">
+            In Development
+          </span>
+
+          <p class="section-label">
+            An Expanded Jungian Tarot System
+          </p>
+
+          <h2>
+            The Mirror’s Edge Tarot
+          </h2>
+
+          <p class="lead">
+            The Mirror’s Edge Tarot translates Synchronic Self Theory
+            into an original symbolic system rooted in Wonderland,
+            individuation, paradox, projection, shadow, and the
+            relationship between the dreamer and the dream.
+          </p>
+
+          <p>
+            It isn’t a standard tarot deck with Wonderland characters
+            placed over familiar meanings. The structure has been
+            rebuilt around a Jungian journey through reflection,
+            fragmentation, descent, recognition, and post-individuation.
+          </p>
+
+          <p>
+            The traditional suits become Mirrors, Keys, Hats, Crowns,
+            and Clocks. Each explores a different realm of experience,
+            including perception, will, emotion, embodiment, and
+            synchronicity.
+          </p>
+
+        </div>
+
+
+        <div class="tarot-gallery">
+
+          <figure>
+            <img
+              src="../card-1.png"
+              alt="The Four of Mirrors tarot card featuring the Cheshire Cat breaking through a central mirror"
+              loading="lazy"
+            >
+
+            <figcaption>
+              Four of Mirrors
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="../card-2.png"
+              alt="The Six of Clocks tarot card featuring pocket watches hanging from a dark tree"
+              loading="lazy"
+            >
+
+            <figcaption>
+              Six of Clocks
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="../card-3.png"
+              alt="The Phoenix tarot card showing a fiery phoenix rising above a burning teacup"
+              loading="lazy"
+            >
+
+            <figcaption>
+              The Phoenix
+            </figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         EXTRA ARCANA
+         ====================================================== -->
+
+    <section class="section extra-arcana-section">
+
+      <div class="section-inner">
+
+        <div class="extra-arcana-intro">
+
+          <p class="section-label">
+            Beyond the Traditional Arcana
+          </p>
+
+          <h2>
+            The journey doesn’t end with The World.
+          </h2>
+
+          <p class="lead">
+            The Mirror’s Edge Tarot includes additional arcana because
+            individuation doesn’t end at completion. The deck continues
+            beyond the familiar sequence to explore descent and the
+            changed identity that emerges after integration.
+          </p>
+
+        </div>
+
+
+        <div class="extra-arcana-grid">
+
+          <article class="arcana-card">
+
+            <img
+              src="../card-4.png"
+              alt="The Rabbit Hole tarot card showing a glowing Cheshire Cat face hidden inside a dark forest structure"
+              loading="lazy"
+            >
+
+            <div class="arcana-card-copy">
+
+              <p class="section-label">
+                XXII
+              </p>
+
+              <h3>
+                The Rabbit Hole
+              </h3>
+
+              <p>
+                The Rabbit Hole represents the Jungian descent into
+                madness. It’s the movement beneath the conscious
+                surface, where familiar structures stop functioning and
+                the seeker enters the disorienting territory of shadow,
+                symbolism, contradiction, and unconscious material.
+              </p>
+
+              <p>
+                This isn’t madness treated as spectacle or failure. It’s
+                the dangerous descent that may become transformative
+                when the seeker remains capable of recognition,
+                grounding, and return.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="arcana-card">
+
+            <img
+              src="../card-5.png"
+              alt="The Outlier tarot card showing an unusual black figure standing apart from a distant crowd"
+              loading="lazy"
+            >
+
+            <div class="arcana-card-copy">
+
+              <p class="section-label">
+                XXIII
+              </p>
+
+              <h3>
+                The Outlier
+              </h3>
+
+              <p>
+                The Outlier represents post-individuation: the
+                realization that you’re no longer the same as everybody
+                else, and that returning to your former identity would
+                require abandoning what you’ve integrated.
+              </p>
+
+              <p>
+                It isn’t a card of superiority. It’s a card of
+                difference consciously accepted. The seeker has
+                returned from the descent, but can’t pretend the journey
+                didn’t change how they see themselves, other people, or
+                the world.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         TWO PAWNS
+         ====================================================== -->
+
+    <section class="section pawn-section">
+
+      <div class="section-inner">
+
+        <div class="pawn-introduction">
+
+          <p class="section-label">
+            Two Beginnings
+          </p>
+
+          <h2>
+            The deck contains two Pawns for opposite Fool’s journeys.
+          </h2>
+
+          <p class="lead">
+            A pawn can appear powerless at the beginning of the game,
+            but it’s also the only piece capable of becoming something
+            entirely different. The two Pawn cards represent opposite
+            directions of initiation.
+          </p>
+
+          <p>
+            One journey begins through awakening: becoming conscious of
+            the board, the rules, and the possibility of transformation.
+            The other begins through rebellion: rejecting the assigned
+            role, resisting the system, and moving through experience by
+            refusing to remain what the board expects.
+          </p>
+
+        </div>
+
+
+        <div class="pawn-grid">
+
+          <article class="pawn-card">
+
+            <img
+              src="../pawn-1.png"
+              alt="The Pawn tarot card showing a dark pawn beneath a streetlight with the word Awake written across it"
+              loading="lazy"
+            >
+
+            <div class="pawn-copy">
+
+              <p class="section-label">
+                The Awakened Pawn
+              </p>
+
+              <h3>
+                The Fool’s journey through recognition
+              </h3>
+
+              <p>
+                This Pawn begins by waking up inside the system. The
+                seeker recognizes that they’re both player and piece,
+                subject to the board while still capable of conscious
+                movement.
+              </p>
+
+              <p>
+                Its journey is shaped by awareness, observation, and the
+                gradual realization that innocence doesn’t have to mean
+                blindness.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="pawn-card">
+
+            <img
+              src="../pawn-2.png"
+              alt="The alternate Pawn tarot card showing a rebel pawn on a chessboard surrounded by symbolic imagery"
+              loading="lazy"
+            >
+
+            <div class="pawn-copy">
+
+              <p class="section-label">
+                The Rebel Pawn
+              </p>
+
+              <h3>
+                The Fool’s journey through refusal
+              </h3>
+
+              <p>
+                This Pawn begins by rejecting the role it’s been given.
+                The seeker doesn’t awaken through cooperation with the
+                board, but through resistance to its assumptions,
+                expectations, and inherited rules.
+              </p>
+
+              <p>
+                Its journey is less orderly and more confrontational,
+                but the destination remains transformation. Rebellion
+                becomes useful when it breaks false structure without
+                becoming another identity prison.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         DEVELOPMENT GALLERY
+         ====================================================== -->
+
+    <section class="section mirror-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Visual Development
+          </p>
+
+          <h2>
+            The deck is still finding its final reflection.
+          </h2>
+
+          <p>
+            The artwork is being developed across multiple visual
+            approaches while the symbolic system, card structure, and
+            guidebook continue taking shape.
+          </p>
+
+        </div>
+
+        <div class="tarot-gallery">
+
+          <figure>
+            <img
+              src="../outlier.png"
+              alt="An early watercolor-style concept for The Outlier showing a black figure standing apart from a crowd"
+              loading="lazy"
+            >
+
+            <figcaption>
+              Early Outlier concept
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="../card-5.png"
+              alt="The framed tarot version of The Outlier card"
+              loading="lazy"
+            >
+
+            <figcaption>
+              The Outlier card treatment
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="../card-4.png"
+              alt="The Rabbit Hole tarot card from The Mirror's Edge Tarot"
+              loading="lazy"
+            >
+
+            <figcaption>
+              The Rabbit Hole
+            </figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         CLOSING
+         ====================================================== -->
+
+    <section class="section development-section">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Work in Progress
+        </p>
+
+        <h2>
+          These projects are still becoming what they’re meant to be.
+        </h2>
+
+        <p>
+          The Black Book, The Yellow Book, and The Mirror’s Edge Tarot
+          are being developed as connected but distinct expressions of
+          Synchronic Self Theory. Updates, essays, visual development,
+          and future publication information will be shared through the
+          journal.
+        </p>
+
+        <a
+          class="button button-primary"
+          href="journal.html"
+        >
+          Visit the Journal
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================
+       SITE FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <a
+          class="footer-site-name"
+          href="../index.html"
+        >
+          Synchronic Self Theory
+        </a>
+
+        <p>
+          As above, so below.<br>
+          As within, so without.
+        </p>
+
+      </div>
+
+      <nav
+        class="footer-navigation"
+        aria-label="Footer navigation"
+      >
+        <a href="journal.html">
+          Journal
+        </a>
+
+        <a href="tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="runes.html">
+          Rune Casting
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+      </nav>
+
+      <div class="footer-credit">
+
+        <p>
+          Powered by
+          <a
+            href="https://ghostwritestudios.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GhostWrite Studios
+          </a>
+        </p>
+
+        <p>
+          Original philosophy and writing by Rory Kelly.
+        </p>
+
+        <p>
+          &copy; 2026 Rory Kelly. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================
+       MOBILE NAVIGATION
+       ====================================================== -->
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    const primaryNavigation = document.querySelector(
+      ".primary-navigation"
+    );
+
+    if (menuToggle && primaryNavigation) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen =
+          menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+        primaryNavigation.classList.toggle(
+          "navigation-open"
+        );
+      });
+    }
+  </script>
+
+</body>
+</html>

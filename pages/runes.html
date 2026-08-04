@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Rune Casting | Synchronic Self Theory
+  </title>
+
+  <meta
+    name="description"
+    content="Explore the history and symbolism of runes, view Rory Kelly's ceramic and lapis lazuli rune sets, and inquire about online rune casting through Synchronic Self Theory."
+  >
+
+  <meta
+    name="keywords"
+    content="rune casting, online rune reading, Elder Futhark, rune history, Odin runes, Freyja runes, ceramic runes, lapis lazuli runes, Synchronic Self Theory, Rory Kelly"
+  >
+
+  <meta name="author" content="Rory Kelly">
+
+  <meta
+    property="og:title"
+    content="Rune Casting | Synchronic Self Theory"
+  >
+
+  <meta
+    property="og:description"
+    content="History, symbolism, personal rune sets, and online rune casting."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://synchronicselftheory.com/pages/runes.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://synchronicselftheory.com/runes-1.jpeg"
+  >
+
+  <link
+    rel="canonical"
+    href="https://synchronicselftheory.com/pages/runes.html"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../styles.css"
+  >
+
+  <style>
+    /* ======================================================
+       RUNE CASTING PAGE
+       These styles apply only to pages/runes.html.
+       ====================================================== */
+
+    .runes-hero {
+      position: relative;
+      display: grid;
+      min-height: 690px;
+      overflow: hidden;
+      place-items: center;
+      isolation: isolate;
+    }
+
+    .runes-hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background-image: url("../runes-1.jpeg");
+      background-position: center 48%;
+      background-size: cover;
+      content: "";
+      filter:
+        brightness(0.46)
+        contrast(1.08)
+        saturate(0.85);
+      transform: scale(1.025);
+    }
+
+    .runes-hero::after {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 6, 9, 0.98) 0%,
+          rgba(5, 6, 9, 0.82) 48%,
+          rgba(5, 6, 9, 0.48) 78%,
+          rgba(5, 6, 9, 0.68) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(5, 6, 9, 0.12) 0%,
+          rgba(5, 6, 9, 0.35) 55%,
+          rgba(5, 6, 9, 0.98) 100%
+        );
+      content: "";
+    }
+
+    .runes-hero-inner {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+      padding: 8rem 1.5rem;
+    }
+
+    .runes-hero-copy {
+      max-width: 860px;
+    }
+
+    .runes-hero h1 {
+      margin-bottom: 1.5rem;
+      font-size: clamp(3.4rem, 8vw, 7.2rem);
+    }
+
+    .runes-hero .lead {
+      max-width: 760px;
+      margin-bottom: 0;
+    }
+
+    .rune-introduction {
+      background:
+        radial-gradient(
+          circle at 18% 0%,
+          rgba(94, 168, 255, 0.08),
+          transparent 29rem
+        ),
+        linear-gradient(
+          180deg,
+          #090b0f,
+          #0d1016
+        );
+    }
+
+    .rune-introduction .section-inner {
+      max-width: 880px;
+    }
+
+    .history-section {
+      background:
+        radial-gradient(
+          circle at 88% 15%,
+          rgba(240, 178, 74, 0.07),
+          transparent 30rem
+        ),
+        var(--background);
+    }
+
+    .history-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .history-card {
+      position: relative;
+      padding: 2.2rem;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.042),
+          rgba(255, 255, 255, 0.012)
+        ),
+        var(--background-card);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .history-card::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 4px;
+      background: linear-gradient(
+        90deg,
+        var(--storm),
+        var(--gold)
+      );
+      content: "";
+    }
+
+    .history-symbol {
+      display: grid;
+      width: 58px;
+      height: 58px;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(240, 178, 74, 0.22);
+      border-radius: 50%;
+      background:
+        radial-gradient(
+          circle,
+          rgba(240, 178, 74, 0.12),
+          transparent 72%
+        );
+      color: var(--gold-soft);
+      font-size: 1.7rem;
+      place-items: center;
+    }
+
+    .history-card h3 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+    }
+
+    .history-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .myth-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .myth-layout {
+      display: grid;
+      align-items: start;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 0.92fr)
+        minmax(0, 1.08fr);
+    }
+
+    .myth-panel {
+      padding: clamp(2rem, 4vw, 3.2rem);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        radial-gradient(
+          circle at 80% 10%,
+          rgba(94, 168, 255, 0.1),
+          transparent 18rem
+        ),
+        var(--background-card);
+      box-shadow: 0 28px 75px rgba(0, 0, 0, 0.38);
+    }
+
+    .myth-panel-freyja {
+      background:
+        radial-gradient(
+          circle at 80% 10%,
+          rgba(240, 178, 74, 0.12),
+          transparent 18rem
+        ),
+        var(--background-card);
+    }
+
+    .myth-panel h2 {
+      font-size: clamp(2.1rem, 4vw, 3.8rem);
+    }
+
+    .myth-panel h3 {
+      margin-top: 2rem;
+      color: var(--gold-soft);
+    }
+
+    .myth-panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .distinction-note {
+      margin-top: 2rem;
+      padding: 1.4rem 1.5rem;
+      border-left: 3px solid var(--gold);
+      border-radius: 0 var(--radius-small) var(--radius-small) 0;
+      background: rgba(240, 178, 74, 0.06);
+    }
+
+    .distinction-note p {
+      margin-bottom: 0;
+      color: var(--text-primary);
+      font-size: 0.96rem;
+    }
+
+    .sets-section {
+      background:
+        radial-gradient(
+          circle at 15% 10%,
+          rgba(94, 168, 255, 0.08),
+          transparent 28rem
+        ),
+        radial-gradient(
+          circle at 90% 65%,
+          rgba(240, 178, 74, 0.06),
+          transparent 27rem
+        ),
+        var(--background);
+    }
+
+    .sets-introduction {
+      max-width: 900px;
+      margin-bottom: 4rem;
+    }
+
+    .set-feature {
+      display: grid;
+      margin-bottom: 5rem;
+      align-items: center;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 1.08fr)
+        minmax(0, 0.92fr);
+    }
+
+    .set-feature.reverse {
+      grid-template-columns:
+        minmax(0, 0.92fr)
+        minmax(0, 1.08fr);
+    }
+
+    .set-feature.reverse .set-gallery {
+      order: 2;
+    }
+
+    .set-feature.reverse .set-copy {
+      order: 1;
+    }
+
+    .set-gallery {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .set-gallery figure {
+      margin: 0;
+    }
+
+    .set-gallery figure:first-child {
+      grid-column: 1 / -1;
+    }
+
+    .set-gallery img {
+      width: 100%;
+      height: 100%;
+      min-height: 250px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      box-shadow: 0 24px 65px rgba(0, 0, 0, 0.42);
+      object-fit: cover;
+    }
+
+    .set-gallery figure:first-child img {
+      aspect-ratio: 4 / 3;
+    }
+
+    .set-gallery figure:not(:first-child) img {
+      aspect-ratio: 4 / 5;
+    }
+
+    .set-copy {
+      padding: clamp(1rem, 3vw, 2rem);
+    }
+
+    .set-copy h2 {
+      font-size: clamp(2.2rem, 4.5vw, 4.1rem);
+    }
+
+    .set-copy h3 {
+      margin-top: 2rem;
+      color: var(--gold-soft);
+    }
+
+    .set-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .set-label {
+      display: inline-flex;
+      margin-bottom: 1.2rem;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid rgba(240, 178, 74, 0.24);
+      border-radius: 999px;
+      background: rgba(240, 178, 74, 0.06);
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .comparison-section {
+      background:
+        linear-gradient(
+          180deg,
+          #0d1016,
+          #080a0f
+        );
+    }
+
+    .comparison-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .comparison-card {
+      padding: clamp(2rem, 4vw, 3rem);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-large);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.035),
+          rgba(255, 255, 255, 0.009)
+        ),
+        var(--background-raised);
+      box-shadow: 0 24px 65px rgba(0, 0, 0, 0.32);
+    }
+
+    .comparison-card h3 {
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+    }
+
+    .comparison-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .casting-section {
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(255, 90, 31, 0.1),
+          transparent 32rem
+        ),
+        var(--background);
+    }
+
+    .casting-layout {
+      display: grid;
+      align-items: start;
+      gap: 4rem;
+      grid-template-columns:
+        minmax(0, 0.85fr)
+        minmax(0, 1.15fr);
+    }
+
+    .casting-process {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .casting-step {
+      display: grid;
+      padding: 1.5rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-medium);
+      background: var(--background-card);
+      gap: 1.2rem;
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .casting-step-number {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(240, 178, 74, 0.24);
+      border-radius: 50%;
+      color: var(--gold);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.76rem;
+      font-weight: 800;
+      place-items: center;
+    }
+
+    .casting-step h3 {
+      margin-bottom: 0.45rem;
+      font-size: 1.25rem;
+    }
+
+    .casting-step p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .service-cta {
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(94, 168, 255, 0.13),
+          transparent 34rem
+        ),
+        #090a0e;
+      text-align: center;
+    }
+
+    .service-cta p:not(.section-label) {
+      max-width: 720px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .service-cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 980px) {
+      .history-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .myth-layout,
+      .set-feature,
+      .set-feature.reverse,
+      .casting-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .set-feature.reverse .set-gallery,
+      .set-feature.reverse .set-copy {
+        order: initial;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .runes-hero {
+        min-height: 600px;
+      }
+
+      .runes-hero-inner {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .set-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .set-gallery figure:first-child {
+        grid-column: auto;
+      }
+
+      .set-gallery figure:first-child img,
+      .set-gallery figure:not(:first-child) img {
+        aspect-ratio: 4 / 3;
+      }
+
+      .service-cta-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .service-cta-actions .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================================================
+       SITE HEADER
+       ====================================================== -->
+
+  <header class="site-header">
+
+    <div class="studio-credit studio-credit-top">
+      <span>Powered by</span>
+
+      <a
+        href="https://ghostwritestudios.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GhostWrite Studios
+      </a>
+    </div>
+
+    <div class="header-inner">
+
+      <a
+        class="site-identity"
+        href="../index.html"
+        aria-label="Synchronic Self Theory home"
+      >
+        <span class="site-name">
+          Synchronic Self Theory
+        </span>
+
+        <span class="site-motto">
+          As within, so without.
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        id="primary-navigation"
+        class="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a href="journal.html">
+          Journal
+        </a>
+
+        <a href="tarot.html">
+          Tarot Readings
+        </a>
+
+        <a
+          class="active"
+          href="runes.html"
+        >
+          Rune Casting
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+         ====================================================== -->
+
+    <section class="runes-hero">
+
+      <div class="runes-hero-inner">
+
+        <div class="runes-hero-copy">
+
+          <p class="eyebrow">
+            Ancient language, symbolic reflection
+          </p>
+
+          <h1>
+            Rune Casting
+          </h1>
+
+          <p class="lead">
+            Runes began as letters, but they’ve endured as symbols
+            capable of carrying language, memory, mythology, and
+            meaning across centuries.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         INTRODUCTION
+         ====================================================== -->
+
+    <section class="section rune-introduction">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          More Than Fortune Telling
+        </p>
+
+        <h2>
+          A rune doesn’t dictate an outcome. It gives the question
+          another shape.
+        </h2>
+
+        <p class="lead">
+          Rune casting uses a limited symbolic vocabulary to examine
+          movement, conflict, timing, inheritance, exchange, disruption,
+          and consequence. The value isn’t in pretending a stone has
+          removed uncertainty. It’s in letting the cast reveal a pattern
+          that may be difficult to recognize through ordinary thought.
+        </p>
+
+        <p>
+          Within Synchronic Self Theory, runes function as reflective
+          tools. The cast becomes a meeting point between the question,
+          the symbols drawn, the reader’s interpretation, and the
+          patterns already active in the questioner’s life.
+        </p>
+
+        <p>
+          That interpretation isn’t meant to replace evidence, personal
+          responsibility, or independent judgment. It’s meant to create
+          perspective. Humanity has already produced plenty of systems
+          that promise certainty while quietly selling confusion.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         HISTORY
+         ====================================================== -->
+
+    <section class="section history-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            A Brief History of Runes
+          </p>
+
+          <h2>
+            Before they were cast, runes were written.
+          </h2>
+
+          <p>
+            The historical runic alphabets developed among
+            Germanic-speaking peoples. They were used for names,
+            memorials, ownership, communication, ritual language, and
+            inscriptions carved into materials that could survive the
+            hands using them.
+          </p>
+
+        </div>
+
+        <div class="history-grid">
+
+          <article class="history-card">
+
+            <div
+              class="history-symbol"
+              aria-hidden="true"
+            >
+              ᚠ
+            </div>
+
+            <h3>
+              Elder Futhark
+            </h3>
+
+            <p>
+              Elder Futhark is the earliest commonly classified runic
+              alphabet. Its name comes from its first six characters,
+              and its twenty-four runes were used across parts of the
+              Germanic world during the early centuries of the Common
+              Era.
+            </p>
+
+          </article>
+
+
+          <article class="history-card">
+
+            <div
+              class="history-symbol"
+              aria-hidden="true"
+            >
+              ᚢ
+            </div>
+
+            <h3>
+              Language and symbol
+            </h3>
+
+            <p>
+              Runes represented sounds and formed written language.
+              Their names also carried concepts, allowing a character
+              to function as both a letter and a symbolic idea. That
+              dual role helped later divinatory traditions grow around
+              them.
+            </p>
+
+          </article>
+
+
+          <article class="history-card">
+
+            <div
+              class="history-symbol"
+              aria-hidden="true"
+            >
+              ᚱ
+            </div>
+
+            <h3>
+              Surviving inscriptions
+            </h3>
+
+            <p>
+              Runic inscriptions appear on stone, metal, wood, bone,
+              weapons, jewelry, and personal objects. Some are
+              monumental. Others are surprisingly ordinary, because
+              ancient people also had errands, property, jokes, and
+              practical lives.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         ODIN AND FREYJA
+         ====================================================== -->
+
+    <section class="section myth-section">
+
+      <div class="section-inner myth-layout">
+
+        <article class="myth-panel">
+
+          <p class="section-label">
+            Odin and the Cost of Knowledge
+          </p>
+
+          <h2>
+            Wisdom is never portrayed as free.
+          </h2>
+
+          <p>
+            Odin’s missing eye represents one of the best-known
+            sacrifices in Norse mythology. He gives an eye for a drink
+            from Mímir’s well, exchanging ordinary sight for deeper
+            wisdom.
+          </p>
+
+          <p>
+            His acquisition of the runes is told through a separate
+            ordeal. In <em>Hávamál</em>, Odin hangs wounded on the world
+            tree for nine nights, offering himself to himself until he
+            perceives and takes up the runes.
+          </p>
+
+          <h3>
+            Sacrifice changes perception
+          </h3>
+
+          <p>
+            The two stories share a central principle: knowledge
+            transforms the knower because something must be surrendered
+            to receive it. The eye represents how we see. The hanging
+            represents the collapse of the identity that believed it
+            already understood.
+          </p>
+
+          <div class="distinction-note">
+
+            <p>
+              Odin’s eye and Odin’s discovery of the runes belong to
+              related themes, but they aren’t the same mythological
+              event.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="myth-panel myth-panel-freyja">
+
+          <p class="section-label">
+            Freyja and Magical Knowledge
+          </p>
+
+          <h2>
+            Intuition has its own discipline.
+          </h2>
+
+          <p>
+            Freyja is associated with seiðr, a form of Norse magical
+            practice connected with altered perception, fate, desire,
+            influence, and hidden knowledge. Tradition credits her with
+            teaching this art to the Æsir.
+          </p>
+
+          <p>
+            Modern rune practice often places Freyja beside the runes
+            because she represents intuition, magic, sovereignty, and
+            receptive knowledge. Historically, though, the surviving
+            sources don’t describe a separate set of “Freyja’s runes”
+            in the same direct way that Odin is tied to winning the
+            runes.
+          </p>
+
+          <h3>
+            Two approaches to knowing
+          </h3>
+
+          <p>
+            Symbolically, Odin and Freyja offer complementary models.
+            Odin seeks knowledge through ordeal, sacrifice, language,
+            and conscious pursuit. Freyja represents knowledge reached
+            through intuition, embodiment, relationship, desire, and
+            the willingness to enter uncertain states.
+          </p>
+
+          <p>
+            Rune casting can hold both. It requires the discipline to
+            understand the symbols and the intuition to recognize how
+            those symbols speak to the question being asked.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         PERSONAL SETS
+         ====================================================== -->
+
+    <section class="section sets-section">
+
+      <div class="section-inner">
+
+        <div class="sets-introduction">
+
+          <p class="section-label">
+            The Sets I Work With
+          </p>
+
+          <h2>
+            Material changes the character of a casting.
+          </h2>
+
+          <p class="lead">
+            Both of my rune sets use the same symbolic language, but
+            they don’t create the same visual or tactile experience.
+            Clients may choose between the white ceramic set and the
+            blue lapis lazuli set for an online casting.
+          </p>
+
+          <p>
+            The difference isn’t that one set is more powerful. It’s
+            that materials influence tone, attention, and the kind of
+            symbolic atmosphere surrounding the reading.
+          </p>
+
+        </div>
+
+
+        <!-- ==================================================
+             CERAMIC SET
+             ================================================== -->
+
+        <section class="set-feature">
+
+          <div class="set-gallery">
+
+            <figure>
+              <img
+                src="../runes-1.jpeg"
+                alt="White ceramic runes with red symbols arranged above blue lapis lazuli runes with gold symbols"
+                loading="lazy"
+              >
+            </figure>
+
+            <figure>
+              <img
+                src="../runes-3.jpeg"
+                alt="Three white ceramic runes with hand-painted red symbols"
+                loading="lazy"
+              >
+            </figure>
+
+          </div>
+
+          <div class="set-copy">
+
+            <span class="set-label">
+              White Ceramic
+            </span>
+
+            <h2>
+              The ceramic rune set
+            </h2>
+
+            <p class="lead">
+              The white ceramic runes are visually direct. Their pale
+              surface and hand-painted red marks create strong contrast,
+              making the symbols feel exposed, immediate, and difficult
+              to soften through ornament.
+            </p>
+
+            <p>
+              Ceramic begins as earth shaped by hand and transformed
+              through fire. That gives the set a useful symbolic tension:
+              something grounded becomes permanent only after passing
+              through heat.
+            </p>
+
+            <h3>
+              What this set represents
+            </h3>
+
+            <p>
+              I associate the ceramic set with clarity, embodiment,
+              direct questions, practical circumstances, and truths that
+              need to be brought out of abstraction. Its irregularity
+              also matters. These aren’t identical manufactured tokens.
+              The visible human touch makes each rune feel individual.
+            </p>
+
+            <p>
+              This set may suit questions involving daily life,
+              decisions, work, boundaries, relationships, or situations
+              where the central issue needs to be named plainly.
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             LAPIS SET
+             ================================================== -->
+
+        <section class="set-feature reverse">
+
+          <div class="set-gallery">
+
+            <figure>
+              <img
+                src="../runes-4.jpeg"
+                alt="Three polished blue lapis lazuli runes engraved with gold symbols"
+                loading="lazy"
+              >
+            </figure>
+
+            <figure>
+              <img
+                src="../runes-2.jpeg"
+                alt="Three individual lapis lazuli runes displayed on a wooden surface"
+                loading="lazy"
+              >
+            </figure>
+
+          </div>
+
+          <div class="set-copy">
+
+            <span class="set-label">
+              Lapis Lazuli
+            </span>
+
+            <h2>
+              The lapis rune set
+            </h2>
+
+            <p class="lead">
+              The lapis set has a heavier, cooler presence. The blue
+              stone varies from soft clouded bands to deep saturated
+              color, while the gold symbols stand sharply against the
+              surface.
+            </p>
+
+            <p>
+              Lapis lazuli has a long cultural history as a valued
+              ornamental stone associated with status, art, sacred
+              objects, and the night sky. In this set, its visual depth
+              naturally complements questions involving intuition,
+              communication, hidden motives, spiritual development, and
+              long-range patterns.
+            </p>
+
+            <h3>
+              What this set represents
+            </h3>
+
+            <p>
+              I associate the lapis set with depth, pattern recognition,
+              internal conflict, symbolic questions, and situations that
+              can’t be understood through surface information alone.
+            </p>
+
+            <p>
+              It may suit questions involving identity, creativity,
+              purpose, recurring emotional patterns, synchronicity, or
+              the relationship between what someone consciously wants
+              and what they may be projecting beneath that desire.
+            </p>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         COMPARING THE SETS
+         ====================================================== -->
+
+    <section class="section comparison-section">
+
+      <div class="section-inner">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Choosing a Set
+          </p>
+
+          <h2>
+            Different materials, different emphasis.
+          </h2>
+
+          <p>
+            Clients may select a set when requesting a casting, or leave
+            the choice to me based on the question.
+          </p>
+
+        </div>
+
+        <div class="comparison-grid">
+
+          <article class="comparison-card">
+
+            <p class="section-label">
+              Ceramic
+            </p>
+
+            <h3>
+              Direct and grounded
+            </h3>
+
+            <p>
+              The ceramic set emphasizes tangible circumstances,
+              practical choices, visible tensions, boundaries, and what
+              needs to be expressed clearly.
+            </p>
+
+          </article>
+
+
+          <article class="comparison-card">
+
+            <p class="section-label">
+              Lapis Lazuli
+            </p>
+
+            <h3>
+              Reflective and layered
+            </h3>
+
+            <p>
+              The lapis set emphasizes intuition, internal patterns,
+              communication, symbolic depth, hidden influence, and
+              questions that unfold across more than one layer.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         ONLINE CASTINGS
+         ====================================================== -->
+
+    <section class="section casting-section">
+
+      <div class="section-inner casting-layout">
+
+        <div class="casting-copy">
+
+          <p class="section-label">
+            Online Rune Casting
+          </p>
+
+          <h2>
+            A casting doesn’t require both people to be in the same room.
+          </h2>
+
+          <p class="lead">
+            Online rune castings allow you to submit a question, choose
+            a rune set, and receive an interpretation based on the
+            symbols drawn and their relationship to one another.
+          </p>
+
+          <p>
+            The focus remains on reflection, not fixed prediction. I’ll
+            explain the runes, the structure of the cast, the tensions
+            between them, and the perspectives they introduce.
+          </p>
+
+          <p>
+            You remain responsible for deciding what fits, what
+            challenges you, and what you choose to do with the reading.
+          </p>
+
+        </div>
+
+
+        <div class="casting-process">
+
+          <article class="casting-step">
+
+            <span class="casting-step-number">
+              01
+            </span>
+
+            <div>
+              <h3>
+                Submit your question
+              </h3>
+
+              <p>
+                Explain what you’d like the casting to examine. Open
+                questions generally provide more useful room for
+                interpretation than simple yes-or-no questions.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="casting-step">
+
+            <span class="casting-step-number">
+              02
+            </span>
+
+            <div>
+              <h3>
+                Choose your rune set
+              </h3>
+
+              <p>
+                Select the white ceramic set, the lapis lazuli set, or
+                allow me to choose based on the nature of your question.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="casting-step">
+
+            <span class="casting-step-number">
+              03
+            </span>
+
+            <div>
+              <h3>
+                Receive the interpretation
+              </h3>
+
+              <p>
+                I’ll interpret the selected runes as a connected pattern
+                and explain both their individual meanings and the story
+                created by their placement together.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         SERVICE CTA
+         ====================================================== -->
+
+    <section class="section service-cta">
+
+      <div class="section-inner narrow">
+
+        <p class="section-label">
+          Request a Casting
+        </p>
+
+        <h2>
+          Bring a question. Choose a set. See what pattern answers.
+        </h2>
+
+        <p>
+          Online rune casting services are available through Synchronic
+          Self Theory. Use the contact page to ask about formats,
+          scheduling, pricing, or which rune set may best suit your
+          question.
+        </p>
+
+        <div class="service-cta-actions">
+
+          <a
+            class="button button-primary"
+            href="contact.html"
+          >
+            Request a Rune Casting
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="journal/runes.html"
+          >
+            Visit the Rune Journal
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================
+       SITE FOOTER
+       ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+
+        <a
+          class="footer-site-name"
+          href="../index.html"
+        >
+          Synchronic Self Theory
+        </a>
+
+        <p>
+          As above, so below.<br>
+          As within, so without.
+        </p>
+
+      </div>
+
+      <nav
+        class="footer-navigation"
+        aria-label="Footer navigation"
+      >
+        <a href="journal.html">
+          Journal
+        </a>
+
+        <a href="tarot.html">
+          Tarot Readings
+        </a>
+
+        <a href="runes.html">
+          Rune Casting
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+      </nav>
+
+      <div class="footer-credit">
+
+        <p>
+          Powered by
+          <a
+            href="https://ghostwritestudios.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GhostWrite Studios
+          </a>
+        </p>
+
+        <p>
+          Original philosophy and writing by Rory Kelly.
+        </p>
+
+        <p>
+          &copy; 2026 Rory Kelly. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================
+       MOBILE NAVIGATION
+       ====================================================== -->
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    const primaryNavigation = document.querySelector(
+      ".primary-navigation"
+    );
+
+    if (menuToggle && primaryNavigation) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen =
+          menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+        primaryNavigation.classList.toggle(
+          "navigation-open"
+        );
+      });
+    }
+  </script>
+
+</body>
+</html>
