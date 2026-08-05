@@ -137,7 +137,7 @@
   <style>
 
     .article-page {
-      overflow: hidden;
+      overflow-x: clip;
       background:
         radial-gradient(
           circle at 15% 12%,
@@ -169,7 +169,7 @@
     .article-hero-image {
       position: absolute;
       inset: 0;
-      z-index: -3;
+      z-index: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -184,7 +184,7 @@
     .article-hero-overlay {
       position: absolute;
       inset: 0;
-      z-index: -2;
+      z-index: 1;
       background:
         linear-gradient(
           90deg,
@@ -202,6 +202,8 @@
     }
 
     .article-hero-content {
+      position: relative;
+      z-index: 2;
       width: min(100%, var(--max-width, 1240px));
       margin: 0 auto;
       padding:
@@ -295,10 +297,6 @@
       text-transform: uppercase;
     }
 
-    .article-meta span {
-      position: relative;
-    }
-
     .article-meta span + span::before {
       margin-right: 1.25rem;
       color: var(--gold, #f0b24a);
@@ -311,11 +309,11 @@
        ====================================================== */
 
     .article-shell {
-      width: min(100%, 920px);
+      width: min(calc(100% - 2rem), 1180px);
       margin: 0 auto;
       padding:
         clamp(4.5rem, 9vw, 8rem)
-        1.5rem
+        0
         clamp(5rem, 10vw, 9rem);
     }
 
@@ -323,7 +321,7 @@
       position: relative;
       padding:
         clamp(2rem, 5vw, 4.5rem)
-        clamp(1.3rem, 5vw, 4.5rem);
+        clamp(1.25rem, 5vw, 4.5rem);
       border: 1px solid var(
         --border-subtle,
         rgba(255, 255, 255, 0.1)
@@ -354,16 +352,24 @@
       content: "";
     }
 
-    .article-body p {
-      margin: 0 0 1.65rem;
+    .article-body > :not(.spread-interpretation) {
+      width: min(100%, 760px);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .article-body > p {
+      margin-top: 0;
+      margin-bottom: 1.65rem;
       color: var(--text-soft, #c9cbd2);
       font-size: clamp(1.04rem, 1.5vw, 1.17rem);
       line-height: 1.9;
     }
 
-    .article-body p:last-child {
-      margin-bottom: 0;
-    }
+
+    /* ======================================================
+       SHORT ANSWER
+       ====================================================== */
 
     .article-answer {
       margin-bottom: 2.4rem;
@@ -400,8 +406,14 @@
       font-weight: 600;
     }
 
+
+    /* ======================================================
+       QUESTION STACKS
+       ====================================================== */
+
     .article-question-stack {
-      margin: 2.5rem 0;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
       padding: clamp(1.5rem, 4vw, 2.4rem);
       border: 1px solid rgba(240, 178, 74, 0.18);
       border-radius: var(--radius-medium, 1rem);
@@ -415,7 +427,7 @@
     }
 
     .article-question-stack p {
-      margin-bottom: 1rem;
+      margin: 0 0 1rem;
       color: var(--text, #f4f1ea);
       font-family:
         Georgia,
@@ -430,8 +442,14 @@
       margin-bottom: 0;
     }
 
+
+    /* ======================================================
+       PUNCHLINE
+       ====================================================== */
+
     .article-punchline {
-      margin: 2.6rem 0;
+      margin-top: 2.6rem;
+      margin-bottom: 2.6rem;
       padding: clamp(1.8rem, 5vw, 3rem);
       border-top: 1px solid rgba(240, 178, 74, 0.25);
       border-bottom: 1px solid rgba(240, 178, 74, 0.25);
@@ -440,7 +458,7 @@
     }
 
     .article-punchline p {
-      margin-bottom: 0.6rem;
+      margin: 0 0 0.6rem;
       color: inherit;
       font-family:
         Georgia,
@@ -462,13 +480,15 @@
        ====================================================== */
 
     .spread-interpretation {
-      margin: 3rem 0;
-      padding: clamp(1.6rem, 4vw, 2.6rem);
+      display: grid;
+      width: 100%;
+      margin: 3.5rem 0;
+      padding: clamp(1.25rem, 3vw, 2.5rem);
       border: 1px solid var(
         --border-subtle,
         rgba(255, 255, 255, 0.1)
       );
-      border-radius: var(--radius-medium, 1rem);
+      border-radius: var(--radius-large, 1.5rem);
       background:
         linear-gradient(
           145deg,
@@ -476,10 +496,22 @@
           rgba(255, 255, 255, 0.012)
         ),
         var(--background-raised, #141821);
+      box-shadow: 0 28px 72px rgba(0, 0, 0, 0.32);
+      gap: clamp(1.5rem, 3vw, 2.5rem);
+      grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(280px, 0.75fr);
+      grid-template-areas:
+        "heading heading"
+        "image copy";
+    }
+
+    .spread-heading {
+      grid-area: heading;
     }
 
     .spread-label {
-      margin-bottom: 1.2rem;
+      margin: 0 0 1rem;
       color: var(--gold, #f0b24a);
       font-family:
         Arial,
@@ -491,13 +523,54 @@
       text-transform: uppercase;
     }
 
-    .spread-interpretation h2 {
-      margin: 0 0 1.4rem;
+    .spread-heading h2 {
+      margin: 0;
       color: var(--text, #f4f1ea);
       font-size: clamp(2rem, 4vw, 3rem);
     }
 
-    .spread-interpretation p:last-child {
+    .spread-figure {
+      min-width: 0;
+      margin: 0;
+      grid-area: image;
+    }
+
+    .spread-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-medium, 1rem);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.38);
+    }
+
+    .spread-figure figcaption {
+      margin-top: 0.8rem;
+      color: rgba(255, 255, 255, 0.55);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      line-height: 1.5;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .spread-copy {
+      min-width: 0;
+      grid-area: copy;
+    }
+
+    .spread-copy p {
+      margin: 0 0 1.25rem;
+      color: var(--text-soft, #c9cbd2);
+      font-size: clamp(1rem, 1.4vw, 1.12rem);
+      line-height: 1.8;
+    }
+
+    .spread-copy p:last-child {
       margin-bottom: 0;
     }
 
@@ -549,7 +622,7 @@
     .closing-question p {
       position: relative;
       z-index: 1;
-      margin-bottom: 0;
+      margin: 0;
       color: var(--text, #f4f1ea);
       font-family:
         Georgia,
@@ -567,10 +640,11 @@
 
     .article-navigation {
       display: flex;
+      width: min(100%, 760px);
       flex-wrap: wrap;
       justify-content: space-between;
       gap: 1rem;
-      margin-top: 2.5rem;
+      margin: 2.5rem auto 0;
     }
 
     .article-navigation a {
@@ -610,8 +684,21 @@
 
 
     /* ======================================================
-       MOBILE
+       RESPONSIVE
        ====================================================== */
+
+    @media (max-width: 900px) {
+
+      .spread-interpretation {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "heading"
+          "image"
+          "copy";
+      }
+
+    }
+
 
     @media (max-width: 760px) {
 
@@ -646,22 +733,21 @@
         display: none;
       }
 
+      .article-shell {
+        width: 100%;
+      }
+
       .article-body {
         border-right: 0;
         border-left: 0;
         border-radius: 0;
       }
 
-      .article-shell {
-        padding-right: 0;
-        padding-left: 0;
-      }
-
       .article-navigation {
         align-items: stretch;
         flex-direction: column;
-        padding-right: 1.3rem;
-        padding-left: 1.3rem;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
       }
 
       .article-navigation a {
@@ -855,8 +941,8 @@
         class="article-hero-image"
         src="../../../sin-spread.PNG"
         alt="A three-card Black Tarot spread showing the reversed Lovers, reversed Justice, and Queen of Spheres on a black celestial cloth"
-        width="1706"
-        height="1280"
+        width="1448"
+        height="1086"
         fetchpriority="high"
       >
 
@@ -1142,23 +1228,22 @@
              TAROT SPREAD INTERPRETATION
              ================================================== -->
 
-               <section class="spread-interpretation">
+        <section class="spread-interpretation">
 
-          <p class="spread-label">
-            The Accompanying Spread
-          </p>
+          <div class="spread-heading">
 
-          <h2>
-            What do the cards say about the question?
-          </h2>
+            <p class="spread-label">
+              The Accompanying Spread
+            </p>
 
-          <figure
-            class="spread-figure"
-            style="
-              width: 100%;
-              margin: 1.8rem 0 2.2rem;
-            "
-          >
+            <h2>
+              What do the cards say about the question?
+            </h2>
+
+          </div>
+
+
+          <figure class="spread-figure">
 
             <img
               src="../../../sin-spread.PNG"
@@ -1166,67 +1251,51 @@
               width="1448"
               height="1086"
               loading="lazy"
-              style="
-                display: block;
-                width: 100%;
-                max-width: 100%;
-                height: auto;
-                object-fit: contain;
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                border-radius: 1rem;
-                box-shadow: 0 24px 60px rgba(0, 0, 0, 0.38);
-              "
             >
 
-            <figcaption
-              style="
-                margin-top: 0.8rem;
-                color: rgba(255, 255, 255, 0.55);
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 0.78rem;
-                letter-spacing: 0.05em;
-                line-height: 1.5;
-                text-align: center;
-                text-transform: uppercase;
-              "
-            >
+            <figcaption>
               The reversed Lovers, Justice reversed, and the Queen of
               Spheres.
             </figcaption>
 
           </figure>
 
-          <p>
-            The tarot spread accompanying this article illustrates
-            exactly that point.
-          </p>
 
-          <p>
-            The <span class="card-name">reversed Lovers</span> asks
-            whether we've divided the world into categories that are
-            simpler than reality itself.
-          </p>
+          <div class="spread-copy">
 
-          <p>
-            <span class="card-name">Justice reversed</span> challenges
-            whether we've judged fairly or whether we've allowed
-            inherited assumptions to become unquestioned doctrine.
-          </p>
+            <p>
+              The tarot spread accompanying this article illustrates
+              exactly that point.
+            </p>
 
-          <p>
-            The <span class="card-name">Queen of Spheres</span> brings
-            the discussion back to earth, reminding us that wisdom
-            ultimately has to function in the real world rather than
-            inside abstract labels.
-          </p>
+            <p>
+              The <span class="card-name">reversed Lovers</span> asks
+              whether we've divided the world into categories that are
+              simpler than reality itself.
+            </p>
 
-          <p>
-            The cards aren't predicting the future.
-          </p>
+            <p>
+              <span class="card-name">Justice reversed</span> challenges
+              whether we've judged fairly or whether we've allowed
+              inherited assumptions to become unquestioned doctrine.
+            </p>
 
-          <p>
-            They're prompting a conversation.
-          </p>
+            <p>
+              The <span class="card-name">Queen of Spheres</span> brings
+              the discussion back to earth, reminding us that wisdom
+              ultimately has to function in the real world rather than
+              inside abstract labels.
+            </p>
+
+            <p>
+              The cards aren't predicting the future.
+            </p>
+
+            <p>
+              They're prompting a conversation.
+            </p>
+
+          </div>
 
         </section>
 
